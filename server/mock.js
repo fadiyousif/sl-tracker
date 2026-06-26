@@ -110,8 +110,12 @@ const RELIABILITY = {
   '58': { score: 80, total: 540,  on_time: 432 },
 }
 
+export function getLines() {
+  return Object.keys(RELIABILITY).sort((a, b) => Number(a) - Number(b))
+}
+
 export function getReliability(line) {
-  return RELIABILITY[line] ?? { score: 80, total: 500, on_time: 400 }
+  return RELIABILITY[line] ?? null
 }
 
 // returns a fake but realistic avg delay in seconds for a given day and hour

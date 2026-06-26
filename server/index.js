@@ -28,6 +28,10 @@ app.get('/api/stops', (_req, res) => {
   res.json(mock.STOPS)
 })
 
+app.get('/api/lines', (_req, res) => {
+  res.json(mock.getLines())
+})
+
 // the client uses this to show the live departures board on the "My Commute" screen
 app.get('/api/departures/:areaId', (req, res) => {
   const { areaId } = req.params
@@ -46,13 +50,11 @@ app.get('/api/reliability/:line', (req, res) => {
   const { line } = req.params
   const key = `rel:${line}`
   const hit = getCached(key, 5 * 60_000)
-  if (hit) {
-    return res.json(hit)
-  } else {
-    const data = mock.getReliability(line)
-    setCached(key, data)
-    res.json(data)
-  }
+  if (hit) return res.json(hit)
+  const data = mock.getReliability(line)
+  if (!data) return res.status(404).json({ error: 'Line not found' })
+  setCached(key, data)
+  res.json(data)
 })
 
 app.get('/api/reliability/:line/heatmap', (req, res) => {
