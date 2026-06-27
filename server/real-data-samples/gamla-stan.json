@@ -1,0 +1,26 @@
+{
+  "timestamp": "2026-06-27T14:39:06",
+  "query": {
+    "queryTime": "2026-06-27T14:39:06",
+    "query": "Gamla+Stan"
+  },
+  "stop_groups": [
+    {
+      "id": "740021653",
+      "name": "Gamla Stan T-bana",
+      "area_type": "RIKSHALLPLATS",
+      "average_daily_stop_times": 975.92,
+      "transport_modes": [
+        "METRO"
+      ],
+      "stops": [
+        {
+          "id": "9824",
+          "name": "Gamla stan",
+          "lat": 59.323286,
+          "lon": 18.067171
+        }
+      ]
+    }
+  ]
+}

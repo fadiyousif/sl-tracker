@@ -1,0 +1,94 @@
+{
+  "timestamp": "2026-06-27T14:44:01",
+  "query": {
+    "queryTime": "2026-06-27T14:44:01",
+    "query": "Kungsträdgården"
+  },
+  "stop_groups": [
+    {
+      "id": "740098495",
+      "name": "Kungsträdgården",
+      "area_type": "META_STOP",
+      "average_daily_stop_times": 411.7,
+      "transport_modes": [
+        "BUS"
+      ],
+      "stops": [
+        {
+          "id": "12056",
+          "name": "Kungsträdgården",
+          "lat": 59.330859,
+          "lon": 18.073588
+        },
+        {
+          "id": "12296",
+          "name": "Kungsträdgården",
+          "lat": 59.331071,
+          "lon": 18.072719
+        },
+        {
+          "id": "12221",
+          "name": "Karl XII:s torg",
+          "lat": 59.32965,
+          "lon": 18.073188
+        }
+      ]
+    },
+    {
+      "id": "740073532",
+      "name": "Kungsträdgården",
+      "area_type": "RIKSHALLPLATS",
+      "average_daily_stop_times": 195.07,
+      "transport_modes": [
+        "BUS"
+      ],
+      "stops": [
+        {
+          "id": "12296",
+          "name": "Kungsträdgården",
+          "lat": 59.331071,
+          "lon": 18.072719
+        }
+      ]
+    },
+    {
+      "id": "740037355",
+      "name": "Stockholm Kungsträdgården",
+      "area_type": "RIKSHALLPLATS",
+      "average_daily_stop_times": 602.16003,
+      "transport_modes": [
+        "TRAM",
+        "BUS"
+      ],
+      "stops": [
+        {
+          "id": "11881",
+          "name": "Kungsträdgården",
+          "lat": 59.332792,
+          "lon": 18.070632
+        },
+        {
+          "id": "12723",
+          "name": "Kungsträdgården",
+          "lat": 59.332573,
+          "lon": 18.071077
+        }
+      ]
+    },
+    {
+      "id": "740021659",
+      "name": "Kungsträdgården T-bana",
+      "area_type": "RIKSHALLPLATS",
+      "average_daily_stop_times": 0,
+      "transport_modes": [],
+      "stops": [
+        {
+          "id": "12056",
+          "name": "Kungsträdgården",
+          "lat": 59.330859,
+          "lon": 18.073588
+        }
+      ]
+    }
+  ]
+}

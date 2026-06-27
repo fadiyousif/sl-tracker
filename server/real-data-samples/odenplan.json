@@ -1,0 +1,81 @@
+{
+  "timestamp": "2026-06-27T13:59:48",
+  "query": {
+    "queryTime": "2026-06-27T13:59:48",
+    "query": "Odenplan"
+  },
+  "stop_groups": [
+    {
+      "id": "740098559",
+      "name": "Odenplan",
+      "area_type": "META_STOP",
+      "average_daily_stop_times": 1951.5599,
+      "transport_modes": [
+        "METRO",
+        "BUS",
+        "TRAIN"
+      ],
+      "stops": [
+        {
+          "id": "9827",
+          "name": "Odenplan",
+          "lat": 59.342763,
+          "lon": 18.048653
+        },
+        {
+          "id": "9942",
+          "name": "Odenplan",
+          "lat": 59.342901,
+          "lon": 18.0486
+        },
+        {
+          "id": "1618",
+          "name": "Stockholm Odenplan",
+          "lat": 59.343213,
+          "lon": 18.04572
+        }
+      ]
+    },
+    {
+      "id": "740021013",
+      "name": "Odenplan T-bana",
+      "area_type": "RIKSHALLPLATS",
+      "average_daily_stop_times": 1529.08,
+      "transport_modes": [
+        "METRO",
+        "BUS"
+      ],
+      "stops": [
+        {
+          "id": "9827",
+          "name": "Odenplan",
+          "lat": 59.342763,
+          "lon": 18.048653
+        },
+        {
+          "id": "9942",
+          "name": "Odenplan",
+          "lat": 59.342901,
+          "lon": 18.0486
+        }
+      ]
+    },
+    {
+      "id": "740001618",
+      "name": "Stockholm Odenplan station",
+      "area_type": "RIKSHALLPLATS",
+      "average_daily_stop_times": 422.48,
+      "transport_modes": [
+        "TRAIN"
+      ],
+      "stops": [
+        {
+          "id": "1618",
+          "name": "Stockholm Odenplan",
+          "lat": 59.343213,
+          "lon": 18.04572
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,180 @@
+{
+  "timestamp": "2026-06-27T13:55:36",
+  "query": {
+    "queryTime": "2026-06-27T13:55:36",
+    "query": "Slussen"
+  },
+  "stop_groups": [
+    {
+      "id": "740020101",
+      "name": "Slussen T-bana",
+      "area_type": "RIKSHALLPLATS",
+      "average_daily_stop_times": 1767.97,
+      "transport_modes": [
+        "METRO",
+        "BUS"
+      ],
+      "stops": [
+        {
+          "id": "9904",
+          "name": "Slussen",
+          "lat": 59.319778,
+          "lon": 18.074088
+        },
+        {
+          "id": "9823",
+          "name": "Slussen",
+          "lat": 59.319534,
+          "lon": 18.071617
+        },
+        {
+          "id": "12799",
+          "name": "Slussen",
+          "lat": 59.319522,
+          "lon": 18.072027
+        }
+      ]
+    },
+    {
+      "id": "740077425",
+      "name": "Slussen bussterminal",
+      "area_type": "RIKSHALLPLATS",
+      "average_daily_stop_times": 1279.07,
+      "transport_modes": [
+        "BUS"
+      ],
+      "stops": [
+        {
+          "id": "12235",
+          "name": "Slussen",
+          "lat": 59.31855,
+          "lon": 18.08087
+        }
+      ]
+    },
+    {
+      "id": "740034486",
+      "name": "Stockholm Slussen kajen",
+      "area_type": "RIKSHALLPLATS",
+      "average_daily_stop_times": 195.43,
+      "transport_modes": [
+        "BOAT"
+      ],
+      "stops": [
+        {
+          "id": "12358",
+          "name": "Slussen",
+          "lat": 59.32329,
+          "lon": 18.076104
+        },
+        {
+          "id": "69500",
+          "name": "Slussen",
+          "lat": 59.323289,
+          "lon": 18.076139
+        }
+      ]
+    },
+    {
+      "id": "740015728",
+      "name": "Malmö Slussen",
+      "area_type": "RIKSHALLPLATS",
+      "average_daily_stop_times": 133.35,
+      "transport_modes": [
+        "BUS"
+      ],
+      "stops": [
+        {
+          "id": "26808",
+          "name": "Malmö Slussen",
+          "lat": 55.607548,
+          "lon": 13.016463
+        }
+      ]
+    },
+    {
+      "id": "740015832",
+      "name": "Slussen",
+      "area_type": "RIKSHALLPLATS",
+      "average_daily_stop_times": 15.45,
+      "transport_modes": [
+        "BUS",
+        "BOAT"
+      ],
+      "stops": [
+        {
+          "id": "35033",
+          "name": "Slussen",
+          "lat": 58.259319,
+          "lon": 11.759694
+        }
+      ]
+    },
+    {
+      "id": "740060641",
+      "name": "Slussen östra",
+      "area_type": "RIKSHALLPLATS",
+      "average_daily_stop_times": 15.12,
+      "transport_modes": [
+        "BUS"
+      ],
+      "stops": [
+        {
+          "id": "35036",
+          "name": "Slussen östra",
+          "lat": 58.258284,
+          "lon": 11.768844
+        }
+      ]
+    },
+    {
+      "id": "740077609",
+      "name": "USÖ slussen",
+      "area_type": "RIKSHALLPLATS",
+      "average_daily_stop_times": 62.13,
+      "transport_modes": [
+        "BUS"
+      ],
+      "stops": [
+        {
+          "id": "72342",
+          "name": "USÖ slussen",
+          "lat": 59.27524,
+          "lon": 15.236981
+        }
+      ]
+    },
+    {
+      "id": "740001509",
+      "name": "Upperud slussen",
+      "area_type": "RIKSHALLPLATS",
+      "average_daily_stop_times": 4.73,
+      "transport_modes": [
+        "BUS"
+      ],
+      "stops": [
+        {
+          "id": "1509",
+          "name": "Upperud slussen",
+          "lat": 58.814004,
+          "lon": 12.436388
+        }
+      ]
+    },
+    {
+      "id": "740047623",
+      "name": "Slussen",
+      "area_type": "RIKSHALLPLATS",
+      "average_daily_stop_times": 0,
+      "transport_modes": [],
+      "stops": [
+        {
+          "id": "45133",
+          "name": "Slussen",
+          "lat": 60.595867,
+          "lon": 15.652247
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "timestamp": "2026-06-27T13:22:48",
+  "query": {
+    "queryTime": "2026-06-27T13:22:48",
+    "query": "T-Centralen"
+  },
+  "stop_groups": [
+    {
+      "id": "740020749",
+      "name": "T-Centralen T-bana",
+      "area_type": "RIKSHALLPLATS",
+      "average_daily_stop_times": 1386.58,
+      "transport_modes": [
+        "METRO"
+      ],
+      "stops": [
+        {
+          "id": "9825",
+          "name": "T-Centralen",
+          "lat": 59.33166,
+          "lon": 18.061694
+        }
+      ]
+    },
+    {
+      "id": "740035997",
+      "name": "T-Centralen Spårv",
+      "area_type": "RIKSHALLPLATS",
+      "average_daily_stop_times": 502.73,
+      "transport_modes": [
+        "BUS",
+        "TRAM"
+      ],
+      "stops": [
+        {
+          "id": "12736",
+          "name": "T-Centralen",
+          "lat": 59.332098,
+          "lon": 18.061943
+        },
+        {
+          "id": "12275",
+          "name": "T-Centralen",
+          "lat": 59.33212,
+          "lon": 18.062138
+        }
+      ]
+    },
+    {
+      "id": "740024382",
+      "name": "T-Centralen buss",
+      "area_type": "RIKSHALLPLATS",
+      "average_daily_stop_times": 0,
+      "transport_modes": [],
+      "stops": [
+        {
+          "id": "68747",
+          "name": "Kulturhuset",
+          "lat": 59.332463,
+          "lon": 18.06344
+        }
+      ]
+    }
+  ]
+}

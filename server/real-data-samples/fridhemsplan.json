@@ -1,0 +1,50 @@
+{
+  "timestamp": "2026-06-27T14:33:06",
+  "query": {
+    "queryTime": "2026-06-27T14:33:06",
+    "query": "Fridhemsplan"
+  },
+  "stop_groups": [
+    {
+      "id": "740021661",
+      "name": "Fridhemsplan T-bana",
+      "area_type": "RIKSHALLPLATS",
+      "average_daily_stop_times": 1753.74,
+      "transport_modes": [
+        "BUS",
+        "METRO"
+      ],
+      "stops": [
+        {
+          "id": "9974",
+          "name": "Fridhemsplan",
+          "lat": 59.332246,
+          "lon": 18.029255
+        },
+        {
+          "id": "9829",
+          "name": "Fridhemsplan",
+          "lat": 59.333017,
+          "lon": 18.031202
+        }
+      ]
+    },
+    {
+      "id": "740073284",
+      "name": "Mora Fridhemsplan",
+      "area_type": "RIKSHALLPLATS",
+      "average_daily_stop_times": 50.7,
+      "transport_modes": [
+        "BUS"
+      ],
+      "stops": [
+        {
+          "id": "47794",
+          "name": "Mora Fridhemsplan",
+          "lat": 61.002895,
+          "lon": 14.535829
+        }
+      ]
+    }
+  ]
+}
