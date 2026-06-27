@@ -49,8 +49,8 @@ export default function MyCommute() {
   const [reliability, setReliability] = useState(null)
 
   useEffect(() => {
-    fetchLines().then(setLines)
-    fetchStops().then(setStops)
+    fetchLines().then(data => data && setLines(data))
+    fetchStops().then(data => data && setStops(data))
   }, [])
 
   // runs on mount and whenever the user changes the selected line
@@ -62,9 +62,9 @@ export default function MyCommute() {
 
   useEffect(() => {
     localStorage.setItem('savedStop', stopId)
-    fetchDepartures(stopId).then(setDepartures)
+    fetchDepartures(stopId).then(data => data && setDepartures(data))
     // re-fetch every 60 seconds to keep the departures board current
-    const t = setInterval(() => fetchDepartures(stopId).then(setDepartures), 60_000)
+    const t = setInterval(() => fetchDepartures(stopId).then(data => data && setDepartures(data)), 60_000)
     // clear the interval when the stop changes or the component unmounts,
     // otherwise old intervals keep running and pile up in the background
     return () => clearInterval(t)

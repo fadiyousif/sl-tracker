@@ -48,7 +48,7 @@ export default function LineExplorer() {
     fetchReliability(line).then(data => {
       if (!data) return setNotFound(true)
       setReliability(data)
-      fetchHeatmap(line).then(setHeatmap)
+      fetchHeatmap(line).then(data => data && setHeatmap(data))
     })
   }, [line])
 
