@@ -41,8 +41,8 @@ function morningRecommendation(reliability) {
 }
 
 export default function MyCommute() {
-  const [line, setLine] = useState(() => localStorage.getItem('savedLine') || '7')
-  const [stopId, setStopId] = useState(() => localStorage.getItem('savedStop') || '740015560')
+  const [line, setLine] = useState(() => localStorage.getItem('savedLine') || '13')
+  const [stopId, setStopId] = useState(() => localStorage.getItem('savedStop') || '740020749')
   const [lines, setLines] = useState([])
   const [stops, setStops] = useState([])
   const [departures, setDepartures] = useState([])
