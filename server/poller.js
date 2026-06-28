@@ -20,8 +20,8 @@ function toRecords(stopId, data) {
       transport_mode: dep.route.transport_mode,
       destination:    dep.route.direction,
       scheduled:      dep.scheduled,
-      delay_seconds:  dep.delay ?? 0,
-      canceled:       dep.canceled ?? false,
+      delay_seconds:  dep.delay,
+      canceled:       dep.canceled,
     }))
 }
 
@@ -32,7 +32,12 @@ async function poll() {
       const data = await fetchDepartures(stop.id)
       const records = toRecords(stop.id, data)
       if (records.length === 0) continue;
-      const { error } = await db.from('departures').insert(records)
+      // upsert instead of insert to avoid duplicates across polls —
+      // if the same departure already exists, update its delay and canceled status
+      const { error } = await db.from('departures').upsert(records, {
+        onConflict: 'stop_area_id,line,scheduled', // match on these three fields
+        ignoreDuplicates: false,                    // update the row on conflict, don't skip it
+      })
       if (error) console.error(`[${ts}] Supabase error for ${stop.name}:`, error.message)
       else console.log(`[${ts}] ${stop.name}: wrote ${records.length} records`)
     } catch (err) {
