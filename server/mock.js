@@ -140,7 +140,7 @@ export function getHeatmap(_line) {
   }
 
   // for each day, loop over every hour and produce one object
-  // flatMap flattens the result so we get a single array of 85 objects instead of an array of arrays
+  // flatMap flattens the result so we get a single array of 80 objects instead of an array of arrays
   return days.flatMap(day =>
     hours.map(hour => ({ day, hour, avg_delay: heatDelay(day, hour) }))
   )
