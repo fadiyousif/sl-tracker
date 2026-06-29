@@ -24,8 +24,9 @@ function minutesAway(scheduled) {
 function delayStatus(delay_seconds, canceled) {
   if (canceled) return { label: 'Cancelled', color: 'var(--gray)' }
   if (delay_seconds === 0) return { label: 'On time', color: 'var(--green)' }
-  if (delay_seconds < 120) return { label: `+${delay_seconds}s`, color: 'var(--yellow)' }
-  return { label: `+${Math.round(delay_seconds / 60)}m`, color: 'var(--red)' }
+  const label = delay_seconds < 60 ? `+${delay_seconds}s` : `+${Math.round(delay_seconds / 60)}m`
+  const color = delay_seconds < 120 ? 'var(--yellow)' : 'var(--red)'
+  return { label, color }
 }
 
 function morningRecommendation(reliability) {
