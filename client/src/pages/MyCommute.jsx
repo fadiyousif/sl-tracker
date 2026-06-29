@@ -76,7 +76,7 @@ export default function MyCommute() {
   return (
     <div className="page">
       <nav className="nav">
-        <span className="nav-brand">Västtrafik Tracker</span>
+        <h1 className="nav-brand">SL Tracker</h1>
         <div className="nav-links">
           <span className="nav-active">My Commute</span>
           <Link to={`/lines/${line}`}>Line {line} Explorer</Link>
