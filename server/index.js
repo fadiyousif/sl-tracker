@@ -92,7 +92,7 @@ app.get('/api/departures/:areaId', async (req, res) => {
   try {
     const data = IS_DEV
       ? mock.getDepartures(areaId)
-      : parseDepartures(areaId, await fetchDepartures(areaId))
+      : parseDepartures(areaId, await fetchDepartures(areaId)).slice(0, 10)
     setCached(key, data)
     res.json(data)
   } catch (err) {
