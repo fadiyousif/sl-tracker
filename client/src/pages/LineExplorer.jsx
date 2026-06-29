@@ -74,7 +74,7 @@ export default function LineExplorer() {
   return (
     <div className="page">
       <nav className="nav">
-        <h1 className="nav-brand">SL Tracker</h1>
+        <Link to="/"><h1 className="nav-brand">SL Tracker</h1></Link>
         <div className="nav-links">
           <Link to="/">My Commute</Link>
           <span className="nav-active">Line {line} Explorer</span>
