@@ -1,0 +1,7406 @@
+{
+  "timestamp": "2026-06-27T15:30:42",
+  "query": {
+    "queryTime": "2026-06-26T17:00:00",
+    "query": "740000002"
+  },
+  "stops": [
+    {
+      "id": "73783",
+      "name": "Drottningtorget",
+      "lat": 57.707899,
+      "lon": 11.973742,
+      "transport_modes": [
+        "BUS",
+        "TRAM"
+      ],
+      "alerts": []
+    },
+    {
+      "id": "71314",
+      "name": "Göteborg C",
+      "lat": 57.708918,
+      "lon": 11.973946,
+      "transport_modes": [],
+      "alerts": []
+    },
+    {
+      "id": "2",
+      "name": "Göteborg Centralstation",
+      "lat": 57.709299,
+      "lon": 11.973659,
+      "transport_modes": [
+        "TRAIN",
+        "BUS"
+      ],
+      "alerts": []
+    }
+  ],
+  "departures": [
+    {
+      "scheduled": "2026-06-26T17:00:00",
+      "realtime": "2026-06-26T17:00:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "1321",
+        "transport_mode_code": 100,
+        "transport_mode": "TRAIN",
+        "direction": "Kungsbacka",
+        "origin": {
+          "id": "2",
+          "name": "Göteborg Centralstation"
+        },
+        "destination": {
+          "id": "161",
+          "name": "Kungsbacka station"
+        }
+      },
+      "trip": {
+        "trip_id": "130000000000011156",
+        "start_date": "2026-06-26",
+        "technical_number": 3119
+      },
+      "agency": {
+        "id": "505000000000000013",
+        "name": "Hallandstrafiken",
+        "operator": "SJ Götalandståg"
+      },
+      "stop": {
+        "id": "2",
+        "name": "Göteborg Centralstation",
+        "lat": 57.709299,
+        "lon": 11.973659
+      },
+      "scheduled_platform": {
+        "id": "9022050000002013",
+        "designation": "5"
+      },
+      "realtime_platform": {
+        "id": "9022050000002013",
+        "designation": "5"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:00:00",
+      "realtime": "2026-06-26T17:00:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": "Västtågen",
+        "designation": "3119",
+        "transport_mode_code": 106,
+        "transport_mode": "TRAIN",
+        "direction": "Kungsbacka",
+        "origin": {
+          "id": "2",
+          "name": "Göteborg Centralstation"
+        },
+        "destination": {
+          "id": "161",
+          "name": "Kungsbacka station"
+        }
+      },
+      "trip": {
+        "trip_id": "400000000000018687",
+        "start_date": "2026-06-26",
+        "technical_number": 3119
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Västtågen"
+      },
+      "stop": {
+        "id": "2",
+        "name": "Göteborg Centralstation",
+        "lat": 57.709299,
+        "lon": 11.973659
+      },
+      "scheduled_platform": null,
+      "realtime_platform": null,
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:00:00",
+      "realtime": "2026-06-26T17:00:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": "Västtågen",
+        "designation": "3268",
+        "transport_mode_code": 106,
+        "transport_mode": "TRAIN",
+        "direction": "Vänersborg central",
+        "origin": {
+          "id": "2",
+          "name": "Göteborg Centralstation"
+        },
+        "destination": {
+          "id": "241",
+          "name": "Vänersborg central"
+        }
+      },
+      "trip": {
+        "trip_id": "400000000000018989",
+        "start_date": "2026-06-26",
+        "technical_number": 3268
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Västtågen"
+      },
+      "stop": {
+        "id": "2",
+        "name": "Göteborg Centralstation",
+        "lat": 57.709299,
+        "lon": 11.973659
+      },
+      "scheduled_platform": null,
+      "realtime_platform": null,
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:00:00",
+      "realtime": "2026-06-26T17:00:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "X6",
+        "transport_mode_code": 700,
+        "transport_mode": "BUS",
+        "direction": "Lilla Varholmen",
+        "origin": {
+          "id": "865",
+          "name": "Landvetter resecentrum"
+        },
+        "destination": {
+          "id": "1205",
+          "name": "Lilla Varholmen"
+        }
+      },
+      "trip": {
+        "trip_id": "141010001440815387",
+        "start_date": "2026-06-26",
+        "technical_number": 151
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Keolis Sverige AB"
+      },
+      "stop": {
+        "id": "73783",
+        "name": "Drottningtorget",
+        "lat": 57.707899,
+        "lon": 11.973742
+      },
+      "scheduled_platform": {
+        "id": "9022050073783008",
+        "designation": "B2"
+      },
+      "realtime_platform": {
+        "id": "9022050073783008",
+        "designation": "B2"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:00:00",
+      "realtime": "2026-06-26T17:00:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "21",
+        "transport_mode_code": 700,
+        "transport_mode": "BUS",
+        "direction": "Bergsjön",
+        "origin": {
+          "id": "38946",
+          "name": "Eketrägatan"
+        },
+        "destination": {
+          "id": "38952",
+          "name": "Merkuriusgatan"
+        }
+      },
+      "trip": {
+        "trip_id": "141010001416777579",
+        "start_date": "2026-06-26",
+        "technical_number": 95
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Transdev Sverige AB"
+      },
+      "stop": {
+        "id": "73783",
+        "name": "Drottningtorget",
+        "lat": 57.707899,
+        "lon": 11.973742
+      },
+      "scheduled_platform": {
+        "id": "9022050073783007",
+        "designation": "B1"
+      },
+      "realtime_platform": {
+        "id": "9022050073783007",
+        "designation": "B1"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:01:00",
+      "realtime": "2026-06-26T17:01:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "17",
+        "transport_mode_code": 700,
+        "transport_mode": "BUS",
+        "direction": "Östra Sjukhuset",
+        "origin": {
+          "id": "31689",
+          "name": "Hinnebäcksgatan"
+        },
+        "destination": {
+          "id": "38953",
+          "name": "Östra Sjukhuset"
+        }
+      },
+      "trip": {
+        "trip_id": "141010001440232713",
+        "start_date": "2026-06-26",
+        "technical_number": 183
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Keolis Sverige AB"
+      },
+      "stop": {
+        "id": "73783",
+        "name": "Drottningtorget",
+        "lat": 57.707899,
+        "lon": 11.973742
+      },
+      "scheduled_platform": {
+        "id": "9022050073783007",
+        "designation": "B1"
+      },
+      "realtime_platform": {
+        "id": "9022050073783007",
+        "designation": "B1"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:02:00",
+      "realtime": "2026-06-26T17:02:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "11",
+        "transport_mode_code": 900,
+        "transport_mode": "TRAM",
+        "direction": "Bergsjön",
+        "origin": {
+          "id": "1206",
+          "name": "Saltholmen"
+        },
+        "destination": {
+          "id": "31756",
+          "name": "Komettorget"
+        }
+      },
+      "trip": {
+        "trip_id": "141010601435815039",
+        "start_date": "2026-06-26",
+        "technical_number": 5667
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Göteborgs Spårvägar Spårvagn"
+      },
+      "stop": {
+        "id": "73783",
+        "name": "Drottningtorget",
+        "lat": 57.707899,
+        "lon": 11.973742
+      },
+      "scheduled_platform": {
+        "id": "9022050073783001",
+        "designation": "A1"
+      },
+      "realtime_platform": {
+        "id": "9022050073783001",
+        "designation": "A1"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:02:00",
+      "realtime": "2026-06-26T17:02:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "9",
+        "transport_mode_code": 900,
+        "transport_mode": "TRAM",
+        "direction": "Saltholmen",
+        "origin": {
+          "id": "31455",
+          "name": "Angered Centrum"
+        },
+        "destination": {
+          "id": "1206",
+          "name": "Saltholmen"
+        }
+      },
+      "trip": {
+        "trip_id": "141010401410346736",
+        "start_date": "2026-06-26",
+        "technical_number": 5600
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Göteborgs Spårvägar Spårvagn"
+      },
+      "stop": {
+        "id": "73783",
+        "name": "Drottningtorget",
+        "lat": 57.707899,
+        "lon": 11.973742
+      },
+      "scheduled_platform": {
+        "id": "9022050073783004",
+        "designation": "A4"
+      },
+      "realtime_platform": {
+        "id": "9022050073783004",
+        "designation": "A4"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:03:00",
+      "realtime": "2026-06-26T17:03:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "1",
+        "transport_mode_code": 900,
+        "transport_mode": "TRAM",
+        "direction": "Tynnered",
+        "origin": {
+          "id": "38953",
+          "name": "Östra Sjukhuset"
+        },
+        "destination": {
+          "id": "31880",
+          "name": "Opaltorget"
+        }
+      },
+      "trip": {
+        "trip_id": "141010301429969670",
+        "start_date": "2026-06-26",
+        "technical_number": 5604
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Göteborgs Spårvägar Spårvagn"
+      },
+      "stop": {
+        "id": "73783",
+        "name": "Drottningtorget",
+        "lat": 57.707899,
+        "lon": 11.973742
+      },
+      "scheduled_platform": {
+        "id": "9022050073783003",
+        "designation": "A3"
+      },
+      "realtime_platform": {
+        "id": "9022050073783003",
+        "designation": "A3"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:03:00",
+      "realtime": "2026-06-26T17:03:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "12",
+        "transport_mode_code": 900,
+        "transport_mode": "TRAM",
+        "direction": "Mölndal",
+        "origin": {
+          "id": "31813",
+          "name": "Lindholmen"
+        },
+        "destination": {
+          "id": "38954",
+          "name": "Mölndals Innerstad"
+        }
+      },
+      "trip": {
+        "trip_id": "141010401410347294",
+        "start_date": "2026-06-26",
+        "technical_number": 5620
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Göteborgs Spårvägar Spårvagn"
+      },
+      "stop": {
+        "id": "73783",
+        "name": "Drottningtorget",
+        "lat": 57.707899,
+        "lon": 11.973742
+      },
+      "scheduled_platform": {
+        "id": "9022050073783002",
+        "designation": "A2"
+      },
+      "realtime_platform": {
+        "id": "9022050073783002",
+        "designation": "A2"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:03:00",
+      "realtime": "2026-06-26T17:03:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "X5",
+        "transport_mode_code": 700,
+        "transport_mode": "BUS",
+        "direction": "Frölunda Torg",
+        "origin": {
+          "id": "35222",
+          "name": "Ljungkullen"
+        },
+        "destination": {
+          "id": "38948",
+          "name": "Frölunda Torg"
+        }
+      },
+      "trip": {
+        "trip_id": "141010001440019932",
+        "start_date": "2026-06-26",
+        "technical_number": 195
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Keolis Sverige AB"
+      },
+      "stop": {
+        "id": "73783",
+        "name": "Drottningtorget",
+        "lat": 57.707899,
+        "lon": 11.973742
+      },
+      "scheduled_platform": {
+        "id": "9022050073783008",
+        "designation": "B2"
+      },
+      "realtime_platform": {
+        "id": "9022050073783008",
+        "designation": "B2"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:04:00",
+      "realtime": "2026-06-26T17:04:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "446",
+        "transport_mode_code": 101,
+        "transport_mode": "TRAIN",
+        "direction": "Stockholm Central",
+        "origin": {
+          "id": "2",
+          "name": "Göteborg Centralstation"
+        },
+        "destination": {
+          "id": "1",
+          "name": "Stockholm Centralstation"
+        }
+      },
+      "trip": {
+        "trip_id": "740446000581000001",
+        "start_date": "2026-06-26",
+        "technical_number": 581
+      },
+      "agency": {
+        "id": "505000000000000100",
+        "name": "SJ AB",
+        "operator": "SJ AB"
+      },
+      "stop": {
+        "id": "2",
+        "name": "Göteborg Centralstation",
+        "lat": 57.709299,
+        "lon": 11.973659
+      },
+      "scheduled_platform": null,
+      "realtime_platform": null,
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:04:00",
+      "realtime": "2026-06-26T17:04:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "60",
+        "transport_mode_code": 700,
+        "transport_mode": "BUS",
+        "direction": "Redbergsplatsen",
+        "origin": {
+          "id": "34721",
+          "name": "Sörgårdsskolan"
+        },
+        "destination": {
+          "id": "31915",
+          "name": "Redbergsplatsen"
+        }
+      },
+      "trip": {
+        "trip_id": "141010001439039654",
+        "start_date": "2026-06-26",
+        "technical_number": 152
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Nobina Sverige AB"
+      },
+      "stop": {
+        "id": "73783",
+        "name": "Drottningtorget",
+        "lat": 57.707899,
+        "lon": 11.973742
+      },
+      "scheduled_platform": {
+        "id": "9022050073783009",
+        "designation": "C1"
+      },
+      "realtime_platform": {
+        "id": "9022050073783009",
+        "designation": "C1"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:04:00",
+      "realtime": "2026-06-26T17:04:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "12",
+        "transport_mode_code": 900,
+        "transport_mode": "TRAM",
+        "direction": "Lindholmen",
+        "origin": {
+          "id": "38954",
+          "name": "Mölndals Innerstad"
+        },
+        "destination": {
+          "id": "31813",
+          "name": "Lindholmen"
+        }
+      },
+      "trip": {
+        "trip_id": "141010301429921396",
+        "start_date": "2026-06-26",
+        "technical_number": 5699
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Göteborgs Spårvägar Spårvagn"
+      },
+      "stop": {
+        "id": "73783",
+        "name": "Drottningtorget",
+        "lat": 57.707899,
+        "lon": 11.973742
+      },
+      "scheduled_platform": {
+        "id": "9022050073783004",
+        "designation": "A4"
+      },
+      "realtime_platform": {
+        "id": "9022050073783004",
+        "designation": "A4"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:04:00",
+      "realtime": "2026-06-26T17:04:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "17",
+        "transport_mode_code": 700,
+        "transport_mode": "BUS",
+        "direction": "Tuve",
+        "origin": {
+          "id": "38953",
+          "name": "Östra Sjukhuset"
+        },
+        "destination": {
+          "id": "31689",
+          "name": "Hinnebäcksgatan"
+        }
+      },
+      "trip": {
+        "trip_id": "141010001440019857",
+        "start_date": "2026-06-26",
+        "technical_number": 184
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Keolis Sverige AB"
+      },
+      "stop": {
+        "id": "73783",
+        "name": "Drottningtorget",
+        "lat": 57.707899,
+        "lon": 11.973742
+      },
+      "scheduled_platform": {
+        "id": "9022050073783008",
+        "designation": "B2"
+      },
+      "realtime_platform": {
+        "id": "9022050073783008",
+        "designation": "B2"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:05:00",
+      "realtime": "2026-06-26T17:05:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": "Västtågen",
+        "designation": "13794",
+        "transport_mode_code": 106,
+        "transport_mode": "TRAIN",
+        "direction": "Dingle",
+        "origin": {
+          "id": "2",
+          "name": "Göteborg Centralstation"
+        },
+        "destination": {
+          "id": "65",
+          "name": "Dingle station"
+        }
+      },
+      "trip": {
+        "trip_id": "400000000000021487",
+        "start_date": "2026-06-26",
+        "technical_number": 13794
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Västtågen"
+      },
+      "stop": {
+        "id": "2",
+        "name": "Göteborg Centralstation",
+        "lat": 57.709299,
+        "lon": 11.973659
+      },
+      "scheduled_platform": null,
+      "realtime_platform": null,
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:05:00",
+      "realtime": "2026-06-26T17:05:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "60",
+        "transport_mode_code": 700,
+        "transport_mode": "BUS",
+        "direction": "Fredriksdal",
+        "origin": {
+          "id": "31915",
+          "name": "Redbergsplatsen"
+        },
+        "destination": {
+          "id": "34721",
+          "name": "Sörgårdsskolan"
+        }
+      },
+      "trip": {
+        "trip_id": "141010001439039690",
+        "start_date": "2026-06-26",
+        "technical_number": 151
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Nobina Sverige AB"
+      },
+      "stop": {
+        "id": "73783",
+        "name": "Drottningtorget",
+        "lat": 57.707899,
+        "lon": 11.973742
+      },
+      "scheduled_platform": {
+        "id": "9022050073783004",
+        "designation": "A4"
+      },
+      "realtime_platform": {
+        "id": "9022050073783004",
+        "designation": "A4"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:05:00",
+      "realtime": "2026-06-26T17:05:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "7",
+        "transport_mode_code": 900,
+        "transport_mode": "TRAM",
+        "direction": "Tynnered via Annedal",
+        "origin": {
+          "id": "31756",
+          "name": "Komettorget"
+        },
+        "destination": {
+          "id": "31880",
+          "name": "Opaltorget"
+        }
+      },
+      "trip": {
+        "trip_id": "141010201442197284",
+        "start_date": "2026-06-26",
+        "technical_number": 5598
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Göteborgs Spårvägar Spårvagn"
+      },
+      "stop": {
+        "id": "73783",
+        "name": "Drottningtorget",
+        "lat": 57.707899,
+        "lon": 11.973742
+      },
+      "scheduled_platform": {
+        "id": "9022050073783003",
+        "designation": "A3"
+      },
+      "realtime_platform": {
+        "id": "9022050073783003",
+        "designation": "A3"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:06:00",
+      "realtime": "2026-06-26T17:06:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "17",
+        "transport_mode_code": 700,
+        "transport_mode": "BUS",
+        "direction": "Östra Sjukhuset",
+        "origin": {
+          "id": "31689",
+          "name": "Hinnebäcksgatan"
+        },
+        "destination": {
+          "id": "38953",
+          "name": "Östra Sjukhuset"
+        }
+      },
+      "trip": {
+        "trip_id": "141010001440232983",
+        "start_date": "2026-06-26",
+        "technical_number": 197
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Keolis Sverige AB"
+      },
+      "stop": {
+        "id": "73783",
+        "name": "Drottningtorget",
+        "lat": 57.707899,
+        "lon": 11.973742
+      },
+      "scheduled_platform": {
+        "id": "9022050073783007",
+        "designation": "B1"
+      },
+      "realtime_platform": {
+        "id": "9022050073783007",
+        "designation": "B1"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:06:00",
+      "realtime": "2026-06-26T17:06:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "4",
+        "transport_mode_code": 900,
+        "transport_mode": "TRAM",
+        "direction": "Mölndal via Skånegatan",
+        "origin": {
+          "id": "31455",
+          "name": "Angered Centrum"
+        },
+        "destination": {
+          "id": "38954",
+          "name": "Mölndals Innerstad"
+        }
+      },
+      "trip": {
+        "trip_id": "141010501429921546",
+        "start_date": "2026-06-26",
+        "technical_number": 5612
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Göteborgs Spårvägar Spårvagn"
+      },
+      "stop": {
+        "id": "73783",
+        "name": "Drottningtorget",
+        "lat": 57.707899,
+        "lon": 11.973742
+      },
+      "scheduled_platform": {
+        "id": "9022050073783005",
+        "designation": "A5"
+      },
+      "realtime_platform": {
+        "id": "9022050073783005",
+        "designation": "A5"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:06:00",
+      "realtime": "2026-06-26T17:06:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "X5",
+        "transport_mode_code": 700,
+        "transport_mode": "BUS",
+        "direction": "Vallhamra",
+        "origin": {
+          "id": "38948",
+          "name": "Frölunda Torg"
+        },
+        "destination": {
+          "id": "35222",
+          "name": "Ljungkullen"
+        }
+      },
+      "trip": {
+        "trip_id": "141010001440019885",
+        "start_date": "2026-06-26",
+        "technical_number": 192
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Keolis Sverige AB"
+      },
+      "stop": {
+        "id": "73783",
+        "name": "Drottningtorget",
+        "lat": 57.707899,
+        "lon": 11.973742
+      },
+      "scheduled_platform": {
+        "id": "9022050073783007",
+        "designation": "B1"
+      },
+      "realtime_platform": {
+        "id": "9022050073783007",
+        "designation": "B1"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:07:00",
+      "realtime": "2026-06-26T17:07:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "3",
+        "transport_mode_code": 900,
+        "transport_mode": "TRAM",
+        "direction": "Kålltorp",
+        "origin": {
+          "id": "32163",
+          "name": "Slottsskogsvallen"
+        },
+        "destination": {
+          "id": "32115",
+          "name": "Virginsgatan"
+        }
+      },
+      "trip": {
+        "trip_id": "141010301410345992",
+        "start_date": "2026-06-26",
+        "technical_number": 5675
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Göteborgs Spårvägar Spårvagn"
+      },
+      "stop": {
+        "id": "73783",
+        "name": "Drottningtorget",
+        "lat": 57.707899,
+        "lon": 11.973742
+      },
+      "scheduled_platform": {
+        "id": "9022050073783002",
+        "designation": "A2"
+      },
+      "realtime_platform": {
+        "id": "9022050073783002",
+        "designation": "A2"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:07:00",
+      "realtime": "2026-06-26T17:07:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "3",
+        "transport_mode_code": 900,
+        "transport_mode": "TRAM",
+        "direction": "Marklandsgatan",
+        "origin": {
+          "id": "32115",
+          "name": "Virginsgatan"
+        },
+        "destination": {
+          "id": "32163",
+          "name": "Slottsskogsvallen"
+        }
+      },
+      "trip": {
+        "trip_id": "141010401410347232",
+        "start_date": "2026-06-26",
+        "technical_number": 5616
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Göteborgs Spårvägar Spårvagn"
+      },
+      "stop": {
+        "id": "73783",
+        "name": "Drottningtorget",
+        "lat": 57.707899,
+        "lon": 11.973742
+      },
+      "scheduled_platform": {
+        "id": "9022050073783004",
+        "designation": "A4"
+      },
+      "realtime_platform": {
+        "id": "9022050073783004",
+        "designation": "A4"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:09:00",
+      "realtime": "2026-06-26T17:09:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "7",
+        "transport_mode_code": 900,
+        "transport_mode": "TRAM",
+        "direction": "Bergsjön",
+        "origin": {
+          "id": "31880",
+          "name": "Opaltorget"
+        },
+        "destination": {
+          "id": "31756",
+          "name": "Komettorget"
+        }
+      },
+      "trip": {
+        "trip_id": "141010101442197221",
+        "start_date": "2026-06-26",
+        "technical_number": 5685
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Göteborgs Spårvägar Spårvagn"
+      },
+      "stop": {
+        "id": "73783",
+        "name": "Drottningtorget",
+        "lat": 57.707899,
+        "lon": 11.973742
+      },
+      "scheduled_platform": {
+        "id": "9022050073783001",
+        "designation": "A1"
+      },
+      "realtime_platform": {
+        "id": "9022050073783001",
+        "designation": "A1"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:09:00",
+      "realtime": "2026-06-26T17:09:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "17",
+        "transport_mode_code": 700,
+        "transport_mode": "BUS",
+        "direction": "Tuve",
+        "origin": {
+          "id": "32027",
+          "name": "Svingeln"
+        },
+        "destination": {
+          "id": "31689",
+          "name": "Hinnebäcksgatan"
+        }
+      },
+      "trip": {
+        "trip_id": "141010001440020347",
+        "start_date": "2026-06-26",
+        "technical_number": 194
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Keolis Sverige AB"
+      },
+      "stop": {
+        "id": "73783",
+        "name": "Drottningtorget",
+        "lat": 57.707899,
+        "lon": 11.973742
+      },
+      "scheduled_platform": {
+        "id": "9022050073783008",
+        "designation": "B2"
+      },
+      "realtime_platform": {
+        "id": "9022050073783008",
+        "designation": "B2"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:10:00",
+      "realtime": "2026-06-26T17:10:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "1103",
+        "transport_mode_code": 100,
+        "transport_mode": "TRAIN",
+        "direction": "Varberg",
+        "origin": {
+          "id": "2",
+          "name": "Göteborg Centralstation"
+        },
+        "destination": {
+          "id": "58782",
+          "name": "Varberg Station"
+        }
+      },
+      "trip": {
+        "trip_id": "130000000000011093",
+        "start_date": "2026-06-26",
+        "technical_number": 13169
+      },
+      "agency": {
+        "id": "505000000000000013",
+        "name": "Hallandstrafiken",
+        "operator": "SJ Götalandståg"
+      },
+      "stop": {
+        "id": "2",
+        "name": "Göteborg Centralstation",
+        "lat": 57.709299,
+        "lon": 11.973659
+      },
+      "scheduled_platform": {
+        "id": "9022050000002011",
+        "designation": "3"
+      },
+      "realtime_platform": {
+        "id": "9022050000002011",
+        "designation": "3"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:10:00",
+      "realtime": "2026-06-26T17:10:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": "Västtågen",
+        "designation": "13169",
+        "transport_mode_code": 106,
+        "transport_mode": "TRAIN",
+        "direction": "Varberg central",
+        "origin": {
+          "id": "2",
+          "name": "Göteborg Centralstation"
+        },
+        "destination": {
+          "id": "74020",
+          "name": "Varbergs central"
+        }
+      },
+      "trip": {
+        "trip_id": "400000000000020806",
+        "start_date": "2026-06-26",
+        "technical_number": 13169
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Västtågen"
+      },
+      "stop": {
+        "id": "2",
+        "name": "Göteborg Centralstation",
+        "lat": 57.709299,
+        "lon": 11.973659
+      },
+      "scheduled_platform": null,
+      "realtime_platform": null,
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:10:00",
+      "realtime": "2026-06-26T17:10:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "11",
+        "transport_mode_code": 900,
+        "transport_mode": "TRAM",
+        "direction": "Saltholmen",
+        "origin": {
+          "id": "31756",
+          "name": "Komettorget"
+        },
+        "destination": {
+          "id": "1206",
+          "name": "Saltholmen"
+        }
+      },
+      "trip": {
+        "trip_id": "141010401435815481",
+        "start_date": "2026-06-26",
+        "technical_number": 5610
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Göteborgs Spårvägar Spårvagn"
+      },
+      "stop": {
+        "id": "73783",
+        "name": "Drottningtorget",
+        "lat": 57.707899,
+        "lon": 11.973742
+      },
+      "scheduled_platform": {
+        "id": "9022050073783004",
+        "designation": "A4"
+      },
+      "realtime_platform": {
+        "id": "9022050073783004",
+        "designation": "A4"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:10:00",
+      "realtime": "2026-06-26T17:10:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "1",
+        "transport_mode_code": 900,
+        "transport_mode": "TRAM",
+        "direction": "Östra Sjukhuset",
+        "origin": {
+          "id": "31880",
+          "name": "Opaltorget"
+        },
+        "destination": {
+          "id": "38953",
+          "name": "Östra Sjukhuset"
+        }
+      },
+      "trip": {
+        "trip_id": "141010401410346503",
+        "start_date": "2026-06-26",
+        "technical_number": 5691
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Göteborgs Spårvägar Spårvagn"
+      },
+      "stop": {
+        "id": "73783",
+        "name": "Drottningtorget",
+        "lat": 57.707899,
+        "lon": 11.973742
+      },
+      "scheduled_platform": {
+        "id": "9022050073783002",
+        "designation": "A2"
+      },
+      "realtime_platform": {
+        "id": "9022050073783002",
+        "designation": "A2"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:10:00",
+      "realtime": "2026-06-26T17:10:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "X6",
+        "transport_mode_code": 700,
+        "transport_mode": "BUS",
+        "direction": "Lilla Varholmen",
+        "origin": {
+          "id": "865",
+          "name": "Landvetter resecentrum"
+        },
+        "destination": {
+          "id": "1205",
+          "name": "Lilla Varholmen"
+        }
+      },
+      "trip": {
+        "trip_id": "141010001441445438",
+        "start_date": "2026-06-26",
+        "technical_number": 453
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Keolis Sverige AB"
+      },
+      "stop": {
+        "id": "73783",
+        "name": "Drottningtorget",
+        "lat": 57.707899,
+        "lon": 11.973742
+      },
+      "scheduled_platform": {
+        "id": "9022050073783008",
+        "designation": "B2"
+      },
+      "realtime_platform": {
+        "id": "9022050073783008",
+        "designation": "B2"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:11:00",
+      "realtime": "2026-06-26T17:11:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "17",
+        "transport_mode_code": 700,
+        "transport_mode": "BUS",
+        "direction": "Östra Sjukhuset",
+        "origin": {
+          "id": "31689",
+          "name": "Hinnebäcksgatan"
+        },
+        "destination": {
+          "id": "38953",
+          "name": "Östra Sjukhuset"
+        }
+      },
+      "trip": {
+        "trip_id": "141010001440019970",
+        "start_date": "2026-06-26",
+        "technical_number": 187
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Keolis Sverige AB"
+      },
+      "stop": {
+        "id": "73783",
+        "name": "Drottningtorget",
+        "lat": 57.707899,
+        "lon": 11.973742
+      },
+      "scheduled_platform": {
+        "id": "9022050073783007",
+        "designation": "B1"
+      },
+      "realtime_platform": {
+        "id": "9022050073783007",
+        "designation": "B1"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:11:00",
+      "realtime": "2026-06-26T17:11:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "9",
+        "transport_mode_code": 900,
+        "transport_mode": "TRAM",
+        "direction": "Angered",
+        "origin": {
+          "id": "1206",
+          "name": "Saltholmen"
+        },
+        "destination": {
+          "id": "31455",
+          "name": "Angered Centrum"
+        }
+      },
+      "trip": {
+        "trip_id": "141010301435815177",
+        "start_date": "2026-06-26",
+        "technical_number": 5677
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Göteborgs Spårvägar Spårvagn"
+      },
+      "stop": {
+        "id": "73783",
+        "name": "Drottningtorget",
+        "lat": 57.707899,
+        "lon": 11.973742
+      },
+      "scheduled_platform": {
+        "id": "9022050073783001",
+        "designation": "A1"
+      },
+      "realtime_platform": {
+        "id": "9022050073783001",
+        "designation": "A1"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:12:00",
+      "realtime": "2026-06-26T17:12:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "60",
+        "transport_mode_code": 700,
+        "transport_mode": "BUS",
+        "direction": "Redbergsplatsen",
+        "origin": {
+          "id": "34721",
+          "name": "Sörgårdsskolan"
+        },
+        "destination": {
+          "id": "31915",
+          "name": "Redbergsplatsen"
+        }
+      },
+      "trip": {
+        "trip_id": "141010001439039815",
+        "start_date": "2026-06-26",
+        "technical_number": 154
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Nobina Sverige AB"
+      },
+      "stop": {
+        "id": "73783",
+        "name": "Drottningtorget",
+        "lat": 57.707899,
+        "lon": 11.973742
+      },
+      "scheduled_platform": {
+        "id": "9022050073783009",
+        "designation": "C1"
+      },
+      "realtime_platform": {
+        "id": "9022050073783009",
+        "designation": "C1"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:13:00",
+      "realtime": "2026-06-26T17:13:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "60",
+        "transport_mode_code": 700,
+        "transport_mode": "BUS",
+        "direction": "Fredriksdal",
+        "origin": {
+          "id": "31915",
+          "name": "Redbergsplatsen"
+        },
+        "destination": {
+          "id": "34721",
+          "name": "Sörgårdsskolan"
+        }
+      },
+      "trip": {
+        "trip_id": "141010001439039878",
+        "start_date": "2026-06-26",
+        "technical_number": 153
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Nobina Sverige AB"
+      },
+      "stop": {
+        "id": "73783",
+        "name": "Drottningtorget",
+        "lat": 57.707899,
+        "lon": 11.973742
+      },
+      "scheduled_platform": {
+        "id": "9022050073783004",
+        "designation": "A4"
+      },
+      "realtime_platform": {
+        "id": "9022050073783004",
+        "designation": "A4"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:14:00",
+      "realtime": "2026-06-26T17:14:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "3972",
+        "transport_mode_code": 106,
+        "transport_mode": "TRAIN",
+        "direction": "Kristinehamn station",
+        "origin": {
+          "id": "2",
+          "name": "Göteborg Centralstation"
+        },
+        "destination": {
+          "id": "222",
+          "name": "Kristinehamn resecentrum"
+        }
+      },
+      "trip": {
+        "trip_id": "743972048463000001",
+        "start_date": "2026-06-26",
+        "technical_number": 48463
+      },
+      "agency": {
+        "id": "505000000000000100",
+        "name": "SJ AB",
+        "operator": "SJ AB"
+      },
+      "stop": {
+        "id": "2",
+        "name": "Göteborg Centralstation",
+        "lat": 57.709299,
+        "lon": 11.973659
+      },
+      "scheduled_platform": null,
+      "realtime_platform": null,
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:14:00",
+      "realtime": "2026-06-26T17:14:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "71",
+        "transport_mode_code": 100,
+        "transport_mode": "TRAIN",
+        "direction": "Kristinehamn resecentrum",
+        "origin": {
+          "id": "2",
+          "name": "Göteborg Centralstation"
+        },
+        "destination": {
+          "id": "222",
+          "name": "Kristinehamn resecentrum"
+        }
+      },
+      "trip": {
+        "trip_id": "175500000283229697",
+        "start_date": "2026-06-26",
+        "technical_number": 3972
+      },
+      "agency": {
+        "id": "505000000000000017",
+        "name": "Värmlandstrafik",
+        "operator": "SJ"
+      },
+      "stop": {
+        "id": "2",
+        "name": "Göteborg Centralstation",
+        "lat": 57.709299,
+        "lon": 11.973659
+      },
+      "scheduled_platform": {
+        "id": "9022050000002021",
+        "designation": "A"
+      },
+      "realtime_platform": {
+        "id": "9022050000002021",
+        "designation": "A"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:14:00",
+      "realtime": "2026-06-26T17:14:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "X5",
+        "transport_mode_code": 700,
+        "transport_mode": "BUS",
+        "direction": "Frölunda Torg",
+        "origin": {
+          "id": "35222",
+          "name": "Ljungkullen"
+        },
+        "destination": {
+          "id": "38948",
+          "name": "Frölunda Torg"
+        }
+      },
+      "trip": {
+        "trip_id": "141010001440020129",
+        "start_date": "2026-06-26",
+        "technical_number": 199
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Keolis Sverige AB"
+      },
+      "stop": {
+        "id": "73783",
+        "name": "Drottningtorget",
+        "lat": 57.707899,
+        "lon": 11.973742
+      },
+      "scheduled_platform": {
+        "id": "9022050073783008",
+        "designation": "B2"
+      },
+      "realtime_platform": {
+        "id": "9022050073783008",
+        "designation": "B2"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:14:00",
+      "realtime": "2026-06-26T17:14:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "17",
+        "transport_mode_code": 700,
+        "transport_mode": "BUS",
+        "direction": "Tuve",
+        "origin": {
+          "id": "38953",
+          "name": "Östra Sjukhuset"
+        },
+        "destination": {
+          "id": "31689",
+          "name": "Hinnebäcksgatan"
+        }
+      },
+      "trip": {
+        "trip_id": "141010001440020045",
+        "start_date": "2026-06-26",
+        "technical_number": 188
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Keolis Sverige AB"
+      },
+      "stop": {
+        "id": "73783",
+        "name": "Drottningtorget",
+        "lat": 57.707899,
+        "lon": 11.973742
+      },
+      "scheduled_platform": {
+        "id": "9022050073783008",
+        "designation": "B2"
+      },
+      "realtime_platform": {
+        "id": "9022050073783008",
+        "designation": "B2"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:14:00",
+      "realtime": "2026-06-26T17:14:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "11",
+        "transport_mode_code": 900,
+        "transport_mode": "TRAM",
+        "direction": "Bergsjön",
+        "origin": {
+          "id": "1206",
+          "name": "Saltholmen"
+        },
+        "destination": {
+          "id": "31756",
+          "name": "Komettorget"
+        }
+      },
+      "trip": {
+        "trip_id": "141010601435815338",
+        "start_date": "2026-06-26",
+        "technical_number": 5695
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Göteborgs Spårvägar Spårvagn"
+      },
+      "stop": {
+        "id": "73783",
+        "name": "Drottningtorget",
+        "lat": 57.707899,
+        "lon": 11.973742
+      },
+      "scheduled_platform": {
+        "id": "9022050073783001",
+        "designation": "A1"
+      },
+      "realtime_platform": {
+        "id": "9022050073783001",
+        "designation": "A1"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:14:00",
+      "realtime": "2026-06-26T17:14:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "9",
+        "transport_mode_code": 900,
+        "transport_mode": "TRAM",
+        "direction": "Saltholmen",
+        "origin": {
+          "id": "31455",
+          "name": "Angered Centrum"
+        },
+        "destination": {
+          "id": "1206",
+          "name": "Saltholmen"
+        }
+      },
+      "trip": {
+        "trip_id": "141010401410347649",
+        "start_date": "2026-06-26",
+        "technical_number": 5626
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Göteborgs Spårvägar Spårvagn"
+      },
+      "stop": {
+        "id": "73783",
+        "name": "Drottningtorget",
+        "lat": 57.707899,
+        "lon": 11.973742
+      },
+      "scheduled_platform": {
+        "id": "9022050073783004",
+        "designation": "A4"
+      },
+      "realtime_platform": {
+        "id": "9022050073783004",
+        "designation": "A4"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:15:00",
+      "realtime": "2026-06-26T17:15:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": "Västtågen",
+        "designation": "3069",
+        "transport_mode_code": 106,
+        "transport_mode": "TRAIN",
+        "direction": "Kungsbacka",
+        "origin": {
+          "id": "2",
+          "name": "Göteborg Centralstation"
+        },
+        "destination": {
+          "id": "161",
+          "name": "Kungsbacka station"
+        }
+      },
+      "trip": {
+        "trip_id": "400000000000018402",
+        "start_date": "2026-06-26",
+        "technical_number": 3069
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Västtågen"
+      },
+      "stop": {
+        "id": "2",
+        "name": "Göteborg Centralstation",
+        "lat": 57.709299,
+        "lon": 11.973659
+      },
+      "scheduled_platform": null,
+      "realtime_platform": null,
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:15:00",
+      "realtime": "2026-06-26T17:15:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "1321",
+        "transport_mode_code": 100,
+        "transport_mode": "TRAIN",
+        "direction": "Kungsbacka",
+        "origin": {
+          "id": "2",
+          "name": "Göteborg Centralstation"
+        },
+        "destination": {
+          "id": "161",
+          "name": "Kungsbacka station"
+        }
+      },
+      "trip": {
+        "trip_id": "130000000000011157",
+        "start_date": "2026-06-26",
+        "technical_number": 3069
+      },
+      "agency": {
+        "id": "505000000000000013",
+        "name": "Hallandstrafiken",
+        "operator": "SJ Götalandståg"
+      },
+      "stop": {
+        "id": "2",
+        "name": "Göteborg Centralstation",
+        "lat": 57.709299,
+        "lon": 11.973659
+      },
+      "scheduled_platform": {
+        "id": "9022050000002013",
+        "designation": "5"
+      },
+      "realtime_platform": {
+        "id": "9022050000002013",
+        "designation": "5"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:15:00",
+      "realtime": "2026-06-26T17:15:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "21",
+        "transport_mode_code": 700,
+        "transport_mode": "BUS",
+        "direction": "Eketrägatan",
+        "origin": {
+          "id": "38952",
+          "name": "Merkuriusgatan"
+        },
+        "destination": {
+          "id": "38946",
+          "name": "Eketrägatan"
+        }
+      },
+      "trip": {
+        "trip_id": "141010001416777682",
+        "start_date": "2026-06-26",
+        "technical_number": 98
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Transdev Sverige AB"
+      },
+      "stop": {
+        "id": "73783",
+        "name": "Drottningtorget",
+        "lat": 57.707899,
+        "lon": 11.973742
+      },
+      "scheduled_platform": {
+        "id": "9022050073783008",
+        "designation": "B2"
+      },
+      "realtime_platform": {
+        "id": "9022050073783008",
+        "designation": "B2"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:15:00",
+      "realtime": "2026-06-26T17:15:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "1",
+        "transport_mode_code": 900,
+        "transport_mode": "TRAM",
+        "direction": "Tynnered",
+        "origin": {
+          "id": "38953",
+          "name": "Östra Sjukhuset"
+        },
+        "destination": {
+          "id": "31880",
+          "name": "Opaltorget"
+        }
+      },
+      "trip": {
+        "trip_id": "141010301429970080",
+        "start_date": "2026-06-26",
+        "technical_number": 5630
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Göteborgs Spårvägar Spårvagn"
+      },
+      "stop": {
+        "id": "73783",
+        "name": "Drottningtorget",
+        "lat": 57.707899,
+        "lon": 11.973742
+      },
+      "scheduled_platform": {
+        "id": "9022050073783003",
+        "designation": "A3"
+      },
+      "realtime_platform": {
+        "id": "9022050073783003",
+        "designation": "A3"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:15:00",
+      "realtime": "2026-06-26T17:15:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "12",
+        "transport_mode_code": 900,
+        "transport_mode": "TRAM",
+        "direction": "Mölndal",
+        "origin": {
+          "id": "31813",
+          "name": "Lindholmen"
+        },
+        "destination": {
+          "id": "38954",
+          "name": "Mölndals Innerstad"
+        }
+      },
+      "trip": {
+        "trip_id": "141010401410348206",
+        "start_date": "2026-06-26",
+        "technical_number": 5646
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Göteborgs Spårvägar Spårvagn"
+      },
+      "stop": {
+        "id": "73783",
+        "name": "Drottningtorget",
+        "lat": 57.707899,
+        "lon": 11.973742
+      },
+      "scheduled_platform": {
+        "id": "9022050073783002",
+        "designation": "A2"
+      },
+      "realtime_platform": {
+        "id": "9022050073783002",
+        "designation": "A2"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:15:00",
+      "realtime": "2026-06-26T17:15:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "X5",
+        "transport_mode_code": 700,
+        "transport_mode": "BUS",
+        "direction": "Vallhamra",
+        "origin": {
+          "id": "38948",
+          "name": "Frölunda Torg"
+        },
+        "destination": {
+          "id": "35222",
+          "name": "Ljungkullen"
+        }
+      },
+      "trip": {
+        "trip_id": "141010001440020073",
+        "start_date": "2026-06-26",
+        "technical_number": 196
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Keolis Sverige AB"
+      },
+      "stop": {
+        "id": "73783",
+        "name": "Drottningtorget",
+        "lat": 57.707899,
+        "lon": 11.973742
+      },
+      "scheduled_platform": {
+        "id": "9022050073783007",
+        "designation": "B1"
+      },
+      "realtime_platform": {
+        "id": "9022050073783007",
+        "designation": "B1"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:16:00",
+      "realtime": "2026-06-26T17:16:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "21",
+        "transport_mode_code": 700,
+        "transport_mode": "BUS",
+        "direction": "Bergsjön",
+        "origin": {
+          "id": "38946",
+          "name": "Eketrägatan"
+        },
+        "destination": {
+          "id": "38952",
+          "name": "Merkuriusgatan"
+        }
+      },
+      "trip": {
+        "trip_id": "141010001416777759",
+        "start_date": "2026-06-26",
+        "technical_number": 97
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Transdev Sverige AB"
+      },
+      "stop": {
+        "id": "73783",
+        "name": "Drottningtorget",
+        "lat": 57.707899,
+        "lon": 11.973742
+      },
+      "scheduled_platform": {
+        "id": "9022050073783007",
+        "designation": "B1"
+      },
+      "realtime_platform": {
+        "id": "9022050073783007",
+        "designation": "B1"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:16:00",
+      "realtime": "2026-06-26T17:16:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "12",
+        "transport_mode_code": 900,
+        "transport_mode": "TRAM",
+        "direction": "Lindholmen",
+        "origin": {
+          "id": "38954",
+          "name": "Mölndals Innerstad"
+        },
+        "destination": {
+          "id": "31813",
+          "name": "Lindholmen"
+        }
+      },
+      "trip": {
+        "trip_id": "141010301429921858",
+        "start_date": "2026-06-26",
+        "technical_number": 5727
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Göteborgs Spårvägar Spårvagn"
+      },
+      "stop": {
+        "id": "73783",
+        "name": "Drottningtorget",
+        "lat": 57.707899,
+        "lon": 11.973742
+      },
+      "scheduled_platform": {
+        "id": "9022050073783004",
+        "designation": "A4"
+      },
+      "realtime_platform": {
+        "id": "9022050073783004",
+        "designation": "A4"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:16:00",
+      "realtime": "2026-06-26T17:16:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "17",
+        "transport_mode_code": 700,
+        "transport_mode": "BUS",
+        "direction": "Östra Sjukhuset",
+        "origin": {
+          "id": "31689",
+          "name": "Hinnebäcksgatan"
+        },
+        "destination": {
+          "id": "38953",
+          "name": "Östra Sjukhuset"
+        }
+      },
+      "trip": {
+        "trip_id": "141010001440233605",
+        "start_date": "2026-06-26",
+        "technical_number": 201
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Keolis Sverige AB"
+      },
+      "stop": {
+        "id": "73783",
+        "name": "Drottningtorget",
+        "lat": 57.707899,
+        "lon": 11.973742
+      },
+      "scheduled_platform": {
+        "id": "9022050073783007",
+        "designation": "B1"
+      },
+      "realtime_platform": {
+        "id": "9022050073783007",
+        "designation": "B1"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:17:00",
+      "realtime": "2026-06-26T17:17:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "7",
+        "transport_mode_code": 900,
+        "transport_mode": "TRAM",
+        "direction": "Tynnered via Annedal",
+        "origin": {
+          "id": "31756",
+          "name": "Komettorget"
+        },
+        "destination": {
+          "id": "31880",
+          "name": "Opaltorget"
+        }
+      },
+      "trip": {
+        "trip_id": "141010201442197458",
+        "start_date": "2026-06-26",
+        "technical_number": 5624
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Göteborgs Spårvägar Spårvagn"
+      },
+      "stop": {
+        "id": "73783",
+        "name": "Drottningtorget",
+        "lat": 57.707899,
+        "lon": 11.973742
+      },
+      "scheduled_platform": {
+        "id": "9022050073783003",
+        "designation": "A3"
+      },
+      "realtime_platform": {
+        "id": "9022050073783003",
+        "designation": "A3"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:18:00",
+      "realtime": "2026-06-26T17:18:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "4",
+        "transport_mode_code": 900,
+        "transport_mode": "TRAM",
+        "direction": "Mölndal via Skånegatan",
+        "origin": {
+          "id": "31455",
+          "name": "Angered Centrum"
+        },
+        "destination": {
+          "id": "38954",
+          "name": "Mölndals Innerstad"
+        }
+      },
+      "trip": {
+        "trip_id": "141010501429921984",
+        "start_date": "2026-06-26",
+        "technical_number": 5638
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Göteborgs Spårvägar Spårvagn"
+      },
+      "stop": {
+        "id": "73783",
+        "name": "Drottningtorget",
+        "lat": 57.707899,
+        "lon": 11.973742
+      },
+      "scheduled_platform": {
+        "id": "9022050073783005",
+        "designation": "A5"
+      },
+      "realtime_platform": {
+        "id": "9022050073783005",
+        "designation": "A5"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:19:00",
+      "realtime": "2026-06-26T17:19:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "X6",
+        "transport_mode_code": 700,
+        "transport_mode": "BUS",
+        "direction": "Lilla Varholmen",
+        "origin": {
+          "id": "865",
+          "name": "Landvetter resecentrum"
+        },
+        "destination": {
+          "id": "1205",
+          "name": "Lilla Varholmen"
+        }
+      },
+      "trip": {
+        "trip_id": "141010001440815456",
+        "start_date": "2026-06-26",
+        "technical_number": 457
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Keolis Sverige AB"
+      },
+      "stop": {
+        "id": "73783",
+        "name": "Drottningtorget",
+        "lat": 57.707899,
+        "lon": 11.973742
+      },
+      "scheduled_platform": {
+        "id": "9022050073783008",
+        "designation": "B2"
+      },
+      "realtime_platform": {
+        "id": "9022050073783008",
+        "designation": "B2"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:19:00",
+      "realtime": "2026-06-26T17:19:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "3",
+        "transport_mode_code": 900,
+        "transport_mode": "TRAM",
+        "direction": "Marklandsgatan",
+        "origin": {
+          "id": "32115",
+          "name": "Virginsgatan"
+        },
+        "destination": {
+          "id": "32163",
+          "name": "Slottsskogsvallen"
+        }
+      },
+      "trip": {
+        "trip_id": "141010401410348144",
+        "start_date": "2026-06-26",
+        "technical_number": 5642
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Göteborgs Spårvägar Spårvagn"
+      },
+      "stop": {
+        "id": "73783",
+        "name": "Drottningtorget",
+        "lat": 57.707899,
+        "lon": 11.973742
+      },
+      "scheduled_platform": {
+        "id": "9022050073783004",
+        "designation": "A4"
+      },
+      "realtime_platform": {
+        "id": "9022050073783004",
+        "designation": "A4"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:19:00",
+      "realtime": "2026-06-26T17:19:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "3",
+        "transport_mode_code": 900,
+        "transport_mode": "TRAM",
+        "direction": "Kålltorp",
+        "origin": {
+          "id": "32163",
+          "name": "Slottsskogsvallen"
+        },
+        "destination": {
+          "id": "32115",
+          "name": "Virginsgatan"
+        }
+      },
+      "trip": {
+        "trip_id": "141010301410346865",
+        "start_date": "2026-06-26",
+        "technical_number": 5703
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Göteborgs Spårvägar Spårvagn"
+      },
+      "stop": {
+        "id": "73783",
+        "name": "Drottningtorget",
+        "lat": 57.707899,
+        "lon": 11.973742
+      },
+      "scheduled_platform": {
+        "id": "9022050073783002",
+        "designation": "A2"
+      },
+      "realtime_platform": {
+        "id": "9022050073783002",
+        "designation": "A2"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:19:00",
+      "realtime": "2026-06-26T17:19:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "17",
+        "transport_mode_code": 700,
+        "transport_mode": "BUS",
+        "direction": "Tuve",
+        "origin": {
+          "id": "32027",
+          "name": "Svingeln"
+        },
+        "destination": {
+          "id": "31689",
+          "name": "Hinnebäcksgatan"
+        }
+      },
+      "trip": {
+        "trip_id": "141010001440235249",
+        "start_date": "2026-06-26",
+        "technical_number": 198
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Keolis Sverige AB"
+      },
+      "stop": {
+        "id": "73783",
+        "name": "Drottningtorget",
+        "lat": 57.707899,
+        "lon": 11.973742
+      },
+      "scheduled_platform": {
+        "id": "9022050073783008",
+        "designation": "B2"
+      },
+      "realtime_platform": {
+        "id": "9022050073783008",
+        "designation": "B2"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:20:00",
+      "realtime": "2026-06-26T17:20:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": "Västtågen",
+        "designation": "3668",
+        "transport_mode_code": 106,
+        "transport_mode": "TRAIN",
+        "direction": "Älvängen",
+        "origin": {
+          "id": "2",
+          "name": "Göteborg Centralstation"
+        },
+        "destination": {
+          "id": "1564",
+          "name": "Älvängen resecentrum"
+        }
+      },
+      "trip": {
+        "trip_id": "400000000000020020",
+        "start_date": "2026-06-26",
+        "technical_number": 3668
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Västtågen"
+      },
+      "stop": {
+        "id": "2",
+        "name": "Göteborg Centralstation",
+        "lat": 57.709299,
+        "lon": 11.973659
+      },
+      "scheduled_platform": null,
+      "realtime_platform": null,
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:20:00",
+      "realtime": "2026-06-26T17:20:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "60",
+        "transport_mode_code": 700,
+        "transport_mode": "BUS",
+        "direction": "Redbergsplatsen",
+        "origin": {
+          "id": "34721",
+          "name": "Sörgårdsskolan"
+        },
+        "destination": {
+          "id": "31915",
+          "name": "Redbergsplatsen"
+        }
+      },
+      "trip": {
+        "trip_id": "141010001439039966",
+        "start_date": "2026-06-26",
+        "technical_number": 156
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Nobina Sverige AB"
+      },
+      "stop": {
+        "id": "73783",
+        "name": "Drottningtorget",
+        "lat": 57.707899,
+        "lon": 11.973742
+      },
+      "scheduled_platform": {
+        "id": "9022050073783009",
+        "designation": "C1"
+      },
+      "realtime_platform": {
+        "id": "9022050073783009",
+        "designation": "C1"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:21:00",
+      "realtime": "2026-06-26T17:21:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "60",
+        "transport_mode_code": 700,
+        "transport_mode": "BUS",
+        "direction": "Fredriksdal",
+        "origin": {
+          "id": "31915",
+          "name": "Redbergsplatsen"
+        },
+        "destination": {
+          "id": "34721",
+          "name": "Sörgårdsskolan"
+        }
+      },
+      "trip": {
+        "trip_id": "141010001439040059",
+        "start_date": "2026-06-26",
+        "technical_number": 155
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Nobina Sverige AB"
+      },
+      "stop": {
+        "id": "73783",
+        "name": "Drottningtorget",
+        "lat": 57.707899,
+        "lon": 11.973742
+      },
+      "scheduled_platform": {
+        "id": "9022050073783004",
+        "designation": "A4"
+      },
+      "realtime_platform": {
+        "id": "9022050073783004",
+        "designation": "A4"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:21:00",
+      "realtime": "2026-06-26T17:21:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "17",
+        "transport_mode_code": 700,
+        "transport_mode": "BUS",
+        "direction": "Östra Sjukhuset",
+        "origin": {
+          "id": "31689",
+          "name": "Hinnebäcksgatan"
+        },
+        "destination": {
+          "id": "38953",
+          "name": "Östra Sjukhuset"
+        }
+      },
+      "trip": {
+        "trip_id": "141010001440234044",
+        "start_date": "2026-06-26",
+        "technical_number": 191
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Keolis Sverige AB"
+      },
+      "stop": {
+        "id": "73783",
+        "name": "Drottningtorget",
+        "lat": 57.707899,
+        "lon": 11.973742
+      },
+      "scheduled_platform": {
+        "id": "9022050073783007",
+        "designation": "B1"
+      },
+      "realtime_platform": {
+        "id": "9022050073783007",
+        "designation": "B1"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:21:00",
+      "realtime": "2026-06-26T17:21:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "7",
+        "transport_mode_code": 900,
+        "transport_mode": "TRAM",
+        "direction": "Bergsjön",
+        "origin": {
+          "id": "31880",
+          "name": "Opaltorget"
+        },
+        "destination": {
+          "id": "31756",
+          "name": "Komettorget"
+        }
+      },
+      "trip": {
+        "trip_id": "141010101442197396",
+        "start_date": "2026-06-26",
+        "technical_number": 5713
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Göteborgs Spårvägar Spårvagn"
+      },
+      "stop": {
+        "id": "73783",
+        "name": "Drottningtorget",
+        "lat": 57.707899,
+        "lon": 11.973742
+      },
+      "scheduled_platform": {
+        "id": "9022050073783001",
+        "designation": "A1"
+      },
+      "realtime_platform": {
+        "id": "9022050073783001",
+        "designation": "A1"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:22:00",
+      "realtime": "2026-06-26T17:22:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "11",
+        "transport_mode_code": 900,
+        "transport_mode": "TRAM",
+        "direction": "Saltholmen",
+        "origin": {
+          "id": "31756",
+          "name": "Komettorget"
+        },
+        "destination": {
+          "id": "1206",
+          "name": "Saltholmen"
+        }
+      },
+      "trip": {
+        "trip_id": "141010401435815819",
+        "start_date": "2026-06-26",
+        "technical_number": 5636
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Göteborgs Spårvägar Spårvagn"
+      },
+      "stop": {
+        "id": "73783",
+        "name": "Drottningtorget",
+        "lat": 57.707899,
+        "lon": 11.973742
+      },
+      "scheduled_platform": {
+        "id": "9022050073783004",
+        "designation": "A4"
+      },
+      "realtime_platform": {
+        "id": "9022050073783004",
+        "designation": "A4"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:22:00",
+      "realtime": "2026-06-26T17:22:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "1",
+        "transport_mode_code": 900,
+        "transport_mode": "TRAM",
+        "direction": "Östra Sjukhuset",
+        "origin": {
+          "id": "31880",
+          "name": "Opaltorget"
+        },
+        "destination": {
+          "id": "38953",
+          "name": "Östra Sjukhuset"
+        }
+      },
+      "trip": {
+        "trip_id": "141010401410347417",
+        "start_date": "2026-06-26",
+        "technical_number": 5719
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Göteborgs Spårvägar Spårvagn"
+      },
+      "stop": {
+        "id": "73783",
+        "name": "Drottningtorget",
+        "lat": 57.707899,
+        "lon": 11.973742
+      },
+      "scheduled_platform": {
+        "id": "9022050073783002",
+        "designation": "A2"
+      },
+      "realtime_platform": {
+        "id": "9022050073783002",
+        "designation": "A2"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:23:00",
+      "realtime": "2026-06-26T17:23:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "9",
+        "transport_mode_code": 900,
+        "transport_mode": "TRAM",
+        "direction": "Angered",
+        "origin": {
+          "id": "1206",
+          "name": "Saltholmen"
+        },
+        "destination": {
+          "id": "31455",
+          "name": "Angered Centrum"
+        }
+      },
+      "trip": {
+        "trip_id": "141010301435815517",
+        "start_date": "2026-06-26",
+        "technical_number": 5705
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Göteborgs Spårvägar Spårvagn"
+      },
+      "stop": {
+        "id": "73783",
+        "name": "Drottningtorget",
+        "lat": 57.707899,
+        "lon": 11.973742
+      },
+      "scheduled_platform": {
+        "id": "9022050073783001",
+        "designation": "A1"
+      },
+      "realtime_platform": {
+        "id": "9022050073783001",
+        "designation": "A1"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:24:00",
+      "realtime": "2026-06-26T17:24:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "17",
+        "transport_mode_code": 700,
+        "transport_mode": "BUS",
+        "direction": "Tuve",
+        "origin": {
+          "id": "38953",
+          "name": "Östra Sjukhuset"
+        },
+        "destination": {
+          "id": "31689",
+          "name": "Hinnebäcksgatan"
+        }
+      },
+      "trip": {
+        "trip_id": "141010001440020220",
+        "start_date": "2026-06-26",
+        "technical_number": 192
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Keolis Sverige AB"
+      },
+      "stop": {
+        "id": "73783",
+        "name": "Drottningtorget",
+        "lat": 57.707899,
+        "lon": 11.973742
+      },
+      "scheduled_platform": {
+        "id": "9022050073783008",
+        "designation": "B2"
+      },
+      "realtime_platform": {
+        "id": "9022050073783008",
+        "designation": "B2"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:25:00",
+      "realtime": "2026-06-26T17:25:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": "Hop on Hop off buss Göteborg 2026",
+        "designation": "10",
+        "transport_mode_code": 700,
+        "transport_mode": "BUS",
+        "direction": "Stora Teatern",
+        "origin": {
+          "id": "68751",
+          "name": "Stora Teatern"
+        },
+        "destination": {
+          "id": "68751",
+          "name": "Stora Teatern"
+        }
+      },
+      "trip": {
+        "trip_id": "650000000000000014",
+        "start_date": "2026-06-26",
+        "technical_number": 28
+      },
+      "agency": {
+        "id": "505000000000000147",
+        "name": "Strömma Turism & Sjöfart AB",
+        "operator": "Strömma Turism & Sjöfart AB"
+      },
+      "stop": {
+        "id": "2",
+        "name": "Göteborg Centralstation",
+        "lat": 57.709299,
+        "lon": 11.973659
+      },
+      "scheduled_platform": null,
+      "realtime_platform": null,
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:25:00",
+      "realtime": "2026-06-26T17:25:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": "Öresundståg",
+        "designation": "20177",
+        "transport_mode_code": 106,
+        "transport_mode": "TRAIN",
+        "direction": "Halmstads central",
+        "origin": {
+          "id": "2",
+          "name": "Göteborg Centralstation"
+        },
+        "destination": {
+          "id": "80",
+          "name": "Halmstad Centralstation"
+        }
+      },
+      "trip": {
+        "trip_id": "400000000000022408",
+        "start_date": "2026-06-26",
+        "technical_number": 20177
+      },
+      "agency": {
+        "id": "505000000000000636",
+        "name": "Öresundståg",
+        "operator": "Öresundståg"
+      },
+      "stop": {
+        "id": "2",
+        "name": "Göteborg Centralstation",
+        "lat": 57.709299,
+        "lon": 11.973659
+      },
+      "scheduled_platform": null,
+      "realtime_platform": null,
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:25:00",
+      "realtime": "2026-06-26T17:25:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "100",
+        "transport_mode_code": 100,
+        "transport_mode": "TRAIN",
+        "direction": "Halmstad",
+        "origin": {
+          "id": "2",
+          "name": "Göteborg Centralstation"
+        },
+        "destination": {
+          "id": "80",
+          "name": "Halmstad Centralstation"
+        }
+      },
+      "trip": {
+        "trip_id": "130000000000011306",
+        "start_date": "2026-06-26",
+        "technical_number": 20177
+      },
+      "agency": {
+        "id": "505000000000000013",
+        "name": "Hallandstrafiken",
+        "operator": "VR Sverige"
+      },
+      "stop": {
+        "id": "2",
+        "name": "Göteborg Centralstation",
+        "lat": 57.709299,
+        "lon": 11.973659
+      },
+      "scheduled_platform": {
+        "id": "9022050000002012",
+        "designation": "4"
+      },
+      "realtime_platform": {
+        "id": "9022050000002012",
+        "designation": "4"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:25:00",
+      "realtime": "2026-06-26T17:25:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "X5",
+        "transport_mode_code": 700,
+        "transport_mode": "BUS",
+        "direction": "Vallhamra",
+        "origin": {
+          "id": "38948",
+          "name": "Frölunda Torg"
+        },
+        "destination": {
+          "id": "35222",
+          "name": "Ljungkullen"
+        }
+      },
+      "trip": {
+        "trip_id": "141010001440020320",
+        "start_date": "2026-06-26",
+        "technical_number": 200
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Keolis Sverige AB"
+      },
+      "stop": {
+        "id": "73783",
+        "name": "Drottningtorget",
+        "lat": 57.707899,
+        "lon": 11.973742
+      },
+      "scheduled_platform": {
+        "id": "9022050073783007",
+        "designation": "B1"
+      },
+      "realtime_platform": {
+        "id": "9022050073783007",
+        "designation": "B1"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:26:00",
+      "realtime": "2026-06-26T17:26:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "17",
+        "transport_mode_code": 700,
+        "transport_mode": "BUS",
+        "direction": "Östra Sjukhuset",
+        "origin": {
+          "id": "31689",
+          "name": "Hinnebäcksgatan"
+        },
+        "destination": {
+          "id": "38953",
+          "name": "Östra Sjukhuset"
+        }
+      },
+      "trip": {
+        "trip_id": "141010001440020256",
+        "start_date": "2026-06-26",
+        "technical_number": 205
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Keolis Sverige AB"
+      },
+      "stop": {
+        "id": "73783",
+        "name": "Drottningtorget",
+        "lat": 57.707899,
+        "lon": 11.973742
+      },
+      "scheduled_platform": {
+        "id": "9022050073783007",
+        "designation": "B1"
+      },
+      "realtime_platform": {
+        "id": "9022050073783007",
+        "designation": "B1"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:26:00",
+      "realtime": "2026-06-26T17:26:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "X5",
+        "transport_mode_code": 700,
+        "transport_mode": "BUS",
+        "direction": "Frölunda Torg",
+        "origin": {
+          "id": "35222",
+          "name": "Ljungkullen"
+        },
+        "destination": {
+          "id": "38948",
+          "name": "Frölunda Torg"
+        }
+      },
+      "trip": {
+        "trip_id": "141010001440020406",
+        "start_date": "2026-06-26",
+        "technical_number": 203
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Keolis Sverige AB"
+      },
+      "stop": {
+        "id": "73783",
+        "name": "Drottningtorget",
+        "lat": 57.707899,
+        "lon": 11.973742
+      },
+      "scheduled_platform": {
+        "id": "9022050073783008",
+        "designation": "B2"
+      },
+      "realtime_platform": {
+        "id": "9022050073783008",
+        "designation": "B2"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:26:00",
+      "realtime": "2026-06-26T17:26:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "9",
+        "transport_mode_code": 900,
+        "transport_mode": "TRAM",
+        "direction": "Saltholmen",
+        "origin": {
+          "id": "31455",
+          "name": "Angered Centrum"
+        },
+        "destination": {
+          "id": "1206",
+          "name": "Saltholmen"
+        }
+      },
+      "trip": {
+        "trip_id": "141010401410348562",
+        "start_date": "2026-06-26",
+        "technical_number": 5652
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Göteborgs Spårvägar Spårvagn"
+      },
+      "stop": {
+        "id": "73783",
+        "name": "Drottningtorget",
+        "lat": 57.707899,
+        "lon": 11.973742
+      },
+      "scheduled_platform": {
+        "id": "9022050073783004",
+        "designation": "A4"
+      },
+      "realtime_platform": {
+        "id": "9022050073783004",
+        "designation": "A4"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:26:00",
+      "realtime": "2026-06-26T17:26:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "11",
+        "transport_mode_code": 900,
+        "transport_mode": "TRAM",
+        "direction": "Bergsjön",
+        "origin": {
+          "id": "1206",
+          "name": "Saltholmen"
+        },
+        "destination": {
+          "id": "31756",
+          "name": "Komettorget"
+        }
+      },
+      "trip": {
+        "trip_id": "141010601435815676",
+        "start_date": "2026-06-26",
+        "technical_number": 5723
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Göteborgs Spårvägar Spårvagn"
+      },
+      "stop": {
+        "id": "73783",
+        "name": "Drottningtorget",
+        "lat": 57.707899,
+        "lon": 11.973742
+      },
+      "scheduled_platform": {
+        "id": "9022050073783001",
+        "designation": "A1"
+      },
+      "realtime_platform": {
+        "id": "9022050073783001",
+        "designation": "A1"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:27:00",
+      "realtime": "2026-06-26T17:27:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "1",
+        "transport_mode_code": 900,
+        "transport_mode": "TRAM",
+        "direction": "Tynnered",
+        "origin": {
+          "id": "38953",
+          "name": "Östra Sjukhuset"
+        },
+        "destination": {
+          "id": "31880",
+          "name": "Opaltorget"
+        }
+      },
+      "trip": {
+        "trip_id": "141010301429970488",
+        "start_date": "2026-06-26",
+        "technical_number": 5656
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Göteborgs Spårvägar Spårvagn"
+      },
+      "stop": {
+        "id": "73783",
+        "name": "Drottningtorget",
+        "lat": 57.707899,
+        "lon": 11.973742
+      },
+      "scheduled_platform": {
+        "id": "9022050073783003",
+        "designation": "A3"
+      },
+      "realtime_platform": {
+        "id": "9022050073783003",
+        "designation": "A3"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:27:00",
+      "realtime": "2026-06-26T17:27:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "12",
+        "transport_mode_code": 900,
+        "transport_mode": "TRAM",
+        "direction": "Mölndal",
+        "origin": {
+          "id": "31813",
+          "name": "Lindholmen"
+        },
+        "destination": {
+          "id": "38954",
+          "name": "Mölndals Innerstad"
+        }
+      },
+      "trip": {
+        "trip_id": "141010401410349119",
+        "start_date": "2026-06-26",
+        "technical_number": 5672
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Göteborgs Spårvägar Spårvagn"
+      },
+      "stop": {
+        "id": "73783",
+        "name": "Drottningtorget",
+        "lat": 57.707899,
+        "lon": 11.973742
+      },
+      "scheduled_platform": {
+        "id": "9022050073783002",
+        "designation": "A2"
+      },
+      "realtime_platform": {
+        "id": "9022050073783002",
+        "designation": "A2"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:28:00",
+      "realtime": "2026-06-26T17:28:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "12",
+        "transport_mode_code": 900,
+        "transport_mode": "TRAM",
+        "direction": "Lindholmen",
+        "origin": {
+          "id": "38954",
+          "name": "Mölndals Innerstad"
+        },
+        "destination": {
+          "id": "31813",
+          "name": "Lindholmen"
+        }
+      },
+      "trip": {
+        "trip_id": "141010301429922314",
+        "start_date": "2026-06-26",
+        "technical_number": 5755
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Göteborgs Spårvägar Spårvagn"
+      },
+      "stop": {
+        "id": "73783",
+        "name": "Drottningtorget",
+        "lat": 57.707899,
+        "lon": 11.973742
+      },
+      "scheduled_platform": {
+        "id": "9022050073783004",
+        "designation": "A4"
+      },
+      "realtime_platform": {
+        "id": "9022050073783004",
+        "designation": "A4"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:28:00",
+      "realtime": "2026-06-26T17:28:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "60",
+        "transport_mode_code": 700,
+        "transport_mode": "BUS",
+        "direction": "Redbergsplatsen",
+        "origin": {
+          "id": "34721",
+          "name": "Sörgårdsskolan"
+        },
+        "destination": {
+          "id": "31915",
+          "name": "Redbergsplatsen"
+        }
+      },
+      "trip": {
+        "trip_id": "141010001439040131",
+        "start_date": "2026-06-26",
+        "technical_number": 158
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Nobina Sverige AB"
+      },
+      "stop": {
+        "id": "73783",
+        "name": "Drottningtorget",
+        "lat": 57.707899,
+        "lon": 11.973742
+      },
+      "scheduled_platform": {
+        "id": "9022050073783009",
+        "designation": "C1"
+      },
+      "realtime_platform": {
+        "id": "9022050073783009",
+        "designation": "C1"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:29:00",
+      "realtime": "2026-06-26T17:29:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "21",
+        "transport_mode_code": 700,
+        "transport_mode": "BUS",
+        "direction": "Eketrägatan",
+        "origin": {
+          "id": "38952",
+          "name": "Merkuriusgatan"
+        },
+        "destination": {
+          "id": "38946",
+          "name": "Eketrägatan"
+        }
+      },
+      "trip": {
+        "trip_id": "141010001416777966",
+        "start_date": "2026-06-26",
+        "technical_number": 100
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Transdev Sverige AB"
+      },
+      "stop": {
+        "id": "73783",
+        "name": "Drottningtorget",
+        "lat": 57.707899,
+        "lon": 11.973742
+      },
+      "scheduled_platform": {
+        "id": "9022050073783008",
+        "designation": "B2"
+      },
+      "realtime_platform": {
+        "id": "9022050073783008",
+        "designation": "B2"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:29:00",
+      "realtime": "2026-06-26T17:29:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "60",
+        "transport_mode_code": 700,
+        "transport_mode": "BUS",
+        "direction": "Fredriksdal",
+        "origin": {
+          "id": "31915",
+          "name": "Redbergsplatsen"
+        },
+        "destination": {
+          "id": "34721",
+          "name": "Sörgårdsskolan"
+        }
+      },
+      "trip": {
+        "trip_id": "141010101439040197",
+        "start_date": "2026-06-26",
+        "technical_number": 157
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Nobina Sverige AB"
+      },
+      "stop": {
+        "id": "73783",
+        "name": "Drottningtorget",
+        "lat": 57.707899,
+        "lon": 11.973742
+      },
+      "scheduled_platform": {
+        "id": "9022050073783004",
+        "designation": "A4"
+      },
+      "realtime_platform": {
+        "id": "9022050073783004",
+        "designation": "A4"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:29:00",
+      "realtime": "2026-06-26T17:29:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "X6",
+        "transport_mode_code": 700,
+        "transport_mode": "BUS",
+        "direction": "Lilla Varholmen",
+        "origin": {
+          "id": "865",
+          "name": "Landvetter resecentrum"
+        },
+        "destination": {
+          "id": "1205",
+          "name": "Lilla Varholmen"
+        }
+      },
+      "trip": {
+        "trip_id": "141010001440815517",
+        "start_date": "2026-06-26",
+        "technical_number": 159
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Keolis Sverige AB"
+      },
+      "stop": {
+        "id": "73783",
+        "name": "Drottningtorget",
+        "lat": 57.707899,
+        "lon": 11.973742
+      },
+      "scheduled_platform": {
+        "id": "9022050073783008",
+        "designation": "B2"
+      },
+      "realtime_platform": {
+        "id": "9022050073783008",
+        "designation": "B2"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:29:00",
+      "realtime": "2026-06-26T17:29:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "17",
+        "transport_mode_code": 700,
+        "transport_mode": "BUS",
+        "direction": "Tuve",
+        "origin": {
+          "id": "32027",
+          "name": "Svingeln"
+        },
+        "destination": {
+          "id": "31689",
+          "name": "Hinnebäcksgatan"
+        }
+      },
+      "trip": {
+        "trip_id": "141010001440235982",
+        "start_date": "2026-06-26",
+        "technical_number": 202
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Keolis Sverige AB"
+      },
+      "stop": {
+        "id": "73783",
+        "name": "Drottningtorget",
+        "lat": 57.707899,
+        "lon": 11.973742
+      },
+      "scheduled_platform": {
+        "id": "9022050073783008",
+        "designation": "B2"
+      },
+      "realtime_platform": {
+        "id": "9022050073783008",
+        "designation": "B2"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:29:00",
+      "realtime": "2026-06-26T17:29:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "7",
+        "transport_mode_code": 900,
+        "transport_mode": "TRAM",
+        "direction": "Tynnered via Annedal",
+        "origin": {
+          "id": "31756",
+          "name": "Komettorget"
+        },
+        "destination": {
+          "id": "31880",
+          "name": "Opaltorget"
+        }
+      },
+      "trip": {
+        "trip_id": "141010201442197632",
+        "start_date": "2026-06-26",
+        "technical_number": 5650
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Göteborgs Spårvägar Spårvagn"
+      },
+      "stop": {
+        "id": "73783",
+        "name": "Drottningtorget",
+        "lat": 57.707899,
+        "lon": 11.973742
+      },
+      "scheduled_platform": {
+        "id": "9022050073783003",
+        "designation": "A3"
+      },
+      "realtime_platform": {
+        "id": "9022050073783003",
+        "designation": "A3"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:30:00",
+      "realtime": "2026-06-26T17:30:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "1321",
+        "transport_mode_code": 100,
+        "transport_mode": "TRAIN",
+        "direction": "Kungsbacka",
+        "origin": {
+          "id": "2",
+          "name": "Göteborg Centralstation"
+        },
+        "destination": {
+          "id": "161",
+          "name": "Kungsbacka station"
+        }
+      },
+      "trip": {
+        "trip_id": "130000000000011158",
+        "start_date": "2026-06-26",
+        "technical_number": 3121
+      },
+      "agency": {
+        "id": "505000000000000013",
+        "name": "Hallandstrafiken",
+        "operator": "SJ Götalandståg"
+      },
+      "stop": {
+        "id": "2",
+        "name": "Göteborg Centralstation",
+        "lat": 57.709299,
+        "lon": 11.973659
+      },
+      "scheduled_platform": {
+        "id": "9022050000002013",
+        "designation": "5"
+      },
+      "realtime_platform": {
+        "id": "9022050000002013",
+        "designation": "5"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:30:00",
+      "realtime": "2026-06-26T17:30:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": "Västtågen",
+        "designation": "3270",
+        "transport_mode_code": 106,
+        "transport_mode": "TRAIN",
+        "direction": "Vänersborg central",
+        "origin": {
+          "id": "2",
+          "name": "Göteborg Centralstation"
+        },
+        "destination": {
+          "id": "241",
+          "name": "Vänersborg central"
+        }
+      },
+      "trip": {
+        "trip_id": "400000000000018993",
+        "start_date": "2026-06-26",
+        "technical_number": 3270
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Västtågen"
+      },
+      "stop": {
+        "id": "2",
+        "name": "Göteborg Centralstation",
+        "lat": 57.709299,
+        "lon": 11.973659
+      },
+      "scheduled_platform": null,
+      "realtime_platform": null,
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:30:00",
+      "realtime": "2026-06-26T17:30:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": "Västtågen",
+        "designation": "3121",
+        "transport_mode_code": 106,
+        "transport_mode": "TRAIN",
+        "direction": "Kungsbacka",
+        "origin": {
+          "id": "2",
+          "name": "Göteborg Centralstation"
+        },
+        "destination": {
+          "id": "161",
+          "name": "Kungsbacka station"
+        }
+      },
+      "trip": {
+        "trip_id": "400000000000018689",
+        "start_date": "2026-06-26",
+        "technical_number": 3121
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Västtågen"
+      },
+      "stop": {
+        "id": "2",
+        "name": "Göteborg Centralstation",
+        "lat": 57.709299,
+        "lon": 11.973659
+      },
+      "scheduled_platform": null,
+      "realtime_platform": null,
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:30:00",
+      "realtime": "2026-06-26T17:30:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "4",
+        "transport_mode_code": 900,
+        "transport_mode": "TRAM",
+        "direction": "Mölndal via Skånegatan",
+        "origin": {
+          "id": "31455",
+          "name": "Angered Centrum"
+        },
+        "destination": {
+          "id": "38954",
+          "name": "Mölndals Innerstad"
+        }
+      },
+      "trip": {
+        "trip_id": "141010801429870573",
+        "start_date": "2026-06-26",
+        "technical_number": 5664
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Göteborgs Spårvägar Spårvagn"
+      },
+      "stop": {
+        "id": "73783",
+        "name": "Drottningtorget",
+        "lat": 57.707899,
+        "lon": 11.973742
+      },
+      "scheduled_platform": {
+        "id": "9022050073783005",
+        "designation": "A5"
+      },
+      "realtime_platform": {
+        "id": "9022050073783005",
+        "designation": "A5"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:31:00",
+      "realtime": "2026-06-26T17:31:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "21",
+        "transport_mode_code": 700,
+        "transport_mode": "BUS",
+        "direction": "Bergsjön",
+        "origin": {
+          "id": "38946",
+          "name": "Eketrägatan"
+        },
+        "destination": {
+          "id": "38952",
+          "name": "Merkuriusgatan"
+        }
+      },
+      "trip": {
+        "trip_id": "141010001416778002",
+        "start_date": "2026-06-26",
+        "technical_number": 99
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Transdev Sverige AB"
+      },
+      "stop": {
+        "id": "73783",
+        "name": "Drottningtorget",
+        "lat": 57.707899,
+        "lon": 11.973742
+      },
+      "scheduled_platform": {
+        "id": "9022050073783007",
+        "designation": "B1"
+      },
+      "realtime_platform": {
+        "id": "9022050073783007",
+        "designation": "B1"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:31:00",
+      "realtime": "2026-06-26T17:31:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "3",
+        "transport_mode_code": 900,
+        "transport_mode": "TRAM",
+        "direction": "Kålltorp",
+        "origin": {
+          "id": "32163",
+          "name": "Slottsskogsvallen"
+        },
+        "destination": {
+          "id": "32115",
+          "name": "Virginsgatan"
+        }
+      },
+      "trip": {
+        "trip_id": "141010301410347778",
+        "start_date": "2026-06-26",
+        "technical_number": 5731
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Göteborgs Spårvägar Spårvagn"
+      },
+      "stop": {
+        "id": "73783",
+        "name": "Drottningtorget",
+        "lat": 57.707899,
+        "lon": 11.973742
+      },
+      "scheduled_platform": {
+        "id": "9022050073783002",
+        "designation": "A2"
+      },
+      "realtime_platform": {
+        "id": "9022050073783002",
+        "designation": "A2"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:31:00",
+      "realtime": "2026-06-26T17:31:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "3",
+        "transport_mode_code": 900,
+        "transport_mode": "TRAM",
+        "direction": "Marklandsgatan",
+        "origin": {
+          "id": "32115",
+          "name": "Virginsgatan"
+        },
+        "destination": {
+          "id": "32163",
+          "name": "Slottsskogsvallen"
+        }
+      },
+      "trip": {
+        "trip_id": "141010401410349057",
+        "start_date": "2026-06-26",
+        "technical_number": 5668
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Göteborgs Spårvägar Spårvagn"
+      },
+      "stop": {
+        "id": "73783",
+        "name": "Drottningtorget",
+        "lat": 57.707899,
+        "lon": 11.973742
+      },
+      "scheduled_platform": {
+        "id": "9022050073783004",
+        "designation": "A4"
+      },
+      "realtime_platform": {
+        "id": "9022050073783004",
+        "designation": "A4"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:31:00",
+      "realtime": "2026-06-26T17:31:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "17",
+        "transport_mode_code": 700,
+        "transport_mode": "BUS",
+        "direction": "Östra Sjukhuset",
+        "origin": {
+          "id": "31689",
+          "name": "Hinnebäcksgatan"
+        },
+        "destination": {
+          "id": "38953",
+          "name": "Östra Sjukhuset"
+        }
+      },
+      "trip": {
+        "trip_id": "141010001440234453",
+        "start_date": "2026-06-26",
+        "technical_number": 195
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Keolis Sverige AB"
+      },
+      "stop": {
+        "id": "73783",
+        "name": "Drottningtorget",
+        "lat": 57.707899,
+        "lon": 11.973742
+      },
+      "scheduled_platform": {
+        "id": "9022050073783007",
+        "designation": "B1"
+      },
+      "realtime_platform": {
+        "id": "9022050073783007",
+        "designation": "B1"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:33:00",
+      "realtime": "2026-06-26T17:33:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "7",
+        "transport_mode_code": 900,
+        "transport_mode": "TRAM",
+        "direction": "Bergsjön",
+        "origin": {
+          "id": "31880",
+          "name": "Opaltorget"
+        },
+        "destination": {
+          "id": "31756",
+          "name": "Komettorget"
+        }
+      },
+      "trip": {
+        "trip_id": "141010101442197570",
+        "start_date": "2026-06-26",
+        "technical_number": 5741
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Göteborgs Spårvägar Spårvagn"
+      },
+      "stop": {
+        "id": "73783",
+        "name": "Drottningtorget",
+        "lat": 57.707899,
+        "lon": 11.973742
+      },
+      "scheduled_platform": {
+        "id": "9022050073783001",
+        "designation": "A1"
+      },
+      "realtime_platform": {
+        "id": "9022050073783001",
+        "designation": "A1"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:34:00",
+      "realtime": "2026-06-26T17:34:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "343",
+        "transport_mode_code": 106,
+        "transport_mode": "TRAIN",
+        "direction": "Kalmar Central",
+        "origin": {
+          "id": "2",
+          "name": "Göteborg Centralstation"
+        },
+        "destination": {
+          "id": "20",
+          "name": "Kalmar Centralstation"
+        }
+      },
+      "trip": {
+        "trip_id": "740343020835000001",
+        "start_date": "2026-06-26",
+        "technical_number": 20835
+      },
+      "agency": {
+        "id": "505000000000000100",
+        "name": "SJ AB",
+        "operator": "SJ AB"
+      },
+      "stop": {
+        "id": "2",
+        "name": "Göteborg Centralstation",
+        "lat": 57.709299,
+        "lon": 11.973659
+      },
+      "scheduled_platform": null,
+      "realtime_platform": null,
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:34:00",
+      "realtime": "2026-06-26T17:34:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "17",
+        "transport_mode_code": 700,
+        "transport_mode": "BUS",
+        "direction": "Tuve",
+        "origin": {
+          "id": "38953",
+          "name": "Östra Sjukhuset"
+        },
+        "destination": {
+          "id": "31689",
+          "name": "Hinnebäcksgatan"
+        }
+      },
+      "trip": {
+        "trip_id": "141010001440234823",
+        "start_date": "2026-06-26",
+        "technical_number": 196
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Keolis Sverige AB"
+      },
+      "stop": {
+        "id": "73783",
+        "name": "Drottningtorget",
+        "lat": 57.707899,
+        "lon": 11.973742
+      },
+      "scheduled_platform": {
+        "id": "9022050073783008",
+        "designation": "B2"
+      },
+      "realtime_platform": {
+        "id": "9022050073783008",
+        "designation": "B2"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:34:00",
+      "realtime": "2026-06-26T17:34:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "11",
+        "transport_mode_code": 900,
+        "transport_mode": "TRAM",
+        "direction": "Saltholmen",
+        "origin": {
+          "id": "31756",
+          "name": "Komettorget"
+        },
+        "destination": {
+          "id": "1206",
+          "name": "Saltholmen"
+        }
+      },
+      "trip": {
+        "trip_id": "141010301435816155",
+        "start_date": "2026-06-26",
+        "technical_number": 5662
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Göteborgs Spårvägar Spårvagn"
+      },
+      "stop": {
+        "id": "73783",
+        "name": "Drottningtorget",
+        "lat": 57.707899,
+        "lon": 11.973742
+      },
+      "scheduled_platform": {
+        "id": "9022050073783004",
+        "designation": "A4"
+      },
+      "realtime_platform": {
+        "id": "9022050073783004",
+        "designation": "A4"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:34:00",
+      "realtime": "2026-06-26T17:34:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "1",
+        "transport_mode_code": 900,
+        "transport_mode": "TRAM",
+        "direction": "Östra Sjukhuset",
+        "origin": {
+          "id": "31880",
+          "name": "Opaltorget"
+        },
+        "destination": {
+          "id": "38953",
+          "name": "Östra Sjukhuset"
+        }
+      },
+      "trip": {
+        "trip_id": "141010401410348329",
+        "start_date": "2026-06-26",
+        "technical_number": 5745
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Göteborgs Spårvägar Spårvagn"
+      },
+      "stop": {
+        "id": "73783",
+        "name": "Drottningtorget",
+        "lat": 57.707899,
+        "lon": 11.973742
+      },
+      "scheduled_platform": {
+        "id": "9022050073783002",
+        "designation": "A2"
+      },
+      "realtime_platform": {
+        "id": "9022050073783002",
+        "designation": "A2"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:35:00",
+      "realtime": "2026-06-26T17:35:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": "Västtågen",
+        "designation": "13618",
+        "transport_mode_code": 106,
+        "transport_mode": "TRAIN",
+        "direction": "Älvängen",
+        "origin": {
+          "id": "2",
+          "name": "Göteborg Centralstation"
+        },
+        "destination": {
+          "id": "1564",
+          "name": "Älvängen resecentrum"
+        }
+      },
+      "trip": {
+        "trip_id": "400000000000021246",
+        "start_date": "2026-06-26",
+        "technical_number": 13618
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Västtågen"
+      },
+      "stop": {
+        "id": "2",
+        "name": "Göteborg Centralstation",
+        "lat": 57.709299,
+        "lon": 11.973659
+      },
+      "scheduled_platform": null,
+      "realtime_platform": null,
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:35:00",
+      "realtime": "2026-06-26T17:35:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "X5",
+        "transport_mode_code": 700,
+        "transport_mode": "BUS",
+        "direction": "Vallhamra",
+        "origin": {
+          "id": "38948",
+          "name": "Frölunda Torg"
+        },
+        "destination": {
+          "id": "35222",
+          "name": "Ljungkullen"
+        }
+      },
+      "trip": {
+        "trip_id": "141010001440020473",
+        "start_date": "2026-06-26",
+        "technical_number": 204
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Keolis Sverige AB"
+      },
+      "stop": {
+        "id": "73783",
+        "name": "Drottningtorget",
+        "lat": 57.707899,
+        "lon": 11.973742
+      },
+      "scheduled_platform": {
+        "id": "9022050073783007",
+        "designation": "B1"
+      },
+      "realtime_platform": {
+        "id": "9022050073783007",
+        "designation": "B1"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:35:00",
+      "realtime": "2026-06-26T17:35:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "9",
+        "transport_mode_code": 900,
+        "transport_mode": "TRAM",
+        "direction": "Angered",
+        "origin": {
+          "id": "1206",
+          "name": "Saltholmen"
+        },
+        "destination": {
+          "id": "31455",
+          "name": "Angered Centrum"
+        }
+      },
+      "trip": {
+        "trip_id": "141010301435815855",
+        "start_date": "2026-06-26",
+        "technical_number": 5733
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Göteborgs Spårvägar Spårvagn"
+      },
+      "stop": {
+        "id": "73783",
+        "name": "Drottningtorget",
+        "lat": 57.707899,
+        "lon": 11.973742
+      },
+      "scheduled_platform": {
+        "id": "9022050073783001",
+        "designation": "A1"
+      },
+      "realtime_platform": {
+        "id": "9022050073783001",
+        "designation": "A1"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:36:00",
+      "realtime": "2026-06-26T17:36:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "60",
+        "transport_mode_code": 700,
+        "transport_mode": "BUS",
+        "direction": "Redbergsplatsen",
+        "origin": {
+          "id": "34721",
+          "name": "Sörgårdsskolan"
+        },
+        "destination": {
+          "id": "31915",
+          "name": "Redbergsplatsen"
+        }
+      },
+      "trip": {
+        "trip_id": "141010001439040322",
+        "start_date": "2026-06-26",
+        "technical_number": 160
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Nobina Sverige AB"
+      },
+      "stop": {
+        "id": "73783",
+        "name": "Drottningtorget",
+        "lat": 57.707899,
+        "lon": 11.973742
+      },
+      "scheduled_platform": {
+        "id": "9022050073783009",
+        "designation": "C1"
+      },
+      "realtime_platform": {
+        "id": "9022050073783009",
+        "designation": "C1"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:36:00",
+      "realtime": "2026-06-26T17:36:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "17",
+        "transport_mode_code": 700,
+        "transport_mode": "BUS",
+        "direction": "Östra Sjukhuset",
+        "origin": {
+          "id": "31689",
+          "name": "Hinnebäcksgatan"
+        },
+        "destination": {
+          "id": "38953",
+          "name": "Östra Sjukhuset"
+        }
+      },
+      "trip": {
+        "trip_id": "141010001440020445",
+        "start_date": "2026-06-26",
+        "technical_number": 209
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Keolis Sverige AB"
+      },
+      "stop": {
+        "id": "73783",
+        "name": "Drottningtorget",
+        "lat": 57.707899,
+        "lon": 11.973742
+      },
+      "scheduled_platform": {
+        "id": "9022050073783007",
+        "designation": "B1"
+      },
+      "realtime_platform": {
+        "id": "9022050073783007",
+        "designation": "B1"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:37:00",
+      "realtime": "2026-06-26T17:37:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "X5",
+        "transport_mode_code": 700,
+        "transport_mode": "BUS",
+        "direction": "Frölunda Torg",
+        "origin": {
+          "id": "35222",
+          "name": "Ljungkullen"
+        },
+        "destination": {
+          "id": "38948",
+          "name": "Frölunda Torg"
+        }
+      },
+      "trip": {
+        "trip_id": "141010001440020560",
+        "start_date": "2026-06-26",
+        "technical_number": 207
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Keolis Sverige AB"
+      },
+      "stop": {
+        "id": "73783",
+        "name": "Drottningtorget",
+        "lat": 57.707899,
+        "lon": 11.973742
+      },
+      "scheduled_platform": {
+        "id": "9022050073783008",
+        "designation": "B2"
+      },
+      "realtime_platform": {
+        "id": "9022050073783008",
+        "designation": "B2"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:37:00",
+      "realtime": "2026-06-26T17:37:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "60",
+        "transport_mode_code": 700,
+        "transport_mode": "BUS",
+        "direction": "Fredriksdal",
+        "origin": {
+          "id": "31915",
+          "name": "Redbergsplatsen"
+        },
+        "destination": {
+          "id": "34721",
+          "name": "Sörgårdsskolan"
+        }
+      },
+      "trip": {
+        "trip_id": "141010001439040355",
+        "start_date": "2026-06-26",
+        "technical_number": 159
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Nobina Sverige AB"
+      },
+      "stop": {
+        "id": "73783",
+        "name": "Drottningtorget",
+        "lat": 57.707899,
+        "lon": 11.973742
+      },
+      "scheduled_platform": {
+        "id": "9022050073783004",
+        "designation": "A4"
+      },
+      "realtime_platform": {
+        "id": "9022050073783004",
+        "designation": "A4"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:38:00",
+      "realtime": "2026-06-26T17:38:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "1",
+        "transport_mode_code": 900,
+        "transport_mode": "TRAM",
+        "direction": "Tynnered",
+        "origin": {
+          "id": "38953",
+          "name": "Östra Sjukhuset"
+        },
+        "destination": {
+          "id": "31880",
+          "name": "Opaltorget"
+        }
+      },
+      "trip": {
+        "trip_id": "141010301429970899",
+        "start_date": "2026-06-26",
+        "technical_number": 5682
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Göteborgs Spårvägar Spårvagn"
+      },
+      "stop": {
+        "id": "73783",
+        "name": "Drottningtorget",
+        "lat": 57.707899,
+        "lon": 11.973742
+      },
+      "scheduled_platform": {
+        "id": "9022050073783003",
+        "designation": "A3"
+      },
+      "realtime_platform": {
+        "id": "9022050073783003",
+        "designation": "A3"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:38:00",
+      "realtime": "2026-06-26T17:38:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "11",
+        "transport_mode_code": 900,
+        "transport_mode": "TRAM",
+        "direction": "Bergsjön",
+        "origin": {
+          "id": "1206",
+          "name": "Saltholmen"
+        },
+        "destination": {
+          "id": "31756",
+          "name": "Komettorget"
+        }
+      },
+      "trip": {
+        "trip_id": "141010601435816014",
+        "start_date": "2026-06-26",
+        "technical_number": 5751
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Göteborgs Spårvägar Spårvagn"
+      },
+      "stop": {
+        "id": "73783",
+        "name": "Drottningtorget",
+        "lat": 57.707899,
+        "lon": 11.973742
+      },
+      "scheduled_platform": {
+        "id": "9022050073783001",
+        "designation": "A1"
+      },
+      "realtime_platform": {
+        "id": "9022050073783001",
+        "designation": "A1"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:38:00",
+      "realtime": "2026-06-26T17:38:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "9",
+        "transport_mode_code": 900,
+        "transport_mode": "TRAM",
+        "direction": "Saltholmen",
+        "origin": {
+          "id": "31455",
+          "name": "Angered Centrum"
+        },
+        "destination": {
+          "id": "1206",
+          "name": "Saltholmen"
+        }
+      },
+      "trip": {
+        "trip_id": "141010401410349474",
+        "start_date": "2026-06-26",
+        "technical_number": 5678
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Göteborgs Spårvägar Spårvagn"
+      },
+      "stop": {
+        "id": "73783",
+        "name": "Drottningtorget",
+        "lat": 57.707899,
+        "lon": 11.973742
+      },
+      "scheduled_platform": {
+        "id": "9022050073783004",
+        "designation": "A4"
+      },
+      "realtime_platform": {
+        "id": "9022050073783004",
+        "designation": "A4"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:39:00",
+      "realtime": "2026-06-26T17:39:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "17",
+        "transport_mode_code": 700,
+        "transport_mode": "BUS",
+        "direction": "Tuve",
+        "origin": {
+          "id": "32027",
+          "name": "Svingeln"
+        },
+        "destination": {
+          "id": "31689",
+          "name": "Hinnebäcksgatan"
+        }
+      },
+      "trip": {
+        "trip_id": "141010001440020852",
+        "start_date": "2026-06-26",
+        "technical_number": 206
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Keolis Sverige AB"
+      },
+      "stop": {
+        "id": "73783",
+        "name": "Drottningtorget",
+        "lat": 57.707899,
+        "lon": 11.973742
+      },
+      "scheduled_platform": {
+        "id": "9022050073783008",
+        "designation": "B2"
+      },
+      "realtime_platform": {
+        "id": "9022050073783008",
+        "designation": "B2"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:39:00",
+      "realtime": "2026-06-26T17:39:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "12",
+        "transport_mode_code": 900,
+        "transport_mode": "TRAM",
+        "direction": "Mölndal",
+        "origin": {
+          "id": "31813",
+          "name": "Lindholmen"
+        },
+        "destination": {
+          "id": "38954",
+          "name": "Mölndals Innerstad"
+        }
+      },
+      "trip": {
+        "trip_id": "141010401410350031",
+        "start_date": "2026-06-26",
+        "technical_number": 5698
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Göteborgs Spårvägar Spårvagn"
+      },
+      "stop": {
+        "id": "73783",
+        "name": "Drottningtorget",
+        "lat": 57.707899,
+        "lon": 11.973742
+      },
+      "scheduled_platform": {
+        "id": "9022050073783002",
+        "designation": "A2"
+      },
+      "realtime_platform": {
+        "id": "9022050073783002",
+        "designation": "A2"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:39:00",
+      "realtime": "2026-06-26T17:39:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "X6",
+        "transport_mode_code": 700,
+        "transport_mode": "BUS",
+        "direction": "Lilla Varholmen",
+        "origin": {
+          "id": "865",
+          "name": "Landvetter resecentrum"
+        },
+        "destination": {
+          "id": "1205",
+          "name": "Lilla Varholmen"
+        }
+      },
+      "trip": {
+        "trip_id": "141010001441445571",
+        "start_date": "2026-06-26",
+        "technical_number": 461
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Keolis Sverige AB"
+      },
+      "stop": {
+        "id": "73783",
+        "name": "Drottningtorget",
+        "lat": 57.707899,
+        "lon": 11.973742
+      },
+      "scheduled_platform": {
+        "id": "9022050073783008",
+        "designation": "B2"
+      },
+      "realtime_platform": {
+        "id": "9022050073783008",
+        "designation": "B2"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:39:00",
+      "realtime": "2026-06-26T17:39:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "12",
+        "transport_mode_code": 900,
+        "transport_mode": "TRAM",
+        "direction": "Lindholmen",
+        "origin": {
+          "id": "38954",
+          "name": "Mölndals Innerstad"
+        },
+        "destination": {
+          "id": "31813",
+          "name": "Lindholmen"
+        }
+      },
+      "trip": {
+        "trip_id": "141010301429922766",
+        "start_date": "2026-06-26",
+        "technical_number": 5783
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Göteborgs Spårvägar Spårvagn"
+      },
+      "stop": {
+        "id": "73783",
+        "name": "Drottningtorget",
+        "lat": 57.707899,
+        "lon": 11.973742
+      },
+      "scheduled_platform": {
+        "id": "9022050073783004",
+        "designation": "A4"
+      },
+      "realtime_platform": {
+        "id": "9022050073783004",
+        "designation": "A4"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:41:00",
+      "realtime": "2026-06-26T17:41:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "17",
+        "transport_mode_code": 700,
+        "transport_mode": "BUS",
+        "direction": "Östra Sjukhuset",
+        "origin": {
+          "id": "31689",
+          "name": "Hinnebäcksgatan"
+        },
+        "destination": {
+          "id": "38953",
+          "name": "Östra Sjukhuset"
+        }
+      },
+      "trip": {
+        "trip_id": "141010001440020532",
+        "start_date": "2026-06-26",
+        "technical_number": 199
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Keolis Sverige AB"
+      },
+      "stop": {
+        "id": "73783",
+        "name": "Drottningtorget",
+        "lat": 57.707899,
+        "lon": 11.973742
+      },
+      "scheduled_platform": {
+        "id": "9022050073783007",
+        "designation": "B1"
+      },
+      "realtime_platform": {
+        "id": "9022050073783007",
+        "designation": "B1"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:41:00",
+      "realtime": "2026-06-26T17:41:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "7",
+        "transport_mode_code": 900,
+        "transport_mode": "TRAM",
+        "direction": "Tynnered via Annedal",
+        "origin": {
+          "id": "31756",
+          "name": "Komettorget"
+        },
+        "destination": {
+          "id": "31880",
+          "name": "Opaltorget"
+        }
+      },
+      "trip": {
+        "trip_id": "141010201442197806",
+        "start_date": "2026-06-26",
+        "technical_number": 5676
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Göteborgs Spårvägar Spårvagn"
+      },
+      "stop": {
+        "id": "73783",
+        "name": "Drottningtorget",
+        "lat": 57.707899,
+        "lon": 11.973742
+      },
+      "scheduled_platform": {
+        "id": "9022050073783003",
+        "designation": "A3"
+      },
+      "realtime_platform": {
+        "id": "9022050073783003",
+        "designation": "A3"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:42:00",
+      "realtime": "2026-06-26T17:42:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "3",
+        "transport_mode_code": 900,
+        "transport_mode": "TRAM",
+        "direction": "Marklandsgatan",
+        "origin": {
+          "id": "32115",
+          "name": "Virginsgatan"
+        },
+        "destination": {
+          "id": "32163",
+          "name": "Slottsskogsvallen"
+        }
+      },
+      "trip": {
+        "trip_id": "141010401410349969",
+        "start_date": "2026-06-26",
+        "technical_number": 5694
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Göteborgs Spårvägar Spårvagn"
+      },
+      "stop": {
+        "id": "73783",
+        "name": "Drottningtorget",
+        "lat": 57.707899,
+        "lon": 11.973742
+      },
+      "scheduled_platform": {
+        "id": "9022050073783004",
+        "designation": "A4"
+      },
+      "realtime_platform": {
+        "id": "9022050073783004",
+        "designation": "A4"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:43:00",
+      "realtime": "2026-06-26T17:43:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "3",
+        "transport_mode_code": 900,
+        "transport_mode": "TRAM",
+        "direction": "Kålltorp",
+        "origin": {
+          "id": "32163",
+          "name": "Slottsskogsvallen"
+        },
+        "destination": {
+          "id": "32115",
+          "name": "Virginsgatan"
+        }
+      },
+      "trip": {
+        "trip_id": "141010301410348691",
+        "start_date": "2026-06-26",
+        "technical_number": 5759
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Göteborgs Spårvägar Spårvagn"
+      },
+      "stop": {
+        "id": "73783",
+        "name": "Drottningtorget",
+        "lat": 57.707899,
+        "lon": 11.973742
+      },
+      "scheduled_platform": {
+        "id": "9022050073783002",
+        "designation": "A2"
+      },
+      "realtime_platform": {
+        "id": "9022050073783002",
+        "designation": "A2"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:44:00",
+      "realtime": "2026-06-26T17:44:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "X5",
+        "transport_mode_code": 700,
+        "transport_mode": "BUS",
+        "direction": "Vallhamra",
+        "origin": {
+          "id": "38948",
+          "name": "Frölunda Torg"
+        },
+        "destination": {
+          "id": "35222",
+          "name": "Ljungkullen"
+        }
+      },
+      "trip": {
+        "trip_id": "141010001440020625",
+        "start_date": "2026-06-26",
+        "technical_number": 208
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Keolis Sverige AB"
+      },
+      "stop": {
+        "id": "73783",
+        "name": "Drottningtorget",
+        "lat": 57.707899,
+        "lon": 11.973742
+      },
+      "scheduled_platform": {
+        "id": "9022050073783007",
+        "designation": "B1"
+      },
+      "realtime_platform": {
+        "id": "9022050073783007",
+        "designation": "B1"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:44:00",
+      "realtime": "2026-06-26T17:44:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "21",
+        "transport_mode_code": 700,
+        "transport_mode": "BUS",
+        "direction": "Eketrägatan",
+        "origin": {
+          "id": "38952",
+          "name": "Merkuriusgatan"
+        },
+        "destination": {
+          "id": "38946",
+          "name": "Eketrägatan"
+        }
+      },
+      "trip": {
+        "trip_id": "141010001416778192",
+        "start_date": "2026-06-26",
+        "technical_number": 102
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Transdev Sverige AB"
+      },
+      "stop": {
+        "id": "73783",
+        "name": "Drottningtorget",
+        "lat": 57.707899,
+        "lon": 11.973742
+      },
+      "scheduled_platform": {
+        "id": "9022050073783008",
+        "designation": "B2"
+      },
+      "realtime_platform": {
+        "id": "9022050073783008",
+        "designation": "B2"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:44:00",
+      "realtime": "2026-06-26T17:44:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "17",
+        "transport_mode_code": 700,
+        "transport_mode": "BUS",
+        "direction": "Tuve",
+        "origin": {
+          "id": "38953",
+          "name": "Östra Sjukhuset"
+        },
+        "destination": {
+          "id": "31689",
+          "name": "Hinnebäcksgatan"
+        }
+      },
+      "trip": {
+        "trip_id": "141010001440235496",
+        "start_date": "2026-06-26",
+        "technical_number": 200
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Keolis Sverige AB"
+      },
+      "stop": {
+        "id": "73783",
+        "name": "Drottningtorget",
+        "lat": 57.707899,
+        "lon": 11.973742
+      },
+      "scheduled_platform": {
+        "id": "9022050073783008",
+        "designation": "B2"
+      },
+      "realtime_platform": {
+        "id": "9022050073783008",
+        "designation": "B2"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:44:00",
+      "realtime": "2026-06-26T17:44:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "60",
+        "transport_mode_code": 700,
+        "transport_mode": "BUS",
+        "direction": "Redbergsplatsen",
+        "origin": {
+          "id": "34721",
+          "name": "Sörgårdsskolan"
+        },
+        "destination": {
+          "id": "31915",
+          "name": "Redbergsplatsen"
+        }
+      },
+      "trip": {
+        "trip_id": "141010001439040504",
+        "start_date": "2026-06-26",
+        "technical_number": 162
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Nobina Sverige AB"
+      },
+      "stop": {
+        "id": "73783",
+        "name": "Drottningtorget",
+        "lat": 57.707899,
+        "lon": 11.973742
+      },
+      "scheduled_platform": {
+        "id": "9022050073783009",
+        "designation": "C1"
+      },
+      "realtime_platform": {
+        "id": "9022050073783009",
+        "designation": "C1"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:45:00",
+      "realtime": "2026-06-26T17:45:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": "Västtågen",
+        "designation": "3071",
+        "transport_mode_code": 106,
+        "transport_mode": "TRAIN",
+        "direction": "Kungsbacka",
+        "origin": {
+          "id": "2",
+          "name": "Göteborg Centralstation"
+        },
+        "destination": {
+          "id": "161",
+          "name": "Kungsbacka station"
+        }
+      },
+      "trip": {
+        "trip_id": "400000000000018406",
+        "start_date": "2026-06-26",
+        "technical_number": 3071
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Västtågen"
+      },
+      "stop": {
+        "id": "2",
+        "name": "Göteborg Centralstation",
+        "lat": 57.709299,
+        "lon": 11.973659
+      },
+      "scheduled_platform": null,
+      "realtime_platform": null,
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:45:00",
+      "realtime": "2026-06-26T17:45:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": "Västtågen",
+        "designation": "13796",
+        "transport_mode_code": 106,
+        "transport_mode": "TRAIN",
+        "direction": "Uddevalla central",
+        "origin": {
+          "id": "2",
+          "name": "Göteborg Centralstation"
+        },
+        "destination": {
+          "id": "37324",
+          "name": "Uddevalla central"
+        }
+      },
+      "trip": {
+        "trip_id": "400000000000021494",
+        "start_date": "2026-06-26",
+        "technical_number": 13796
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Västtågen"
+      },
+      "stop": {
+        "id": "2",
+        "name": "Göteborg Centralstation",
+        "lat": 57.709299,
+        "lon": 11.973659
+      },
+      "scheduled_platform": null,
+      "realtime_platform": null,
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:45:00",
+      "realtime": "2026-06-26T17:45:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "1321",
+        "transport_mode_code": 100,
+        "transport_mode": "TRAIN",
+        "direction": "Kungsbacka",
+        "origin": {
+          "id": "2",
+          "name": "Göteborg Centralstation"
+        },
+        "destination": {
+          "id": "161",
+          "name": "Kungsbacka station"
+        }
+      },
+      "trip": {
+        "trip_id": "130000000000011159",
+        "start_date": "2026-06-26",
+        "technical_number": 3071
+      },
+      "agency": {
+        "id": "505000000000000013",
+        "name": "Hallandstrafiken",
+        "operator": "SJ Götalandståg"
+      },
+      "stop": {
+        "id": "2",
+        "name": "Göteborg Centralstation",
+        "lat": 57.709299,
+        "lon": 11.973659
+      },
+      "scheduled_platform": {
+        "id": "9022050000002013",
+        "designation": "5"
+      },
+      "realtime_platform": {
+        "id": "9022050000002013",
+        "designation": "5"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:45:00",
+      "realtime": "2026-06-26T17:45:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "60",
+        "transport_mode_code": 700,
+        "transport_mode": "BUS",
+        "direction": "Fredriksdal",
+        "origin": {
+          "id": "31915",
+          "name": "Redbergsplatsen"
+        },
+        "destination": {
+          "id": "34721",
+          "name": "Sörgårdsskolan"
+        }
+      },
+      "trip": {
+        "trip_id": "141010001439040541",
+        "start_date": "2026-06-26",
+        "technical_number": 161
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Nobina Sverige AB"
+      },
+      "stop": {
+        "id": "73783",
+        "name": "Drottningtorget",
+        "lat": 57.707899,
+        "lon": 11.973742
+      },
+      "scheduled_platform": {
+        "id": "9022050073783004",
+        "designation": "A4"
+      },
+      "realtime_platform": {
+        "id": "9022050073783004",
+        "designation": "A4"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:45:00",
+      "realtime": "2026-06-26T17:45:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "7",
+        "transport_mode_code": 900,
+        "transport_mode": "TRAM",
+        "direction": "Bergsjön",
+        "origin": {
+          "id": "31880",
+          "name": "Opaltorget"
+        },
+        "destination": {
+          "id": "31756",
+          "name": "Komettorget"
+        }
+      },
+      "trip": {
+        "trip_id": "141010101442197744",
+        "start_date": "2026-06-26",
+        "technical_number": 5769
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Göteborgs Spårvägar Spårvagn"
+      },
+      "stop": {
+        "id": "73783",
+        "name": "Drottningtorget",
+        "lat": 57.707899,
+        "lon": 11.973742
+      },
+      "scheduled_platform": {
+        "id": "9022050073783001",
+        "designation": "A1"
+      },
+      "realtime_platform": {
+        "id": "9022050073783001",
+        "designation": "A1"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:45:00",
+      "realtime": "2026-06-26T17:45:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "4",
+        "transport_mode_code": 900,
+        "transport_mode": "TRAM",
+        "direction": "Mölndal via Skånegatan",
+        "origin": {
+          "id": "31455",
+          "name": "Angered Centrum"
+        },
+        "destination": {
+          "id": "38954",
+          "name": "Mölndals Innerstad"
+        }
+      },
+      "trip": {
+        "trip_id": "141010501429922915",
+        "start_date": "2026-06-26",
+        "technical_number": 5690
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Göteborgs Spårvägar Spårvagn"
+      },
+      "stop": {
+        "id": "73783",
+        "name": "Drottningtorget",
+        "lat": 57.707899,
+        "lon": 11.973742
+      },
+      "scheduled_platform": {
+        "id": "9022050073783002",
+        "designation": "A2"
+      },
+      "realtime_platform": {
+        "id": "9022050073783002",
+        "designation": "A2"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:46:00",
+      "realtime": "2026-06-26T17:46:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "17",
+        "transport_mode_code": 700,
+        "transport_mode": "BUS",
+        "direction": "Östra Sjukhuset",
+        "origin": {
+          "id": "31689",
+          "name": "Hinnebäcksgatan"
+        },
+        "destination": {
+          "id": "38953",
+          "name": "Östra Sjukhuset"
+        }
+      },
+      "trip": {
+        "trip_id": "141010001440235532",
+        "start_date": "2026-06-26",
+        "technical_number": 213
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Keolis Sverige AB"
+      },
+      "stop": {
+        "id": "73783",
+        "name": "Drottningtorget",
+        "lat": 57.707899,
+        "lon": 11.973742
+      },
+      "scheduled_platform": {
+        "id": "9022050073783007",
+        "designation": "B1"
+      },
+      "realtime_platform": {
+        "id": "9022050073783007",
+        "designation": "B1"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:46:00",
+      "realtime": "2026-06-26T17:46:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "1",
+        "transport_mode_code": 900,
+        "transport_mode": "TRAM",
+        "direction": "Östra Sjukhuset",
+        "origin": {
+          "id": "31880",
+          "name": "Opaltorget"
+        },
+        "destination": {
+          "id": "38953",
+          "name": "Östra Sjukhuset"
+        }
+      },
+      "trip": {
+        "trip_id": "141010401410349242",
+        "start_date": "2026-06-26",
+        "technical_number": 5775
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Göteborgs Spårvägar Spårvagn"
+      },
+      "stop": {
+        "id": "73783",
+        "name": "Drottningtorget",
+        "lat": 57.707899,
+        "lon": 11.973742
+      },
+      "scheduled_platform": {
+        "id": "9022050073783002",
+        "designation": "A2"
+      },
+      "realtime_platform": {
+        "id": "9022050073783002",
+        "designation": "A2"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:46:00",
+      "realtime": "2026-06-26T17:46:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "21",
+        "transport_mode_code": 700,
+        "transport_mode": "BUS",
+        "direction": "Bergsjön",
+        "origin": {
+          "id": "38946",
+          "name": "Eketrägatan"
+        },
+        "destination": {
+          "id": "38952",
+          "name": "Merkuriusgatan"
+        }
+      },
+      "trip": {
+        "trip_id": "141010001416778291",
+        "start_date": "2026-06-26",
+        "technical_number": 101
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Transdev Sverige AB"
+      },
+      "stop": {
+        "id": "73783",
+        "name": "Drottningtorget",
+        "lat": 57.707899,
+        "lon": 11.973742
+      },
+      "scheduled_platform": {
+        "id": "9022050073783007",
+        "designation": "B1"
+      },
+      "realtime_platform": {
+        "id": "9022050073783007",
+        "designation": "B1"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:46:00",
+      "realtime": "2026-06-26T17:46:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "11",
+        "transport_mode_code": 900,
+        "transport_mode": "TRAM",
+        "direction": "Saltholmen",
+        "origin": {
+          "id": "31756",
+          "name": "Komettorget"
+        },
+        "destination": {
+          "id": "1206",
+          "name": "Saltholmen"
+        }
+      },
+      "trip": {
+        "trip_id": "141010301435816494",
+        "start_date": "2026-06-26",
+        "technical_number": 5688
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Göteborgs Spårvägar Spårvagn"
+      },
+      "stop": {
+        "id": "73783",
+        "name": "Drottningtorget",
+        "lat": 57.707899,
+        "lon": 11.973742
+      },
+      "scheduled_platform": {
+        "id": "9022050073783004",
+        "designation": "A4"
+      },
+      "realtime_platform": {
+        "id": "9022050073783004",
+        "designation": "A4"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:47:00",
+      "realtime": "2026-06-26T17:47:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "9",
+        "transport_mode_code": 900,
+        "transport_mode": "TRAM",
+        "direction": "Angered",
+        "origin": {
+          "id": "1206",
+          "name": "Saltholmen"
+        },
+        "destination": {
+          "id": "31455",
+          "name": "Angered Centrum"
+        }
+      },
+      "trip": {
+        "trip_id": "141010301435816191",
+        "start_date": "2026-06-26",
+        "technical_number": 5761
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Göteborgs Spårvägar Spårvagn"
+      },
+      "stop": {
+        "id": "73783",
+        "name": "Drottningtorget",
+        "lat": 57.707899,
+        "lon": 11.973742
+      },
+      "scheduled_platform": {
+        "id": "9022050073783001",
+        "designation": "A1"
+      },
+      "realtime_platform": {
+        "id": "9022050073783001",
+        "designation": "A1"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:47:00",
+      "realtime": "2026-06-26T17:47:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "X5",
+        "transport_mode_code": 700,
+        "transport_mode": "BUS",
+        "direction": "Frölunda Torg",
+        "origin": {
+          "id": "35222",
+          "name": "Ljungkullen"
+        },
+        "destination": {
+          "id": "38948",
+          "name": "Frölunda Torg"
+        }
+      },
+      "trip": {
+        "trip_id": "141010001440020763",
+        "start_date": "2026-06-26",
+        "technical_number": 211
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Keolis Sverige AB"
+      },
+      "stop": {
+        "id": "73783",
+        "name": "Drottningtorget",
+        "lat": 57.707899,
+        "lon": 11.973742
+      },
+      "scheduled_platform": {
+        "id": "9022050073783008",
+        "designation": "B2"
+      },
+      "realtime_platform": {
+        "id": "9022050073783008",
+        "designation": "B2"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:49:00",
+      "realtime": "2026-06-26T17:49:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "17",
+        "transport_mode_code": 700,
+        "transport_mode": "BUS",
+        "direction": "Tuve",
+        "origin": {
+          "id": "32027",
+          "name": "Svingeln"
+        },
+        "destination": {
+          "id": "31689",
+          "name": "Hinnebäcksgatan"
+        }
+      },
+      "trip": {
+        "trip_id": "141010001440237261",
+        "start_date": "2026-06-26",
+        "technical_number": 210
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Keolis Sverige AB"
+      },
+      "stop": {
+        "id": "73783",
+        "name": "Drottningtorget",
+        "lat": 57.707899,
+        "lon": 11.973742
+      },
+      "scheduled_platform": {
+        "id": "9022050073783008",
+        "designation": "B2"
+      },
+      "realtime_platform": {
+        "id": "9022050073783008",
+        "designation": "B2"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:49:00",
+      "realtime": "2026-06-26T17:49:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "X6",
+        "transport_mode_code": 700,
+        "transport_mode": "BUS",
+        "direction": "Lilla Varholmen",
+        "origin": {
+          "id": "865",
+          "name": "Landvetter resecentrum"
+        },
+        "destination": {
+          "id": "1205",
+          "name": "Lilla Varholmen"
+        }
+      },
+      "trip": {
+        "trip_id": "141010001440815585",
+        "start_date": "2026-06-26",
+        "technical_number": 465
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Keolis Sverige AB"
+      },
+      "stop": {
+        "id": "73783",
+        "name": "Drottningtorget",
+        "lat": 57.707899,
+        "lon": 11.973742
+      },
+      "scheduled_platform": {
+        "id": "9022050073783008",
+        "designation": "B2"
+      },
+      "realtime_platform": {
+        "id": "9022050073783008",
+        "designation": "B2"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:50:00",
+      "realtime": "2026-06-26T17:50:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": "Västtågen",
+        "designation": "3670",
+        "transport_mode_code": 106,
+        "transport_mode": "TRAIN",
+        "direction": "Älvängen",
+        "origin": {
+          "id": "2",
+          "name": "Göteborg Centralstation"
+        },
+        "destination": {
+          "id": "1564",
+          "name": "Älvängen resecentrum"
+        }
+      },
+      "trip": {
+        "trip_id": "400000000000020025",
+        "start_date": "2026-06-26",
+        "technical_number": 3670
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Västtågen"
+      },
+      "stop": {
+        "id": "2",
+        "name": "Göteborg Centralstation",
+        "lat": 57.709299,
+        "lon": 11.973659
+      },
+      "scheduled_platform": null,
+      "realtime_platform": null,
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:50:00",
+      "realtime": "2026-06-26T17:50:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": "Oslo-Kornsjø-Gøteborg-Malmø",
+        "designation": "920",
+        "transport_mode_code": 101,
+        "transport_mode": "TRAIN",
+        "direction": "Malmö central",
+        "origin": {
+          "id": "72581",
+          "name": "Oslo S"
+        },
+        "destination": {
+          "id": "3",
+          "name": "Malmö Centralstation"
+        }
+      },
+      "trip": {
+        "trip_id": "790920055695000001",
+        "start_date": "2026-06-26",
+        "technical_number": 55695
+      },
+      "agency": {
+        "id": "505000000000000101",
+        "name": "Vy Tåg AB",
+        "operator": "Vygruppen AS"
+      },
+      "stop": {
+        "id": "2",
+        "name": "Göteborg Centralstation",
+        "lat": 57.709299,
+        "lon": 11.973659
+      },
+      "scheduled_platform": {
+        "id": "9022050000002012",
+        "designation": "4"
+      },
+      "realtime_platform": {
+        "id": "9022050000002012",
+        "designation": "4"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:50:00",
+      "realtime": "2026-06-26T17:50:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "11",
+        "transport_mode_code": 900,
+        "transport_mode": "TRAM",
+        "direction": "Bergsjön",
+        "origin": {
+          "id": "1206",
+          "name": "Saltholmen"
+        },
+        "destination": {
+          "id": "31756",
+          "name": "Komettorget"
+        }
+      },
+      "trip": {
+        "trip_id": "141010601435816351",
+        "start_date": "2026-06-26",
+        "technical_number": 5779
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Göteborgs Spårvägar Spårvagn"
+      },
+      "stop": {
+        "id": "73783",
+        "name": "Drottningtorget",
+        "lat": 57.707899,
+        "lon": 11.973742
+      },
+      "scheduled_platform": {
+        "id": "9022050073783001",
+        "designation": "A1"
+      },
+      "realtime_platform": {
+        "id": "9022050073783001",
+        "designation": "A1"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:50:00",
+      "realtime": "2026-06-26T17:50:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "1",
+        "transport_mode_code": 900,
+        "transport_mode": "TRAM",
+        "direction": "Tynnered",
+        "origin": {
+          "id": "38953",
+          "name": "Östra Sjukhuset"
+        },
+        "destination": {
+          "id": "31880",
+          "name": "Opaltorget"
+        }
+      },
+      "trip": {
+        "trip_id": "141010301429971310",
+        "start_date": "2026-06-26",
+        "technical_number": 5708
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Göteborgs Spårvägar Spårvagn"
+      },
+      "stop": {
+        "id": "73783",
+        "name": "Drottningtorget",
+        "lat": 57.707899,
+        "lon": 11.973742
+      },
+      "scheduled_platform": {
+        "id": "9022050073783003",
+        "designation": "A3"
+      },
+      "realtime_platform": {
+        "id": "9022050073783003",
+        "designation": "A3"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:50:00",
+      "realtime": "2026-06-26T17:50:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "9",
+        "transport_mode_code": 900,
+        "transport_mode": "TRAM",
+        "direction": "Saltholmen",
+        "origin": {
+          "id": "31455",
+          "name": "Angered Centrum"
+        },
+        "destination": {
+          "id": "1206",
+          "name": "Saltholmen"
+        }
+      },
+      "trip": {
+        "trip_id": "141010401410350387",
+        "start_date": "2026-06-26",
+        "technical_number": 5704
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Göteborgs Spårvägar Spårvagn"
+      },
+      "stop": {
+        "id": "73783",
+        "name": "Drottningtorget",
+        "lat": 57.707899,
+        "lon": 11.973742
+      },
+      "scheduled_platform": {
+        "id": "9022050073783004",
+        "designation": "A4"
+      },
+      "realtime_platform": {
+        "id": "9022050073783004",
+        "designation": "A4"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:51:00",
+      "realtime": "2026-06-26T17:51:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "17",
+        "transport_mode_code": 700,
+        "transport_mode": "BUS",
+        "direction": "Östra Sjukhuset",
+        "origin": {
+          "id": "31689",
+          "name": "Hinnebäcksgatan"
+        },
+        "destination": {
+          "id": "38953",
+          "name": "Östra Sjukhuset"
+        }
+      },
+      "trip": {
+        "trip_id": "141010001440020680",
+        "start_date": "2026-06-26",
+        "technical_number": 203
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Keolis Sverige AB"
+      },
+      "stop": {
+        "id": "73783",
+        "name": "Drottningtorget",
+        "lat": 57.707899,
+        "lon": 11.973742
+      },
+      "scheduled_platform": {
+        "id": "9022050073783007",
+        "designation": "B1"
+      },
+      "realtime_platform": {
+        "id": "9022050073783007",
+        "designation": "B1"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:51:00",
+      "realtime": "2026-06-26T17:51:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "12",
+        "transport_mode_code": 900,
+        "transport_mode": "TRAM",
+        "direction": "Lindholmen",
+        "origin": {
+          "id": "38954",
+          "name": "Mölndals Innerstad"
+        },
+        "destination": {
+          "id": "31813",
+          "name": "Lindholmen"
+        }
+      },
+      "trip": {
+        "trip_id": "141010301429923245",
+        "start_date": "2026-06-26",
+        "technical_number": 5811
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Göteborgs Spårvägar Spårvagn"
+      },
+      "stop": {
+        "id": "73783",
+        "name": "Drottningtorget",
+        "lat": 57.707899,
+        "lon": 11.973742
+      },
+      "scheduled_platform": {
+        "id": "9022050073783004",
+        "designation": "A4"
+      },
+      "realtime_platform": {
+        "id": "9022050073783004",
+        "designation": "A4"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:51:00",
+      "realtime": "2026-06-26T17:51:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "12",
+        "transport_mode_code": 900,
+        "transport_mode": "TRAM",
+        "direction": "Mölndal",
+        "origin": {
+          "id": "31813",
+          "name": "Lindholmen"
+        },
+        "destination": {
+          "id": "38954",
+          "name": "Mölndals Innerstad"
+        }
+      },
+      "trip": {
+        "trip_id": "141010401410350944",
+        "start_date": "2026-06-26",
+        "technical_number": 5724
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Göteborgs Spårvägar Spårvagn"
+      },
+      "stop": {
+        "id": "73783",
+        "name": "Drottningtorget",
+        "lat": 57.707899,
+        "lon": 11.973742
+      },
+      "scheduled_platform": {
+        "id": "9022050073783002",
+        "designation": "A2"
+      },
+      "realtime_platform": {
+        "id": "9022050073783002",
+        "designation": "A2"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:52:00",
+      "realtime": "2026-06-26T17:52:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "60",
+        "transport_mode_code": 700,
+        "transport_mode": "BUS",
+        "direction": "Redbergsplatsen",
+        "origin": {
+          "id": "34721",
+          "name": "Sörgårdsskolan"
+        },
+        "destination": {
+          "id": "31915",
+          "name": "Redbergsplatsen"
+        }
+      },
+      "trip": {
+        "trip_id": "141010001439040683",
+        "start_date": "2026-06-26",
+        "technical_number": 164
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Nobina Sverige AB"
+      },
+      "stop": {
+        "id": "73783",
+        "name": "Drottningtorget",
+        "lat": 57.707899,
+        "lon": 11.973742
+      },
+      "scheduled_platform": {
+        "id": "9022050073783009",
+        "designation": "C1"
+      },
+      "realtime_platform": {
+        "id": "9022050073783009",
+        "designation": "C1"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:53:00",
+      "realtime": "2026-06-26T17:53:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "60",
+        "transport_mode_code": 700,
+        "transport_mode": "BUS",
+        "direction": "Fredriksdal",
+        "origin": {
+          "id": "31915",
+          "name": "Redbergsplatsen"
+        },
+        "destination": {
+          "id": "34721",
+          "name": "Sörgårdsskolan"
+        }
+      },
+      "trip": {
+        "trip_id": "141010001439040748",
+        "start_date": "2026-06-26",
+        "technical_number": 163
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Nobina Sverige AB"
+      },
+      "stop": {
+        "id": "73783",
+        "name": "Drottningtorget",
+        "lat": 57.707899,
+        "lon": 11.973742
+      },
+      "scheduled_platform": {
+        "id": "9022050073783004",
+        "designation": "A4"
+      },
+      "realtime_platform": {
+        "id": "9022050073783004",
+        "designation": "A4"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:53:00",
+      "realtime": "2026-06-26T17:53:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "7",
+        "transport_mode_code": 900,
+        "transport_mode": "TRAM",
+        "direction": "Tynnered via Annedal",
+        "origin": {
+          "id": "31756",
+          "name": "Komettorget"
+        },
+        "destination": {
+          "id": "31880",
+          "name": "Opaltorget"
+        }
+      },
+      "trip": {
+        "trip_id": "141010201442197979",
+        "start_date": "2026-06-26",
+        "technical_number": 5702
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Göteborgs Spårvägar Spårvagn"
+      },
+      "stop": {
+        "id": "73783",
+        "name": "Drottningtorget",
+        "lat": 57.707899,
+        "lon": 11.973742
+      },
+      "scheduled_platform": {
+        "id": "9022050073783003",
+        "designation": "A3"
+      },
+      "realtime_platform": {
+        "id": "9022050073783003",
+        "designation": "A3"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:54:00",
+      "realtime": "2026-06-26T17:54:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "4",
+        "transport_mode_code": 900,
+        "transport_mode": "TRAM",
+        "direction": "Mölndal via Skånegatan",
+        "origin": {
+          "id": "31455",
+          "name": "Angered Centrum"
+        },
+        "destination": {
+          "id": "38954",
+          "name": "Mölndals Innerstad"
+        }
+      },
+      "trip": {
+        "trip_id": "141010501429923394",
+        "start_date": "2026-06-26",
+        "technical_number": 5716
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Göteborgs Spårvägar Spårvagn"
+      },
+      "stop": {
+        "id": "73783",
+        "name": "Drottningtorget",
+        "lat": 57.707899,
+        "lon": 11.973742
+      },
+      "scheduled_platform": {
+        "id": "9022050073783005",
+        "designation": "A5"
+      },
+      "realtime_platform": {
+        "id": "9022050073783005",
+        "designation": "A5"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:54:00",
+      "realtime": "2026-06-26T17:54:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "X5",
+        "transport_mode_code": 700,
+        "transport_mode": "BUS",
+        "direction": "Vallhamra",
+        "origin": {
+          "id": "38948",
+          "name": "Frölunda Torg"
+        },
+        "destination": {
+          "id": "35222",
+          "name": "Ljungkullen"
+        }
+      },
+      "trip": {
+        "trip_id": "141010001440020789",
+        "start_date": "2026-06-26",
+        "technical_number": 212
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Keolis Sverige AB"
+      },
+      "stop": {
+        "id": "73783",
+        "name": "Drottningtorget",
+        "lat": 57.707899,
+        "lon": 11.973742
+      },
+      "scheduled_platform": {
+        "id": "9022050073783007",
+        "designation": "B1"
+      },
+      "realtime_platform": {
+        "id": "9022050073783007",
+        "designation": "B1"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:54:00",
+      "realtime": "2026-06-26T17:54:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "3",
+        "transport_mode_code": 900,
+        "transport_mode": "TRAM",
+        "direction": "Marklandsgatan",
+        "origin": {
+          "id": "32115",
+          "name": "Virginsgatan"
+        },
+        "destination": {
+          "id": "32163",
+          "name": "Slottsskogsvallen"
+        }
+      },
+      "trip": {
+        "trip_id": "141010401410350882",
+        "start_date": "2026-06-26",
+        "technical_number": 5720
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Göteborgs Spårvägar Spårvagn"
+      },
+      "stop": {
+        "id": "73783",
+        "name": "Drottningtorget",
+        "lat": 57.707899,
+        "lon": 11.973742
+      },
+      "scheduled_platform": {
+        "id": "9022050073783004",
+        "designation": "A4"
+      },
+      "realtime_platform": {
+        "id": "9022050073783004",
+        "designation": "A4"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:54:00",
+      "realtime": "2026-06-26T17:54:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "17",
+        "transport_mode_code": 700,
+        "transport_mode": "BUS",
+        "direction": "Tuve",
+        "origin": {
+          "id": "38953",
+          "name": "Östra Sjukhuset"
+        },
+        "destination": {
+          "id": "31689",
+          "name": "Hinnebäcksgatan"
+        }
+      },
+      "trip": {
+        "trip_id": "141010001440236345",
+        "start_date": "2026-06-26",
+        "technical_number": 204
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Keolis Sverige AB"
+      },
+      "stop": {
+        "id": "73783",
+        "name": "Drottningtorget",
+        "lat": 57.707899,
+        "lon": 11.973742
+      },
+      "scheduled_platform": {
+        "id": "9022050073783008",
+        "designation": "B2"
+      },
+      "realtime_platform": {
+        "id": "9022050073783008",
+        "designation": "B2"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:55:00",
+      "realtime": "2026-06-26T17:55:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "100",
+        "transport_mode_code": 100,
+        "transport_mode": "TRAIN",
+        "direction": "Köpenhamn",
+        "origin": {
+          "id": "2",
+          "name": "Göteborg Centralstation"
+        },
+        "destination": {
+          "id": "25317",
+          "name": "København Østerport"
+        }
+      },
+      "trip": {
+        "trip_id": "130000000000011296",
+        "start_date": "2026-06-26",
+        "technical_number": 1135
+      },
+      "agency": {
+        "id": "505000000000000013",
+        "name": "Hallandstrafiken",
+        "operator": "VR Sverige"
+      },
+      "stop": {
+        "id": "2",
+        "name": "Göteborg Centralstation",
+        "lat": 57.709299,
+        "lon": 11.973659
+      },
+      "scheduled_platform": {
+        "id": "9022050000002012",
+        "designation": "4"
+      },
+      "realtime_platform": {
+        "id": "9022050000002012",
+        "designation": "4"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:55:00",
+      "realtime": "2026-06-26T17:55:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": "Ø Göteborg-Halmstad-Helsingborg-Malmö-Købe",
+        "designation": "804",
+        "transport_mode_code": 100,
+        "transport_mode": "TRAIN",
+        "direction": "Østerport",
+        "origin": {
+          "id": "2",
+          "name": "Göteborg Centralstation"
+        },
+        "destination": {
+          "id": "25317",
+          "name": "København Østerport"
+        }
+      },
+      "trip": {
+        "trip_id": "121120000389250867",
+        "start_date": "2026-06-26",
+        "technical_number": 1135
+      },
+      "agency": {
+        "id": "500000000000000110",
+        "name": "110",
+        "operator": "VR Sverige AB"
+      },
+      "stop": {
+        "id": "2",
+        "name": "Göteborg Centralstation",
+        "lat": 57.709299,
+        "lon": 11.973659
+      },
+      "scheduled_platform": {
+        "id": "9022050000002017",
+        "designation": "9"
+      },
+      "realtime_platform": {
+        "id": "9022050000002017",
+        "designation": "9"
+      },
+      "alerts": [
+        {
+          "type": "OTHER_CAUSE",
+          "title": "Platsbrist för cyklar",
+          "text": "Det kan vara platsbrist för cyklar i sommar. Cyklar tas med i mån av plats."
+        }
+      ],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:55:00",
+      "realtime": "2026-06-26T17:55:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "3",
+        "transport_mode_code": 900,
+        "transport_mode": "TRAM",
+        "direction": "Kålltorp",
+        "origin": {
+          "id": "32163",
+          "name": "Slottsskogsvallen"
+        },
+        "destination": {
+          "id": "32115",
+          "name": "Virginsgatan"
+        }
+      },
+      "trip": {
+        "trip_id": "141010301410349603",
+        "start_date": "2026-06-26",
+        "technical_number": 5787
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Göteborgs Spårvägar Spårvagn"
+      },
+      "stop": {
+        "id": "73783",
+        "name": "Drottningtorget",
+        "lat": 57.707899,
+        "lon": 11.973742
+      },
+      "scheduled_platform": {
+        "id": "9022050073783002",
+        "designation": "A2"
+      },
+      "realtime_platform": {
+        "id": "9022050073783002",
+        "designation": "A2"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:57:00",
+      "realtime": "2026-06-26T17:57:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "7",
+        "transport_mode_code": 900,
+        "transport_mode": "TRAM",
+        "direction": "Bergsjön",
+        "origin": {
+          "id": "31880",
+          "name": "Opaltorget"
+        },
+        "destination": {
+          "id": "31756",
+          "name": "Komettorget"
+        }
+      },
+      "trip": {
+        "trip_id": "141010101442197917",
+        "start_date": "2026-06-26",
+        "technical_number": 5797
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Göteborgs Spårvägar Spårvagn"
+      },
+      "stop": {
+        "id": "73783",
+        "name": "Drottningtorget",
+        "lat": 57.707899,
+        "lon": 11.973742
+      },
+      "scheduled_platform": {
+        "id": "9022050073783001",
+        "designation": "A1"
+      },
+      "realtime_platform": {
+        "id": "9022050073783001",
+        "designation": "A1"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:57:00",
+      "realtime": "2026-06-26T17:57:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "X5",
+        "transport_mode_code": 700,
+        "transport_mode": "BUS",
+        "direction": "Frölunda Torg",
+        "origin": {
+          "id": "35222",
+          "name": "Ljungkullen"
+        },
+        "destination": {
+          "id": "38948",
+          "name": "Frölunda Torg"
+        }
+      },
+      "trip": {
+        "trip_id": "141010001440020897",
+        "start_date": "2026-06-26",
+        "technical_number": 215
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Keolis Sverige AB"
+      },
+      "stop": {
+        "id": "73783",
+        "name": "Drottningtorget",
+        "lat": 57.707899,
+        "lon": 11.973742
+      },
+      "scheduled_platform": {
+        "id": "9022050073783008",
+        "designation": "B2"
+      },
+      "realtime_platform": {
+        "id": "9022050073783008",
+        "designation": "B2"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:58:00",
+      "realtime": "2026-06-26T17:58:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "11",
+        "transport_mode_code": 900,
+        "transport_mode": "TRAM",
+        "direction": "Saltholmen",
+        "origin": {
+          "id": "31756",
+          "name": "Komettorget"
+        },
+        "destination": {
+          "id": "1206",
+          "name": "Saltholmen"
+        }
+      },
+      "trip": {
+        "trip_id": "141010301435816832",
+        "start_date": "2026-06-26",
+        "technical_number": 5714
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Göteborgs Spårvägar Spårvagn"
+      },
+      "stop": {
+        "id": "73783",
+        "name": "Drottningtorget",
+        "lat": 57.707899,
+        "lon": 11.973742
+      },
+      "scheduled_platform": {
+        "id": "9022050073783004",
+        "designation": "A4"
+      },
+      "realtime_platform": {
+        "id": "9022050073783004",
+        "designation": "A4"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:58:00",
+      "realtime": "2026-06-26T17:58:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "1",
+        "transport_mode_code": 900,
+        "transport_mode": "TRAM",
+        "direction": "Östra Sjukhuset",
+        "origin": {
+          "id": "31880",
+          "name": "Opaltorget"
+        },
+        "destination": {
+          "id": "38953",
+          "name": "Östra Sjukhuset"
+        }
+      },
+      "trip": {
+        "trip_id": "141010401410350154",
+        "start_date": "2026-06-26",
+        "technical_number": 5803
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Göteborgs Spårvägar Spårvagn"
+      },
+      "stop": {
+        "id": "73783",
+        "name": "Drottningtorget",
+        "lat": 57.707899,
+        "lon": 11.973742
+      },
+      "scheduled_platform": {
+        "id": "9022050073783002",
+        "designation": "A2"
+      },
+      "realtime_platform": {
+        "id": "9022050073783002",
+        "designation": "A2"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:58:00",
+      "realtime": "2026-06-26T17:58:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "21",
+        "transport_mode_code": 700,
+        "transport_mode": "BUS",
+        "direction": "Eketrägatan",
+        "origin": {
+          "id": "38952",
+          "name": "Merkuriusgatan"
+        },
+        "destination": {
+          "id": "38946",
+          "name": "Eketrägatan"
+        }
+      },
+      "trip": {
+        "trip_id": "141010001416778371",
+        "start_date": "2026-06-26",
+        "technical_number": 104
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Transdev Sverige AB"
+      },
+      "stop": {
+        "id": "73783",
+        "name": "Drottningtorget",
+        "lat": 57.707899,
+        "lon": 11.973742
+      },
+      "scheduled_platform": {
+        "id": "9022050073783008",
+        "designation": "B2"
+      },
+      "realtime_platform": {
+        "id": "9022050073783008",
+        "designation": "B2"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:59:00",
+      "realtime": "2026-06-26T17:59:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "9",
+        "transport_mode_code": 900,
+        "transport_mode": "TRAM",
+        "direction": "Angered",
+        "origin": {
+          "id": "1206",
+          "name": "Saltholmen"
+        },
+        "destination": {
+          "id": "31455",
+          "name": "Angered Centrum"
+        }
+      },
+      "trip": {
+        "trip_id": "141010301435816530",
+        "start_date": "2026-06-26",
+        "technical_number": 5789
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Göteborgs Spårvägar Spårvagn"
+      },
+      "stop": {
+        "id": "73783",
+        "name": "Drottningtorget",
+        "lat": 57.707899,
+        "lon": 11.973742
+      },
+      "scheduled_platform": {
+        "id": "9022050073783001",
+        "designation": "A1"
+      },
+      "realtime_platform": {
+        "id": "9022050073783001",
+        "designation": "A1"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T17:59:00",
+      "realtime": "2026-06-26T17:59:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "X6",
+        "transport_mode_code": 700,
+        "transport_mode": "BUS",
+        "direction": "Lilla Varholmen",
+        "origin": {
+          "id": "865",
+          "name": "Landvetter resecentrum"
+        },
+        "destination": {
+          "id": "1205",
+          "name": "Lilla Varholmen"
+        }
+      },
+      "trip": {
+        "trip_id": "141010001441445643",
+        "start_date": "2026-06-26",
+        "technical_number": 167
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Keolis Sverige AB"
+      },
+      "stop": {
+        "id": "73783",
+        "name": "Drottningtorget",
+        "lat": 57.707899,
+        "lon": 11.973742
+      },
+      "scheduled_platform": {
+        "id": "9022050073783008",
+        "designation": "B2"
+      },
+      "realtime_platform": {
+        "id": "9022050073783008",
+        "designation": "B2"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T18:00:00",
+      "realtime": "2026-06-26T18:00:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "1321",
+        "transport_mode_code": 100,
+        "transport_mode": "TRAIN",
+        "direction": "Kungsbacka",
+        "origin": {
+          "id": "2",
+          "name": "Göteborg Centralstation"
+        },
+        "destination": {
+          "id": "161",
+          "name": "Kungsbacka station"
+        }
+      },
+      "trip": {
+        "trip_id": "130000000000011160",
+        "start_date": "2026-06-26",
+        "technical_number": 3123
+      },
+      "agency": {
+        "id": "505000000000000013",
+        "name": "Hallandstrafiken",
+        "operator": "SJ Götalandståg"
+      },
+      "stop": {
+        "id": "2",
+        "name": "Göteborg Centralstation",
+        "lat": 57.709299,
+        "lon": 11.973659
+      },
+      "scheduled_platform": {
+        "id": "9022050000002013",
+        "designation": "5"
+      },
+      "realtime_platform": {
+        "id": "9022050000002013",
+        "designation": "5"
+      },
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T18:00:00",
+      "realtime": "2026-06-26T18:00:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": "Västtågen",
+        "designation": "3123",
+        "transport_mode_code": 106,
+        "transport_mode": "TRAIN",
+        "direction": "Kungsbacka",
+        "origin": {
+          "id": "2",
+          "name": "Göteborg Centralstation"
+        },
+        "destination": {
+          "id": "161",
+          "name": "Kungsbacka station"
+        }
+      },
+      "trip": {
+        "trip_id": "400000000000018691",
+        "start_date": "2026-06-26",
+        "technical_number": 3123
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Västtågen"
+      },
+      "stop": {
+        "id": "2",
+        "name": "Göteborg Centralstation",
+        "lat": 57.709299,
+        "lon": 11.973659
+      },
+      "scheduled_platform": null,
+      "realtime_platform": null,
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T18:00:00",
+      "realtime": "2026-06-26T18:00:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": "Västtågen",
+        "designation": "3272",
+        "transport_mode_code": 106,
+        "transport_mode": "TRAIN",
+        "direction": "Vänersborg central",
+        "origin": {
+          "id": "2",
+          "name": "Göteborg Centralstation"
+        },
+        "destination": {
+          "id": "241",
+          "name": "Vänersborg central"
+        }
+      },
+      "trip": {
+        "trip_id": "400000000000018998",
+        "start_date": "2026-06-26",
+        "technical_number": 3272
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Västtågen"
+      },
+      "stop": {
+        "id": "2",
+        "name": "Göteborg Centralstation",
+        "lat": 57.709299,
+        "lon": 11.973659
+      },
+      "scheduled_platform": null,
+      "realtime_platform": null,
+      "alerts": [],
+      "is_realtime": true
+    },
+    {
+      "scheduled": "2026-06-26T18:00:00",
+      "realtime": "2026-06-26T18:00:00",
+      "delay": 0,
+      "canceled": false,
+      "route": {
+        "name": null,
+        "designation": "17",
+        "transport_mode_code": 700,
+        "transport_mode": "BUS",
+        "direction": "Tuve",
+        "origin": {
+          "id": "32027",
+          "name": "Svingeln"
+        },
+        "destination": {
+          "id": "31689",
+          "name": "Hinnebäcksgatan"
+        }
+      },
+      "trip": {
+        "trip_id": "141010001440238036",
+        "start_date": "2026-06-26",
+        "technical_number": 214
+      },
+      "agency": {
+        "id": "505000000000000014",
+        "name": "Västtrafik",
+        "operator": "Keolis Sverige AB"
+      },
+      "stop": {
+        "id": "73783",
+        "name": "Drottningtorget",
+        "lat": 57.707899,
+        "lon": 11.973742
+      },
+      "scheduled_platform": {
+        "id": "9022050073783008",
+        "designation": "B2"
+      },
+      "realtime_platform": {
+        "id": "9022050073783008",
+        "designation": "B2"
+      },
+      "alerts": [],
+      "is_realtime": true
+    }
+  ]
+}
