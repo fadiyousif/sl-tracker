@@ -135,7 +135,7 @@ export function getHeatmap(_line) {
 
   // build an array of hours from 6 to 22
   const hours = []
-  for (let i = 6; i <= 22; i++) {
+  for (let i = 6; i <= 21; i++) {
     hours.push(i)
   }
 

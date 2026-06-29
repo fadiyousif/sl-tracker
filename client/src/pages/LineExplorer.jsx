@@ -5,7 +5,7 @@ import { fetchReliability, fetchHeatmap } from '../api'
 const DAY_NAMES = { 1: 'Mon', 2: 'Tue', 3: 'Wed', 4: 'Thu', 5: 'Fri' }
 const DAYS = [1, 2, 3, 4, 5]
 const HOURS = []
-for (let i = 6; i <= 22; i++) {
+for (let i = 6; i <= 21; i++) {
   HOURS.push(i)
 }
 
