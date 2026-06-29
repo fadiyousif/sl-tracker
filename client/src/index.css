@@ -77,6 +77,11 @@
   margin: 0;
 }
 
+.nav a {
+  color: inherit;
+  text-decoration: none;
+}
+
 .nav-links {
   display: flex;
   gap: 1.25rem;
