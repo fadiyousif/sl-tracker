@@ -1,36 +1,14 @@
 import cron from 'node-cron'
 import db from './db.js'
 import { STOPS } from './mock.js'
-
-const BASE = 'https://realtime-api.trafiklab.se/v1'
-
-
-async function fetchDepartures(stopId) {
-  const url = `${BASE}/departures/${stopId}?key=${process.env.TRAFIKLAB_API_KEY}`
-  const res = await fetch(url)
-  if (!res.ok) throw new Error(`HTTP ${res.status}`)
-  return res.json()
-}
-
-function toRecords(stopId, data) {
-  if (!data.departures?.length) return [];
-  return data.departures.map(dep => ({
-      stop_area_id:   stopId,
-      line:           dep.route.designation,
-      transport_mode: dep.route.transport_mode,
-      destination:    dep.route.direction,
-      scheduled:      dep.scheduled,
-      delay_seconds:  dep.delay,
-      canceled:       dep.canceled,
-    }))
-}
+import { fetchDepartures, parseDepartures } from './trafiklab.js'
 
 async function poll() {
   const ts = new Date().toISOString()
   for (const stop of STOPS) {
     try {
       const data = await fetchDepartures(stop.id)
-      const records = toRecords(stop.id, data)
+      const records = parseDepartures(stop.id, data)
       if (records.length === 0) continue;
       // upsert instead of insert to avoid duplicates across polls —
       // if the same departure already exists, update its delay and canceled status
