@@ -7,6 +7,10 @@
     <title>SL Tracker</title>
   </head>
   <body>
+    <script>
+      const t = localStorage.getItem('theme') || 'light'
+      document.documentElement.dataset.theme = t
+    </script>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>

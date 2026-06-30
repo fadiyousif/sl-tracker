@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { fetchStops, fetchDepartures, fetchReliability, fetchLines } from '../api'
+import ThemeToggle from '../components/ThemeToggle'
 
 function scoreColor(score) {
   if (score >= 90) return 'var(--green)'
@@ -80,6 +81,7 @@ export default function MyCommute() {
         <div className="nav-links">
           <span className="nav-active">My Commute</span>
           <Link to={`/lines/${line}`}>Line {line} Explorer</Link>
+          <ThemeToggle />
         </div>
       </nav>
 

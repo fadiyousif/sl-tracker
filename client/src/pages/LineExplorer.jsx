@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { useParams, Link } from 'react-router-dom'
 import { fetchReliability, fetchHeatmap } from '../api'
+import ThemeToggle from '../components/ThemeToggle'
 
 const DAY_NAMES = { 1: 'Mon', 2: 'Tue', 3: 'Wed', 4: 'Thu', 5: 'Fri' }
 const DAYS = [1, 2, 3, 4, 5]
@@ -78,6 +79,7 @@ export default function LineExplorer() {
         <div className="nav-links">
           <Link to="/">My Commute</Link>
           <span className="nav-active">Line {line} Explorer</span>
+          <ThemeToggle />
         </div>
       </nav>
 

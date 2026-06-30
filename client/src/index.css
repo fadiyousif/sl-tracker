@@ -1,19 +1,15 @@
 :root {
-  /* layout */
-  --bg: #0f1117;
-  --surface: #1a1f2e;
-  --border: #2d3348;
-  --text: #e2e8f0;
-  --muted: #8b95a8;
-
-  /* nav */
-  --nav-bg: #111827;
+  /* light theme (default) */
+  --bg: #f1f5f9;
+  --surface: #ffffff;
+  --border: #e2e8f0;
+  --text: #1e293b;
+  --muted: #64748b;
+  --nav-bg: #1e293b;
   --nav-link: rgba(255, 255, 255, 0.8);
-
-  /* warning banner */
-  --warning-bg: #422006;
-  --warning-border: #92400e;
-  --warning-text: #fde68a;
+  --warning-bg: #fef3c7;
+  --warning-border: #d97706;
+  --warning-text: #92400e;
 
   /* semantic status colors */
   --green: #16a34a;
@@ -31,6 +27,18 @@
   font: 15px/1.6 system-ui, -apple-system, sans-serif;
   color: var(--text);
   background: var(--bg);
+}
+
+[data-theme="dark"] {
+  --bg: #0f1117;
+  --surface: #1a1f2e;
+  --border: #2d3348;
+  --text: #e2e8f0;
+  --muted: #8b95a8;
+  --nav-bg: #111827;
+  --warning-bg: #422006;
+  --warning-border: #92400e;
+  --warning-text: #fde68a;
 }
 
 * {
@@ -101,6 +109,25 @@
   color: white;
   font-weight: 600;
 }
+
+.theme-toggle {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 0.25rem;
+  display: flex;
+  align-items: center;
+  transition: color 0.2s;
+}
+
+.theme-toggle svg {
+  width: 20px;
+  height: 20px;
+}
+
+.theme-toggle[data-mode="dark"]:hover  { color: #fbbf24; } /* sun → yellow */
+.theme-toggle[data-mode="light"]:hover { color: #818cf8; } /* moon → indigo */
 
 /* ── Cards ── */
 
