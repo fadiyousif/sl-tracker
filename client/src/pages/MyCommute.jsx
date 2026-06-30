@@ -151,6 +151,7 @@ export default function MyCommute() {
               <tbody>
                 {departures.map((d, i) => {
                   const status = delayStatus(d.delay_seconds, d.canceled)
+                  const mins = minutesAway(d.scheduled)
                   return (
                     <tr key={i} className={d.canceled ? 'row-canceled' : ''}>
                       <td>
@@ -163,7 +164,7 @@ export default function MyCommute() {
                         </Link>
                       </td>
                       <td className={d.canceled ? 'text-canceled' : ''}>{d.destination}</td>
-                      <td className="muted">{minutesAway(d.scheduled)} min</td>
+                      <td className="muted">{mins === 0 ? 'Now' : `${mins} min`}</td>
                       <td style={{ color: status.color, fontWeight: 600 }}>{status.label}</td>
                     </tr>
                   )
