@@ -1,6 +1,6 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import MyCommute from './pages/MyCommute'
-import LineExplorer from './pages/LineExplorer'
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import MyCommute from './pages/MyCommute';
+import LineExplorer from './pages/LineExplorer';
 
 export default function App() {
   return (
@@ -10,5 +10,5 @@ export default function App() {
         <Route path="/lines/:line" element={<LineExplorer />} />
       </Routes>
     </BrowserRouter>
-  )
+  );
 }

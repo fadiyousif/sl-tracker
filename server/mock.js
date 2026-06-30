@@ -5,7 +5,7 @@ export const STOPS = [
   { id: '740021661', name: 'Fridhemsplan T-bana' },
   { id: '740021653', name: 'Gamla Stan T-bana' },
   { id: '740037355', name: 'Kungsträdgården' },
-]
+];
 
 const TEMPLATES = {
   '740020749': [
@@ -18,22 +18,22 @@ const TEMPLATES = {
     { line: '13', transport_mode: 'METRO', destination: 'Norsborg',      offset: 14, delay_seconds: 60,  canceled: false },
   ],
   '740020101': [
-    { line: '17', transport_mode: 'METRO', destination: 'Åkeshov',       offset: 2,  delay_seconds: 0,   canceled: false },
-    { line: '18', transport_mode: 'METRO', destination: 'Hässelby Strand', offset: 4, delay_seconds: 90, canceled: false },
-    { line: '19', transport_mode: 'METRO', destination: 'Hässelby Strand', offset: 5, delay_seconds: 0,  canceled: false },
-    { line: '53', transport_mode: 'BUS',   destination: 'Hornstull',     offset: 7,  delay_seconds: 180, canceled: false },
-    { line: '17', transport_mode: 'METRO', destination: 'Åkeshov',       offset: 9,  delay_seconds: 0,   canceled: true  },
-    { line: '55', transport_mode: 'BUS',   destination: 'Sergels Torg',  offset: 11, delay_seconds: 30,  canceled: false },
-    { line: '18', transport_mode: 'METRO', destination: 'Hässelby Strand', offset: 14, delay_seconds: 0, canceled: false },
+    { line: '17', transport_mode: 'METRO', destination: 'Åkeshov',         offset: 2,  delay_seconds: 0,   canceled: false },
+    { line: '18', transport_mode: 'METRO', destination: 'Hässelby Strand', offset: 4,  delay_seconds: 90,  canceled: false },
+    { line: '19', transport_mode: 'METRO', destination: 'Hässelby Strand', offset: 5,  delay_seconds: 0,   canceled: false },
+    { line: '53', transport_mode: 'BUS',   destination: 'Hornstull',        offset: 7,  delay_seconds: 180, canceled: false },
+    { line: '17', transport_mode: 'METRO', destination: 'Åkeshov',         offset: 9,  delay_seconds: 0,   canceled: true  },
+    { line: '55', transport_mode: 'BUS',   destination: 'Sergels Torg',    offset: 11, delay_seconds: 30,  canceled: false },
+    { line: '18', transport_mode: 'METRO', destination: 'Hässelby Strand', offset: 14, delay_seconds: 0,   canceled: false },
   ],
   '740098559': [
-    { line: '17', transport_mode: 'METRO', destination: 'Skarpnäck',     offset: 2,  delay_seconds: 0,   canceled: false },
-    { line: '18', transport_mode: 'METRO', destination: 'Farsta Strand',  offset: 4,  delay_seconds: 0,   canceled: false },
-    { line: '40', transport_mode: 'TRAIN', destination: 'Märsta',         offset: 5,  delay_seconds: 240, canceled: false },
-    { line: '41', transport_mode: 'TRAIN', destination: 'Södertälje C',   offset: 8,  delay_seconds: 0,   canceled: false },
-    { line: '17', transport_mode: 'METRO', destination: 'Skarpnäck',     offset: 10, delay_seconds: 0,   canceled: true  },
-    { line: '43', transport_mode: 'BUS',   destination: 'Fridhemsplan',  offset: 12, delay_seconds: 60,  canceled: false },
-    { line: '40', transport_mode: 'TRAIN', destination: 'Märsta',         offset: 15, delay_seconds: 0,   canceled: false },
+    { line: '17', transport_mode: 'METRO', destination: 'Skarpnäck',    offset: 2,  delay_seconds: 0,   canceled: false },
+    { line: '18', transport_mode: 'METRO', destination: 'Farsta Strand', offset: 4,  delay_seconds: 0,   canceled: false },
+    { line: '40', transport_mode: 'TRAIN', destination: 'Märsta',        offset: 5,  delay_seconds: 240, canceled: false },
+    { line: '41', transport_mode: 'TRAIN', destination: 'Södertälje C',  offset: 8,  delay_seconds: 0,   canceled: false },
+    { line: '17', transport_mode: 'METRO', destination: 'Skarpnäck',    offset: 10, delay_seconds: 0,   canceled: true  },
+    { line: '43', transport_mode: 'BUS',   destination: 'Fridhemsplan', offset: 12, delay_seconds: 60,  canceled: false },
+    { line: '40', transport_mode: 'TRAIN', destination: 'Märsta',        offset: 15, delay_seconds: 0,   canceled: false },
   ],
   '740021661': [
     { line: '10', transport_mode: 'METRO', destination: 'Kungsträdgården', offset: 2,  delay_seconds: 0,   canceled: false },
@@ -45,13 +45,13 @@ const TEMPLATES = {
     { line: '1',  transport_mode: 'BUS',   destination: 'Stora Essingen',  offset: 15, delay_seconds: 0,   canceled: false },
   ],
   '740021653': [
-    { line: '13', transport_mode: 'METRO', destination: 'Rope',           offset: 2,  delay_seconds: 0,   canceled: false },
-    { line: '14', transport_mode: 'METRO', destination: 'Mörby Centrum',  offset: 3,  delay_seconds: 0,   canceled: false },
-    { line: '17', transport_mode: 'METRO', destination: 'Åkeshov',        offset: 6,  delay_seconds: 200, canceled: false },
-    { line: '18', transport_mode: 'METRO', destination: 'Hässelby Strand', offset: 8, delay_seconds: 0,   canceled: false },
-    { line: '13', transport_mode: 'METRO', destination: 'Norsborg',       offset: 10, delay_seconds: 0,   canceled: true  },
-    { line: '19', transport_mode: 'METRO', destination: 'Hässelby Strand', offset: 12, delay_seconds: 60, canceled: false },
-    { line: '14', transport_mode: 'METRO', destination: 'Fruängen',       offset: 15, delay_seconds: 0,   canceled: false },
+    { line: '13', transport_mode: 'METRO', destination: 'Rope',            offset: 2,  delay_seconds: 0,   canceled: false },
+    { line: '14', transport_mode: 'METRO', destination: 'Mörby Centrum',   offset: 3,  delay_seconds: 0,   canceled: false },
+    { line: '17', transport_mode: 'METRO', destination: 'Åkeshov',         offset: 6,  delay_seconds: 200, canceled: false },
+    { line: '18', transport_mode: 'METRO', destination: 'Hässelby Strand', offset: 8,  delay_seconds: 0,   canceled: false },
+    { line: '13', transport_mode: 'METRO', destination: 'Norsborg',        offset: 10, delay_seconds: 0,   canceled: true  },
+    { line: '19', transport_mode: 'METRO', destination: 'Hässelby Strand', offset: 12, delay_seconds: 60,  canceled: false },
+    { line: '14', transport_mode: 'METRO', destination: 'Fruängen',        offset: 15, delay_seconds: 0,   canceled: false },
   ],
   '740037355': [
     { line: '7',  transport_mode: 'TRAM', destination: 'Djurgårdslinjen', offset: 2,  delay_seconds: 0,   canceled: false },
@@ -62,21 +62,21 @@ const TEMPLATES = {
     { line: '76', transport_mode: 'BUS',  destination: 'Ropsten',         offset: 13, delay_seconds: 0,   canceled: true  },
     { line: '62', transport_mode: 'BUS',  destination: 'Lidingö',         offset: 16, delay_seconds: 0,   canceled: false },
   ],
-}
+};
 
 // offset is minutes from now — keeps mock departures always in the future
 const DEFAULT_TEMPLATE = [
-  { line: '13', transport_mode: 'METRO', destination: 'Norsborg',       offset: 2,  delay_seconds: 0,   canceled: false },
-  { line: '17', transport_mode: 'METRO', destination: 'Skarpnäck',      offset: 4,  delay_seconds: 60,  canceled: false },
-  { line: '40', transport_mode: 'TRAIN', destination: 'Märsta',          offset: 6,  delay_seconds: 0,   canceled: false },
+  { line: '13', transport_mode: 'METRO', destination: 'Norsborg',        offset: 2,  delay_seconds: 0,   canceled: false },
+  { line: '17', transport_mode: 'METRO', destination: 'Skarpnäck',       offset: 4,  delay_seconds: 60,  canceled: false },
+  { line: '40', transport_mode: 'TRAIN', destination: 'Märsta',           offset: 6,  delay_seconds: 0,   canceled: false },
   { line: '7',  transport_mode: 'TRAM',  destination: 'Djurgårdslinjen', offset: 8,  delay_seconds: 0,   canceled: true  },
-  { line: '55', transport_mode: 'BUS',   destination: 'Sergels Torg',   offset: 10, delay_seconds: 120, canceled: false },
-  { line: '14', transport_mode: 'METRO', destination: 'Fruängen',       offset: 14, delay_seconds: 0,   canceled: false },
-]
+  { line: '55', transport_mode: 'BUS',   destination: 'Sergels Torg',    offset: 10, delay_seconds: 120, canceled: false },
+  { line: '14', transport_mode: 'METRO', destination: 'Fruängen',        offset: 14, delay_seconds: 0,   canceled: false },
+];
 
 export function getDepartures(areaId) {
-  const now = new Date()
-  const templates = TEMPLATES[areaId] || DEFAULT_TEMPLATE
+  const now = new Date();
+  const templates = TEMPLATES[areaId] || DEFAULT_TEMPLATE;
   return templates.map(t => ({
     stop_area_id: areaId,
     line: t.line,
@@ -86,7 +86,7 @@ export function getDepartures(areaId) {
     scheduled: new Date(now.getTime() + t.offset * 60_000).toISOString(),
     delay_seconds: t.delay_seconds,
     canceled: t.canceled,
-  }))
+  }));
 }
 
 // pre-computed reliability stats per line — in production these come from aggregating the departures table
@@ -110,38 +110,38 @@ const RELIABILITY = {
   '55': { score: 76, total: 1100, on_time: 836 },
   '62': { score: 90, total: 640,  on_time: 576 },
   '76': { score: 83, total: 720,  on_time: 598 },
-}
+};
 
 export function getLines() {
-  return Object.keys(RELIABILITY).sort((a, b) => Number(a) - Number(b))
+  return Object.keys(RELIABILITY).sort((a, b) => Number(a) - Number(b));
 }
 
 export function getReliability(line) {
-  return RELIABILITY[line] ?? null
+  return RELIABILITY[line] ?? null;
 }
 
 // returns a fake but realistic avg delay in seconds for a given day and hour
 // the % operator adds variation between cells so they don't all look identical
 function heatDelay(day, hour) {
-  if (hour >= 7 && hour <= 9)   return 90  + (day * 3 + hour * 7) % 60  // morning rush: high delays
-  if (hour >= 16 && hour <= 18) return 110 + (day * 5 + hour * 4) % 70  // evening rush: highest delays
-  if (hour <= 7 || hour >= 21)  return 10  + (day + hour) % 15           // quiet hours: low delays
-  return 25 + (day * 2 + hour * 3) % 35                                  // off-peak: moderate delays
+  if (hour >= 7 && hour <= 9)   return 90  + (day * 3 + hour * 7) % 60;  // morning rush: high delays
+  if (hour >= 16 && hour <= 18) return 110 + (day * 5 + hour * 4) % 70;  // evening rush: highest delays
+  if (hour <= 7 || hour >= 21)  return 10  + (day + hour) % 15;           // quiet hours: low delays
+  return 25 + (day * 2 + hour * 3) % 35;                                  // off-peak: moderate delays
 }
 
 export function getHeatmap(_line) {
   // 1 = Monday, 2 = Tuesday, ..., 5 = Friday
-  const days = [1, 2, 3, 4, 5]
+  const days = [1, 2, 3, 4, 5];
 
-  // build an array of hours from 6 to 22
-  const hours = []
+  // build an array of hours from 6 to 21
+  const hours = [];
   for (let i = 6; i <= 21; i++) {
-    hours.push(i)
+    hours.push(i);
   }
 
   // for each day, loop over every hour and produce one object
   // flatMap flattens the result so we get a single array of 80 objects instead of an array of arrays
   return days.flatMap(day =>
     hours.map(hour => ({ day, hour, avg_delay: heatDelay(day, hour) }))
-  )
+  );
 }
