@@ -119,9 +119,9 @@ export default function LineExplorer() {
               {generateHeatmapCells()}
             </div>
             <div className="heatmap-legend">
-              <span style={{ color: delayColor(0) }}>On time</span>
+              <span className="legend-green">On time</span>
               <div className="legend-bar" />
-              <span style={{ color: delayColor(360) }}>+6 min late</span>
+              <span className="legend-red">+6 min late</span>
             </div>
           </section>
         )}
