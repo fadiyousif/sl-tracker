@@ -3,7 +3,8 @@ import { useParams, Link } from 'react-router-dom';
 import { fetchReliability, fetchHeatmap } from '../api';
 import ThemeToggle from '../components/ThemeToggle';
 
-const DAY_NAMES = { 1: 'Mon', 2: 'Tue', 3: 'Wed', 4: 'Thu', 5: 'Fri' };
+const DAY_NAMES  = { 1: 'Monday', 2: 'Tuesday', 3: 'Wednesday', 4: 'Thursday', 5: 'Friday' };
+const DAY_NAMES_ABBREVIATED  = { 1: 'Mon',    2: 'Tue',     3: 'Wed',       4: 'Thu',      5: 'Fri'    };
 const DAYS = [1, 2, 3, 4, 5];
 const HOURS = [];
 for (let i = 6; i <= 21; i++) {
@@ -114,7 +115,12 @@ export default function LineExplorer() {
             <p className="muted" style={{ marginBottom: '1rem' }}>Average delay in seconds by hour and day</p>
             <div className="heatmap-grid">
               <div></div>
-              {DAYS.map(d => <div key={d} className="hm-day">{DAY_NAMES[d]}</div>)}
+              {DAYS.map(d => (
+                <div key={d} className="hm-day">
+                  <span className="hm-day-short">{DAY_NAMES_ABBREVIATED[d]}</span>
+                  <span className="hm-day-long">{DAY_NAMES[d]}</span>
+                </div>
+              ))}
               {generateHeatmapCells()}
             </div>
             <div className="heatmap-legend">
