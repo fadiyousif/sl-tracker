@@ -87,7 +87,7 @@ export default function MyCommute() {
 
       <main className="main">
         <section className="card">
-          <h2>Saved Route</h2>
+          <h2>Your Route</h2>
           <div className="selectors">
             <label>
               Line
