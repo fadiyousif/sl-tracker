@@ -129,25 +129,23 @@ function heatDelay(day, hour) {
   return 25 + (day * 2 + hour * 3) % 35;                                  // off-peak: moderate delays
 }
 
-function isoWeek(date) {
-  const d = new Date(Date.UTC(date.getFullYear(), date.getMonth(), date.getDate()));
-  const day = d.getUTCDay() || 7;
-  d.setUTCDate(d.getUTCDate() + 4 - day);
-  const yearStart = new Date(Date.UTC(d.getUTCFullYear(), 0, 1));
-  const week = Math.ceil((((d - yearStart) / 86400000) + 1) / 7);
-  return `${d.getUTCFullYear()}-W${String(week).padStart(2, '0')}`;
-}
-
 export function getTrend(line) {
   const base = RELIABILITY[line]?.score ?? 80;
   const now = new Date();
   const result = [];
-  for (let i = 11; i >= 0; i--) {
-    const date = new Date(now.getTime() - i * 7 * 24 * 60 * 60 * 1000);
-    const week = isoWeek(date);
-    const variation = Math.round(Math.sin(i * 0.9) * 6 + (i % 4) * 2 - 4);
-    const score = Math.min(99, Math.max(50, base + variation));
-    result.push({ week, score, total: 200 + i * 8 });
+  // walk backwards one calendar day at a time until we have 7 weekday entries —
+  // a fixed 7-day window would yield only 5 weekdays whenever it spans a weekend
+  let daysBack = 1;
+  while (result.length < 7) {
+    const date = new Date(now.getTime() - daysBack * 24 * 60 * 60 * 1000);
+    const dayOfWeek = date.getDay();
+    if (dayOfWeek >= 1 && dayOfWeek <= 5) {
+      const day = date.toISOString().slice(0, 10);
+      const variation = Math.round(Math.sin(daysBack * 1.2) * 8 + (daysBack % 3) * 3 - 5);
+      const score = Math.min(99, Math.max(50, base + variation));
+      result.unshift({ day, score, total: 30 + daysBack * 4 }); // unshift to keep chronological order while walking backwards
+    }
+    daysBack++;
   }
   return result;
 }

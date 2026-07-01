@@ -1,8 +1,52 @@
 import { useState } from 'react';
 
-export default function TrendChart({ data }) {
-  if (!data || data.length < 2) return <p className="muted">Not enough data yet.</p>;
+const DAY_NAMES = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 
+function dayName(dateStr) {
+  const d = new Date(dateStr);
+  return DAY_NAMES[d.getDay()];
+}
+
+function dayDate(dateStr) {
+  const d = new Date(dateStr);
+  return `${d.getDate()}/${d.getMonth() + 1}`;
+}
+
+function dayLabel(dateStr) {
+  return `${dayName(dateStr)} ${dayDate(dateStr)}`;
+}
+
+function scoreColor(score) {
+  if (score >= 90) return 'var(--green)';
+  if (score >= 80) return 'var(--yellow)';
+  if (score >= 70) return 'var(--orange)';
+  return 'var(--red)';
+}
+
+function TrendTable({ data }) {
+  return (
+    <table className="dep-table">
+      <thead>
+        <tr>
+          <th>Day</th>
+          <th>On-time</th>
+          <th>Departures</th>
+        </tr>
+      </thead>
+      <tbody>
+        {[...data].reverse().map(d => (
+          <tr key={d.day}>
+            <td className="muted">{dayLabel(d.day)}</td>
+            <td style={{ color: scoreColor(d.score), fontWeight: 600 }}>{d.score}%</td>
+            <td className="muted">{d.total.toLocaleString()}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  );
+}
+
+function TrendLineChart({ data }) {
   const [hovered, setHovered] = useState(null);
 
   const scores = data.map(d => d.score);
@@ -11,11 +55,11 @@ export default function TrendChart({ data }) {
   const range = maxScore - minScore;
 
   const W = 500;
-  const H = 120;
+  const H = 135;
   const padL = 8;
   const padR = 8;
   const padT = 10;
-  const padB = 28;
+  const padB = 52;
   const innerW = W - padL - padR;
   const innerH = H - padT - padB;
 
@@ -34,8 +78,6 @@ export default function TrendChart({ data }) {
         <g key={i}
           onMouseEnter={() => setHovered(i)}
           onMouseLeave={() => setHovered(null)}
-          onTouchStart={(e) => { e.preventDefault(); setHovered(i); }}
-          onTouchEnd={() => setHovered(null)}
         >
           <circle cx={cx(i)} cy={cy(d.score)} r="16" fill="transparent" />
           <circle
@@ -43,15 +85,13 @@ export default function TrendChart({ data }) {
             cy={cy(d.score)}
             r={hovered === i ? 7 : 4}
             fill={hovered === i ? '#2563eb' : '#3b82f6'}
-            className="trend-dot"
           />
         </g>
       ))}
       {hovered !== null && (() => {
         const x = cx(hovered);
         const y = cy(data[hovered].score);
-        const label = `W${data[hovered].week.split('-W')[1]} · ${data[hovered].score}%`;
-        const rectW = 80;
+        const rectW = 72;
         const rectH = 24;
         const rectX = Math.min(Math.max(x - rectW / 2, padL), W - padR - rectW);
         const rectY = y - 42 < padT ? y + 14 : y - 42;
@@ -59,17 +99,29 @@ export default function TrendChart({ data }) {
           <>
             <rect x={rectX} y={rectY} width={rectW} height={rectH} rx="5" fill="var(--surface)" stroke="var(--border)" strokeWidth="1" />
             <text x={rectX + rectW / 2} y={rectY + 16} textAnchor="middle" fontSize="12">
-              <tspan fill="var(--muted)" fontWeight="400">{`W${data[hovered].week.split('-W')[1]} · `}</tspan>
+              <tspan fill="var(--muted)" fontWeight="400">{`${dayDate(data[hovered].day)} · `}</tspan>
               <tspan fill="#3b82f6" fontWeight="700">{`${data[hovered].score}%`}</tspan>
             </text>
           </>
         );
       })()}
-      {data.map((d, i) => (i === 0 || i === data.length - 1 || i % 2 === 0) && (
-        <text key={i} x={cx(i)} y={H - 6} textAnchor="middle" fontSize="11" fill="var(--muted)">
-          {`W${d.week.split('-W')[1]}`}
+      {data.map((d, i) => (
+        <text key={i} x={cx(i)} textAnchor="middle" fontSize="11" fill="var(--muted)">
+          <tspan x={cx(i)} y={H - padB + 16}>{dayName(d.day)}</tspan>
+          <tspan x={cx(i)} y={H - padB + 29}>{dayDate(d.day)}</tspan>
         </text>
       ))}
     </svg>
+  );
+}
+
+export default function TrendChart({ data }) {
+  if (!data || data.length < 2) return <p className="muted">Not enough data yet.</p>;
+
+  return (
+    <>
+      <div className="trend-mobile"><TrendTable data={data} /></div>
+      <div className="trend-desktop"><TrendLineChart data={data} /></div>
+    </>
   );
 }

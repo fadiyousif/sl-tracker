@@ -30,15 +30,6 @@ function ninetyDaysAgo() {
   return new Date(Date.now() - 90 * 24 * 60 * 60 * 1000).toISOString();
 }
 
-function isoWeek(date) {
-  const d = new Date(Date.UTC(date.getFullYear(), date.getMonth(), date.getDate()));
-  const day = d.getUTCDay() || 7;
-  d.setUTCDate(d.getUTCDate() + 4 - day);
-  const yearStart = new Date(Date.UTC(d.getUTCFullYear(), 0, 1));
-  const week = Math.ceil((((d - yearStart) / 86400000) + 1) / 7);
-  return `${d.getUTCFullYear()}-W${String(week).padStart(2, '0')}`;
-}
-
 async function computeReliability(line) {
   const cutoff = ninetyDaysAgo();
   const { data, error } = await db
@@ -86,25 +77,29 @@ async function buildHeatmap(line) {
 }
 
 async function buildTrend(line) {
-  const cutoff = new Date(Date.now() - 12 * 7 * 24 * 60 * 60 * 1000).toISOString();
+  const cutoff = new Date(Date.now() - 11 * 24 * 60 * 60 * 1000).toISOString();
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
   const { data, error } = await db
     .from('departures')
     .select('scheduled, delay_seconds')
     .eq('line', line)
     .eq('canceled', false)
-    .gte('scheduled', cutoff);
+    .gte('scheduled', cutoff)
+    .lt('scheduled', today.toISOString());
   if (error) throw error;
-  const byWeek = {};
+  const byDay = {};
   for (const dep of data) {
-    const week = isoWeek(new Date(dep.scheduled));
-    if (!byWeek[week]) byWeek[week] = { on_time: 0, total: 0 };
-    byWeek[week].total++;
-    if (dep.delay_seconds < 120) byWeek[week].on_time++;
+    const day = new Date(dep.scheduled).toISOString().slice(0, 10);
+    if (!byDay[day]) byDay[day] = { on_time: 0, total: 0 };
+    byDay[day].total++;
+    if (dep.delay_seconds < 120) byDay[day].on_time++;
   }
-  return Object.entries(byWeek)
+  return Object.entries(byDay)
+    .filter(([day]) => { const dayOfWeek = new Date(day).getDay(); return dayOfWeek >= 1 && dayOfWeek <= 5; })
     .sort(([a], [b]) => a.localeCompare(b))
-    .map(([week, { on_time, total }]) => ({
-      week,
+    .map(([day, { on_time, total }]) => ({
+      day,
       score: Math.round((on_time / total) * 100),
       total,
     }));
@@ -155,7 +150,7 @@ app.get('/api/reliability/:line/trend', async (req, res) => {
   const hit = getCached(key, 5 * 60_000);
   if (hit) return res.json(hit);
   try {
-    const data = mock.getTrend(line); // TODO: replace with buildTrend(line) once 12 weeks of data is collected
+    const data = IS_DEV ? mock.getTrend(line) : await buildTrend(line);
     setCached(key, data);
     res.json(data);
   } catch (err) {

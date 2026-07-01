@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { fetchReliability, fetchLines, fetchTrend } from '../api';
+import { fetchReliability, fetchLines, fetchTrend, fetchHeatmap } from '../api';
 import ThemeToggle from '../components/ThemeToggle';
 import TrendChart from '../components/TrendChart';
 
@@ -23,11 +23,28 @@ function morningRecommendation(reliability) {
   return null;
 }
 
+// averages delay across all weekdays per hour, returns the hour with the highest average
+function worstHour(heatmap) {
+  const byHour = {};
+  for (const slot of heatmap) {
+    if (!byHour[slot.hour]) byHour[slot.hour] = { total: 0, count: 0 };
+    byHour[slot.hour].total += slot.avg_delay;
+    byHour[slot.hour].count++;
+  }
+  let worst = null;
+  for (const [hour, { total, count }] of Object.entries(byHour)) {
+    const avg = total / count;
+    if (!worst || avg > worst.avg) worst = { hour: Number(hour), avg };
+  }
+  return worst?.hour ?? null;
+}
+
 export default function MyCommute() {
   const [line, setLine] = useState(() => localStorage.getItem('savedLine') || '13');
   const [lines, setLines] = useState([]);
   const [reliability, setReliability] = useState(null);
   const [trend, setTrend] = useState([]);
+  const [heatmap, setHeatmap] = useState([]);
 
   useEffect(() => {
     fetchLines().then(data => data && setLines(data));
@@ -37,11 +54,14 @@ export default function MyCommute() {
     localStorage.setItem('savedLine', line);
     setReliability(null);
     setTrend([]);
+    setHeatmap([]);
     fetchReliability(line).then(setReliability);
     fetchTrend(line).then(data => data && setTrend(data));
+    fetchHeatmap(line).then(data => data && setHeatmap(data));
   }, [line]);
 
   const rec = reliability ? morningRecommendation(reliability) : null;
+  const worst = heatmap.length > 0 ? worstHour(heatmap) : null;
 
   return (
     <div className="page">
@@ -84,6 +104,11 @@ export default function MyCommute() {
             {reliability.warning && (
               <div className="warning">⚠️ {reliability.warning}</div>
             )}
+            {worst !== null && (
+              <p className="muted" style={{ marginTop: '0.75rem', fontSize: '0.875rem' }}>
+                Historically, Line {line} is most delayed at {worst}:00 on weekdays.
+              </p>
+            )}
           </section>
         )}
 
@@ -100,7 +125,7 @@ export default function MyCommute() {
         {trend.length > 0 && (
           <section className="card">
             <h2>Reliability Trend</h2>
-            <p className="muted" style={{ marginBottom: '1rem' }}>On-time percentage by week (last 12 weeks)</p>
+            <p className="muted" style={{ marginBottom: '1rem' }}>On-time percentage by day (last 7 weekdays)</p>
             <TrendChart data={trend} />
           </section>
         )}

@@ -116,7 +116,7 @@ export default function LineExplorer() {
         {trend.length > 0 && (
           <section className="card">
             <h2>Reliability Trend</h2>
-            <p className="muted" style={{ marginBottom: '1rem' }}>On-time percentage by week (last 12 weeks)</p>
+            <p className="muted" style={{ marginBottom: '1rem' }}>On-time percentage by day (last 7 weekdays)</p>
             <TrendChart data={trend} />
           </section>
         )}

@@ -372,14 +372,12 @@
 
 /* ── Trend chart ── */
 
-.trend-dot {
-  cursor: pointer;
-  transition: r 0.15s ease;
-}
+.trend-desktop { display: none; }
+.trend-mobile  { display: block; }
 
-.trend-dot:hover {
-  r: 7;
-  fill: #2563eb;
+@media (min-width: 768px) {
+  .trend-desktop { display: block; }
+  .trend-mobile  { display: none; }
 }
 
 /* ── Footer ── */
