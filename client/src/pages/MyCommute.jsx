@@ -1,33 +1,14 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { fetchStops, fetchDepartures, fetchReliability, fetchLines } from '../api';
+import { fetchReliability, fetchLines, fetchTrend } from '../api';
 import ThemeToggle from '../components/ThemeToggle';
+import TrendChart from '../components/TrendChart';
 
 function scoreColor(score) {
   if (score >= 90) return 'var(--green)';
   if (score >= 80) return 'var(--yellow)';
   if (score >= 70) return 'var(--orange)';
   return 'var(--red)';
-}
-
-function modeColor(mode) {
-  const colors = { TRAM: 'var(--tram)', BUS: 'var(--bus)', TRAIN: 'var(--train)', FERRY: 'var(--ferry)' };
-  return colors[mode] || 'var(--gray)';
-}
-
-// returns how many minutes until the scheduled departure, clamped to 0 if it's already passed
-function minutesAway(scheduled) {
-  return Math.max(0, Math.round((new Date(scheduled) - new Date()) / 60_000));
-}
-
-// returns a label and color for the status cell in the departures table
-// 120s threshold matches the reliability score definition (< 2 min late = on time)
-function delayStatus(delay_seconds, canceled) {
-  if (canceled) return { label: 'Cancelled', color: 'var(--gray)' };
-  if (delay_seconds === 0) return { label: 'On time', color: 'var(--green)' };
-  const label = delay_seconds < 60 ? `+${delay_seconds}s` : `+${Math.round(delay_seconds / 60)}m`;
-  const color = delay_seconds < 120 ? 'var(--yellow)' : 'var(--red)';
-  return { label, color };
 }
 
 function morningRecommendation(reliability) {
@@ -44,33 +25,21 @@ function morningRecommendation(reliability) {
 
 export default function MyCommute() {
   const [line, setLine] = useState(() => localStorage.getItem('savedLine') || '13');
-  const [stopId, setStopId] = useState(() => localStorage.getItem('savedStop') || '740020749');
   const [lines, setLines] = useState([]);
-  const [stops, setStops] = useState([]);
-  const [departures, setDepartures] = useState([]);
   const [reliability, setReliability] = useState(null);
+  const [trend, setTrend] = useState([]);
 
   useEffect(() => {
     fetchLines().then(data => data && setLines(data));
-    fetchStops().then(data => data && setStops(data));
   }, []);
 
-  // runs on mount and whenever the user changes the selected line
   useEffect(() => {
-    localStorage.setItem('savedLine', line); // persist selection across page refreshes
-    setReliability(null); // clear old score immediately so stale data isn't shown during fetch
+    localStorage.setItem('savedLine', line);
+    setReliability(null);
+    setTrend([]);
     fetchReliability(line).then(setReliability);
+    fetchTrend(line).then(data => data && setTrend(data));
   }, [line]);
-
-  useEffect(() => {
-    localStorage.setItem('savedStop', stopId);
-    fetchDepartures(stopId).then(data => data && setDepartures(data));
-    // re-fetch every 60 seconds to keep the departures board current
-    const t = setInterval(() => fetchDepartures(stopId).then(data => data && setDepartures(data)), 60_000);
-    // clear the interval when the stop changes or the component unmounts,
-    // otherwise old intervals keep running and pile up in the background
-    return () => clearInterval(t);
-  }, [stopId]);
 
   const rec = reliability ? morningRecommendation(reliability) : null;
 
@@ -93,12 +62,6 @@ export default function MyCommute() {
               Line
               <select value={line} onChange={e => setLine(e.target.value)}>
                 {lines.map(l => <option key={l} value={l}>Line {l}</option>)}
-              </select>
-            </label>
-            <label>
-              Stop
-              <select value={stopId} onChange={e => setStopId(e.target.value)}>
-                {stops.map(s => <option key={s.id} value={s.id}>{s.name}</option>)}
               </select>
             </label>
           </div>
@@ -134,45 +97,13 @@ export default function MyCommute() {
           </section>
         )}
 
-        <section className="card">
-          <h2>Live Departures</h2>
-          {departures.length === 0 ? (
-            <p className="muted">Loading…</p>
-          ) : (
-            <table className="dep-table">
-              <thead>
-                <tr>
-                  <th>Line</th>
-                  <th>Destination</th>
-                  <th>In</th>
-                  <th>Status</th>
-                </tr>
-              </thead>
-              <tbody>
-                {departures.map((d, i) => {
-                  const status = delayStatus(d.delay_seconds, d.canceled);
-                  const mins = minutesAway(d.scheduled);
-                  return (
-                    <tr key={i} className={d.canceled ? 'row-canceled' : ''}>
-                      <td>
-                        <Link
-                          to={`/lines/${d.line}`}
-                          className="line-badge"
-                          style={{ background: modeColor(d.transport_mode) }}
-                        >
-                          {d.line}
-                        </Link>
-                      </td>
-                      <td className={d.canceled ? 'text-canceled' : ''}>{d.destination}</td>
-                      <td className="muted">{mins === 0 ? 'Now' : `${mins} min`}</td>
-                      <td style={{ color: status.color, fontWeight: 600 }}>{status.label}</td>
-                    </tr>
-                  );
-                })}
-              </tbody>
-            </table>
-          )}
-        </section>
+        {trend.length > 0 && (
+          <section className="card">
+            <h2>Reliability Trend</h2>
+            <p className="muted" style={{ marginBottom: '1rem' }}>On-time percentage by week (last 12 weeks)</p>
+            <TrendChart data={trend} />
+          </section>
+        )}
       </main>
 
       <footer className="footer">

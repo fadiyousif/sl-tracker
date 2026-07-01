@@ -16,3 +16,4 @@ export const fetchLines       = () => apiFetch(`${BASE}/api/lines`);
 export const fetchDepartures  = (areaId) => apiFetch(`${BASE}/api/departures/${areaId}`);
 export const fetchReliability = (line) => apiFetch(`${BASE}/api/reliability/${line}`);
 export const fetchHeatmap     = (line) => apiFetch(`${BASE}/api/reliability/${line}/heatmap`);
+export const fetchTrend       = (line) => apiFetch(`${BASE}/api/reliability/${line}/trend`);

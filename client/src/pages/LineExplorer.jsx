@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { fetchReliability, fetchHeatmap } from '../api';
+import { fetchReliability, fetchHeatmap, fetchTrend } from '../api';
 import ThemeToggle from '../components/ThemeToggle';
+import TrendChart from '../components/TrendChart';
 
 const DAY_NAMES  = { 1: 'Monday', 2: 'Tuesday', 3: 'Wednesday', 4: 'Thursday', 5: 'Friday' };
 const DAY_NAMES_ABBREVIATED  = { 1: 'Mon',    2: 'Tue',     3: 'Wed',       4: 'Thu',      5: 'Fri'    };
@@ -41,15 +42,18 @@ export default function LineExplorer() {
   const [reliability, setReliability] = useState(null);
   const [notFound, setNotFound] = useState(false);
   const [heatmap, setHeatmap] = useState([]);
+  const [trend, setTrend] = useState([]);
 
   useEffect(() => {
     setReliability(null);
     setNotFound(false);
     setHeatmap([]);
+    setTrend([]);
     fetchReliability(line).then(data => {
       if (!data) return setNotFound(true);
       setReliability(data);
       fetchHeatmap(line).then(data => data && setHeatmap(data));
+      fetchTrend(line).then(data => data && setTrend(data));
     });
   }, [line]);
 
@@ -106,6 +110,14 @@ export default function LineExplorer() {
             {reliability.warning && (
               <div className="warning">⚠️ {reliability.warning}</div>
             )}
+          </section>
+        )}
+
+        {trend.length > 0 && (
+          <section className="card">
+            <h2>Reliability Trend</h2>
+            <p className="muted" style={{ marginBottom: '1rem' }}>On-time percentage by week (last 12 weeks)</p>
+            <TrendChart data={trend} />
           </section>
         )}
 

@@ -30,6 +30,15 @@ function ninetyDaysAgo() {
   return new Date(Date.now() - 90 * 24 * 60 * 60 * 1000).toISOString();
 }
 
+function isoWeek(date) {
+  const d = new Date(Date.UTC(date.getFullYear(), date.getMonth(), date.getDate()));
+  const day = d.getUTCDay() || 7;
+  d.setUTCDate(d.getUTCDate() + 4 - day);
+  const yearStart = new Date(Date.UTC(d.getUTCFullYear(), 0, 1));
+  const week = Math.ceil((((d - yearStart) / 86400000) + 1) / 7);
+  return `${d.getUTCFullYear()}-W${String(week).padStart(2, '0')}`;
+}
+
 async function computeReliability(line) {
   const cutoff = ninetyDaysAgo();
   const { data, error } = await db
@@ -76,6 +85,31 @@ async function buildHeatmap(line) {
   }));
 }
 
+async function buildTrend(line) {
+  const cutoff = new Date(Date.now() - 12 * 7 * 24 * 60 * 60 * 1000).toISOString();
+  const { data, error } = await db
+    .from('departures')
+    .select('scheduled, delay_seconds')
+    .eq('line', line)
+    .eq('canceled', false)
+    .gte('scheduled', cutoff);
+  if (error) throw error;
+  const byWeek = {};
+  for (const dep of data) {
+    const week = isoWeek(new Date(dep.scheduled));
+    if (!byWeek[week]) byWeek[week] = { on_time: 0, total: 0 };
+    byWeek[week].total++;
+    if (dep.delay_seconds < 120) byWeek[week].on_time++;
+  }
+  return Object.entries(byWeek)
+    .sort(([a], [b]) => a.localeCompare(b))
+    .map(([week, { on_time, total }]) => ({
+      week,
+      score: Math.round((on_time / total) * 100),
+      total,
+    }));
+}
+
 app.get('/api/stops', (_req, res) => {
   res.json(mock.STOPS);
 });
@@ -108,6 +142,20 @@ app.get('/api/reliability/:line', async (req, res) => {
   try {
     const data = IS_DEV ? mock.getReliability(line) : await computeReliability(line);
     if (!data) return res.status(404).json({ error: 'Line not found' });
+    setCached(key, data);
+    res.json(data);
+  } catch (err) {
+    res.status(502).json({ error: err.message });
+  }
+});
+
+app.get('/api/reliability/:line/trend', async (req, res) => {
+  const { line } = req.params;
+  const key = `trend:${line}`;
+  const hit = getCached(key, 5 * 60_000);
+  if (hit) return res.json(hit);
+  try {
+    const data = IS_DEV ? mock.getTrend(line) : await buildTrend(line);
     setCached(key, data);
     res.json(data);
   } catch (err) {

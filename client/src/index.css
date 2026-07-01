@@ -370,6 +370,18 @@
   color: var(--text);
 }
 
+/* ── Trend chart ── */
+
+.trend-dot {
+  cursor: pointer;
+  transition: r 0.15s ease;
+}
+
+.trend-dot:hover {
+  r: 7;
+  fill: #2563eb;
+}
+
 /* ── Footer ── */
 
 .footer {

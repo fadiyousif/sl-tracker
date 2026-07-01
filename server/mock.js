@@ -129,6 +129,29 @@ function heatDelay(day, hour) {
   return 25 + (day * 2 + hour * 3) % 35;                                  // off-peak: moderate delays
 }
 
+function isoWeek(date) {
+  const d = new Date(Date.UTC(date.getFullYear(), date.getMonth(), date.getDate()));
+  const day = d.getUTCDay() || 7;
+  d.setUTCDate(d.getUTCDate() + 4 - day);
+  const yearStart = new Date(Date.UTC(d.getUTCFullYear(), 0, 1));
+  const week = Math.ceil((((d - yearStart) / 86400000) + 1) / 7);
+  return `${d.getUTCFullYear()}-W${String(week).padStart(2, '0')}`;
+}
+
+export function getTrend(line) {
+  const base = RELIABILITY[line]?.score ?? 80;
+  const now = new Date();
+  const result = [];
+  for (let i = 11; i >= 0; i--) {
+    const date = new Date(now.getTime() - i * 7 * 24 * 60 * 60 * 1000);
+    const week = isoWeek(date);
+    const variation = Math.round(Math.sin(i * 0.9) * 6 + (i % 4) * 2 - 4);
+    const score = Math.min(99, Math.max(50, base + variation));
+    result.push({ week, score, total: 200 + i * 8 });
+  }
+  return result;
+}
+
 export function getHeatmap(_line) {
   // 1 = Monday, 2 = Tuesday, ..., 5 = Friday
   const days = [1, 2, 3, 4, 5];
