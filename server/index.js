@@ -155,7 +155,7 @@ app.get('/api/reliability/:line/trend', async (req, res) => {
   const hit = getCached(key, 5 * 60_000);
   if (hit) return res.json(hit);
   try {
-    const data = IS_DEV ? mock.getTrend(line) : await buildTrend(line);
+    const data = mock.getTrend(line); // TODO: replace with buildTrend(line) once 12 weeks of data is collected
     setCached(key, data);
     res.json(data);
   } catch (err) {
