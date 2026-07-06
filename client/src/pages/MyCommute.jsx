@@ -116,7 +116,7 @@ export default function MyCommute() {
             )}
             {worst !== null && (
               <p className="muted" style={{ marginTop: '0.75rem', fontSize: '0.875rem' }}>
-                Historically, Line {line} is most delayed at {worst}:00 on weekdays.
+                Historically, Line {line} is most delayed at {worst}:00–{worst + 1}:00 on weekdays.
               </p>
             )}
             {streak >= 2 && (

@@ -33,7 +33,7 @@ function HeatmapCell({ day, hour, delay }) {
     <div
       className="hm-cell"
       style={{ background: delayColor(clampedDelay) }}
-      title={`${DAY_NAMES[day]} ${hour}:00 — avg ${clampedDelay}s`}
+      title={`${DAY_NAMES[day]} ${hour}:00–${hour + 1}:00 — avg ${clampedDelay}s`}
     />
   );
 }
