@@ -28,11 +28,12 @@ function delayColor(seconds) {
 }
 
 function HeatmapCell({ day, hour, delay }) {
+  const clampedDelay = Math.max(0, delay);
   return (
     <div
       className="hm-cell"
-      style={{ background: delayColor(delay) }}
-      title={`${DAY_NAMES[day]} ${hour}:00 — avg ${delay}s`}
+      style={{ background: delayColor(clampedDelay) }}
+      title={`${DAY_NAMES[day]} ${hour}:00 — avg ${clampedDelay}s`}
     />
   );
 }
