@@ -23,6 +23,15 @@ function morningRecommendation(reliability) {
   return null;
 }
 
+function punctualityStreak(trend) {
+  let streak = 0;
+  for (const entry of [...trend].reverse()) {
+    if (entry.score >= 80) streak++;
+    else break;
+  }
+  return streak;
+}
+
 // averages delay across all weekdays per hour, returns the hour with the highest average
 function worstHour(heatmap) {
   const byHour = {};
@@ -62,6 +71,7 @@ export default function MyCommute() {
 
   const rec = reliability ? morningRecommendation(reliability) : null;
   const worst = heatmap.length > 0 ? worstHour(heatmap) : null;
+  const streak = trend.length > 0 ? punctualityStreak(trend) : 0;
 
   return (
     <div className="page">
@@ -107,6 +117,16 @@ export default function MyCommute() {
             {worst !== null && (
               <p className="muted" style={{ marginTop: '0.75rem', fontSize: '0.875rem' }}>
                 Historically, Line {line} is most delayed at {worst}:00 on weekdays.
+              </p>
+            )}
+            {streak >= 2 && (
+              <p style={{ marginTop: '0.5rem', fontSize: '0.875rem', color: 'var(--green)' }}>
+                On time for {streak} weekdays in a row.
+              </p>
+            )}
+            {streak === 1 && (
+              <p style={{ marginTop: '0.5rem', fontSize: '0.875rem', color: 'var(--green)' }}>
+                On time yesterday.
               </p>
             )}
           </section>
