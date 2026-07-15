@@ -49,7 +49,7 @@ function worstHour(heatmap) {
 }
 
 export default function MyCommute() {
-  const [line, setLine] = useState(() => localStorage.getItem('savedLine') || '13');
+  const [line, setLine] = useState(() => localStorage.getItem('savedLine') || '1');
   const [lines, setLines] = useState([]);
   const [reliability, setReliability] = useState(null);
   const [trend, setTrend] = useState([]);

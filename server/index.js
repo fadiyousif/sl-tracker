@@ -109,8 +109,10 @@ app.get('/api/stops', (_req, res) => {
   res.json(mock.STOPS);
 });
 
+const TRACKED_LINES = ['1', '7', '10', '53', '55', '76'];
+
 app.get('/api/lines', (_req, res) => {
-  res.json(mock.getLines());
+  res.json(TRACKED_LINES);
 });
 
 app.get('/api/departures/:areaId', async (req, res) => {
