@@ -30,41 +30,62 @@ function ninetyDaysAgo() {
   return new Date(Date.now() - 90 * 24 * 60 * 60 * 1000).toISOString();
 }
 
+const SUPABASE_PAGE_SIZE = 1000;
+
+// Supabase/PostgREST caps each response at SUPABASE_PAGE_SIZE rows, so queries that
+// might exceed that must page through with .range() to get the full result set.
+async function fetchAllRows(buildQuery) {
+  const allRows = [];
+  let from = 0;
+  while (true) {
+    const { data, error } = await buildQuery().range(from, from + SUPABASE_PAGE_SIZE - 1);
+    if (error) throw error;
+    allRows.push(...data);
+    if (data.length < SUPABASE_PAGE_SIZE) break;
+    from += SUPABASE_PAGE_SIZE;
+  }
+  return allRows;
+}
+
 async function computeReliability(line) {
   const cutoff = ninetyDaysAgo();
-  const { data, error } = await db
-    .from('departures')
-    .select('delay_seconds')
-    .eq('line', line)
-    .eq('canceled', false)
-    .gte('scheduled', cutoff);
-  if (error) throw error;
-  if (!data.length) return null;
-  const onTime = data.filter(departure => departure.delay_seconds < 120);
+  const departures = await fetchAllRows(() =>
+    db
+      .from('departures')
+      .select('delay_seconds')
+      .eq('line', line)
+      .eq('canceled', false)
+      .gte('scheduled', cutoff)
+      .order('id', { ascending: true })
+  );
+  if (!departures.length) return null;
+  const onTimeDepartures = departures.filter(departure => departure.delay_seconds < 120);
   return {
-    score:   Math.round((onTime.length / data.length) * 100),
-    total:   data.length,
-    on_time: onTime.length,
+    score:   Math.round((onTimeDepartures.length / departures.length) * 100),
+    total:   departures.length,
+    on_time: onTimeDepartures.length,
   };
 }
 
 async function buildHeatmap(line) {
   const cutoff = ninetyDaysAgo();
-  const { data, error } = await db
-    .from('departures')
-    .select('scheduled, delay_seconds')
-    .eq('line', line)
-    .eq('canceled', false)
-    .gte('scheduled', cutoff);
-  if (error) throw error;
+  const departures = await fetchAllRows(() =>
+    db
+      .from('departures')
+      .select('scheduled, delay_seconds')
+      .eq('line', line)
+      .eq('canceled', false)
+      .gte('scheduled', cutoff)
+      .order('id', { ascending: true })
+  );
   // group departures by day-of-week + hour, accumulating total delay and departure count per slot
   const byDayHour = {};
-  for (const departure of data) {
+  for (const departure of departures) {
     const scheduledDate = new Date(departure.scheduled);
-    const day = scheduledDate.getDay();   // 0 = Sunday, 1 = Monday, ..., 6 = Saturday
+    const dayOfWeek = scheduledDate.getDay();   // 0 = Sunday, 1 = Monday, ..., 6 = Saturday
     const hour = scheduledDate.getHours();
-    const key = `${day}-${hour}`;
-    if (!byDayHour[key]) byDayHour[key] = { day, hour, delay_total: 0, departure_count: 0 };
+    const key = `${dayOfWeek}-${hour}`;
+    if (!byDayHour[key]) byDayHour[key] = { day: dayOfWeek, hour, delay_total: 0, departure_count: 0 };
     byDayHour[key].delay_total += departure.delay_seconds;
     byDayHour[key].departure_count++;
   }
@@ -80,20 +101,22 @@ async function buildTrend(line) {
   const cutoff = new Date(Date.now() - 11 * 24 * 60 * 60 * 1000).toISOString();
   const today = new Date();
   today.setHours(0, 0, 0, 0);
-  const { data, error } = await db
-    .from('departures')
-    .select('scheduled, delay_seconds')
-    .eq('line', line)
-    .eq('canceled', false)
-    .gte('scheduled', cutoff)
-    .lt('scheduled', today.toISOString());
-  if (error) throw error;
+  const departures = await fetchAllRows(() =>
+    db
+      .from('departures')
+      .select('scheduled, delay_seconds')
+      .eq('line', line)
+      .eq('canceled', false)
+      .gte('scheduled', cutoff)
+      .lt('scheduled', today.toISOString())
+      .order('id', { ascending: true })
+  );
   const byDay = {};
-  for (const dep of data) {
-    const day = new Date(dep.scheduled).toISOString().slice(0, 10);
+  for (const departure of departures) {
+    const day = new Date(departure.scheduled).toISOString().slice(0, 10);
     if (!byDay[day]) byDay[day] = { on_time: 0, total: 0 };
     byDay[day].total++;
-    if (dep.delay_seconds < 120) byDay[day].on_time++;
+    if (departure.delay_seconds < 120) byDay[day].on_time++;
   }
   return Object.entries(byDay)
     .filter(([day]) => { const dayOfWeek = new Date(day).getDay(); return dayOfWeek >= 1 && dayOfWeek <= 5; })
