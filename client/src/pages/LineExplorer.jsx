@@ -3,6 +3,7 @@ import { useParams, Link } from 'react-router-dom';
 import { fetchReliability, fetchHeatmap, fetchTrend } from '../api';
 import ThemeToggle from '../components/ThemeToggle';
 import TrendChart from '../components/TrendChart';
+import Spinner from '../components/Spinner';
 
 const DAY_NAMES  = { 1: 'Monday', 2: 'Tuesday', 3: 'Wednesday', 4: 'Thursday', 5: 'Friday' };
 const DAY_NAMES_ABBREVIATED  = { 1: 'Mon',    2: 'Tue',     3: 'Wed',       4: 'Thu',      5: 'Fri'    };
@@ -101,6 +102,11 @@ export default function LineExplorer() {
         {notFound && (
           <section className="card">
             <p className="muted">Line {line} not found.</p>
+          </section>
+        )}
+        {!reliability && !notFound && (
+          <section className="card">
+            <Spinner />
           </section>
         )}
         {reliability && (

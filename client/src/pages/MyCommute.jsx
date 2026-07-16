@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { fetchReliability, fetchLines, fetchTrend, fetchHeatmap } from '../api';
 import ThemeToggle from '../components/ThemeToggle';
 import TrendChart from '../components/TrendChart';
+import Spinner from '../components/Spinner';
 
 function scoreColor(score) {
   if (score >= 90) return 'var(--green)';
@@ -96,6 +97,12 @@ export default function MyCommute() {
             </label>
           </div>
         </section>
+
+        {!reliability && (
+          <section className="card">
+            <Spinner />
+          </section>
+        )}
 
         {reliability && (
           <section className="card">
