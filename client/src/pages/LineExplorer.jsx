@@ -27,13 +27,22 @@ function delayColor(seconds) {
   return `hsl(${hue}, 65%, 42%)`; // saturation and lightness stay fixed, only hue changes
 }
 
+// formats a delay in seconds as "Ns" under a minute, or "Mm Ss" (or "Mm" when exact) once it reaches 60s
+function formatDelay(seconds) {
+  const roundedSeconds = Math.round(seconds);
+  if (roundedSeconds <= 59) return `${roundedSeconds}s`;
+  const minutes = Math.floor(roundedSeconds / 60);
+  const remainingSeconds = roundedSeconds % 60;
+  return remainingSeconds === 0 ? `${minutes}m` : `${minutes}m ${remainingSeconds}s`;
+}
+
 function HeatmapCell({ day, hour, delay }) {
   const clampedDelay = Math.max(0, delay);
   return (
     <div
       className="hm-cell"
       style={{ background: delayColor(clampedDelay) }}
-      title={`${DAY_NAMES[day]} ${hour}:00–${hour + 1}:00 — avg ${clampedDelay}s`}
+      title={`${DAY_NAMES[day]} ${hour}:00–${hour + 1}:00 — avg ${formatDelay(clampedDelay)}`}
     />
   );
 }
@@ -152,7 +161,7 @@ export default function LineExplorer() {
                 <li key={`${day}-${hour}`}>
                   <span className="worst-time">{DAY_NAMES[day]} {hour}:00–{hour + 1}:00</span>
                   <span style={{ color: delayColor(avg_delay), fontWeight: 600 }}>
-                    avg +{Math.round(avg_delay)}s
+                    avg +{formatDelay(avg_delay)}
                   </span>
                 </li>
               ))}
